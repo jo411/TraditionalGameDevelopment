@@ -10,7 +10,10 @@ public class AttackResult {
 
     public AttackResult(List<string> log, bool hit, bool crit, double damage)
     {
-
+        this.log = log;
+        this.hit = hit;
+        this.crit = crit;
+        this.damage = damage;
     }
 }
 

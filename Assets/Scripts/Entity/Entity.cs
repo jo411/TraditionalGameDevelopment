@@ -11,15 +11,33 @@ public class Entity: MonoBehaviour
     public List<Attack> attacks;
 
     private Image healthBar;
+    public GameObject combatText;
 
     // Use this for initialization
     void Start()
     {
         
         healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();
+        attacks = new List<Attack>();
         addDefaultAttacks();
     }
 
+    public GameObject initCBT(string text)//TODO: a lot of finds and get components consider prefetching
+    {
+        GameObject temp = Instantiate(combatText) as GameObject;
+        RectTransform tempRect = temp.GetComponent<RectTransform>();
+        temp.transform.SetParent(transform.Find("EntityCanvas"));
+        tempRect.transform.localPosition = combatText.transform.localPosition;
+        tempRect.transform.localScale = combatText.transform.localScale;
+        tempRect.transform.localRotation = combatText.transform.localRotation;
+
+
+        temp.GetComponent<Text>().text = text;
+
+        Destroy(temp.gameObject, 2);
+        return temp;
+
+    }
     public void addDefaultAttacks()
     {
         attacks.Add(new Attack("Fast Attack", 30, .95));
@@ -34,12 +52,8 @@ public class Entity: MonoBehaviour
 
     private Stats baseStats;
     Stats stats;
-    public String eName
-    {
-        get { return eName; }
-        set { }
-    }
-
+    public string eName;
+   
     public void Initialize(string name)//calls constructor
     {
         noParamEntity(name);
@@ -70,6 +84,7 @@ public class Entity: MonoBehaviour
         List<string> log = new List<string>();
         bool hit;
         bool crit=false;
+        double critMult = 1.5;//TODO: store this elsewhere
         log.Add(this.eName + " attacks " + target.eName + "!\n");
 
         
@@ -79,22 +94,29 @@ public class Entity: MonoBehaviour
         {
             log.Add("The attack missed!");
             hit = false;
+            damage = 0;
         }
         else
         {
             hit = true;
-            double critMod = Calculator.checkProbability(stats.critChance) ? 1.5 : 1;
+            double critMod = Calculator.checkProbability(stats.critChance) ? critMult : 1;
             crit= critMod !=1;
             string hitString = critMod == 1 ? "hits" : "crits";
 
             damage = Calculator.getDamage(stats.level, getAttack(), target.getDefense(), attack.power, critMod);
             log.Add(eName + " " + hitString + " for " + (int)damage + " damage!");
-
-            target.dealDamage(damage);
-        }
+          
+        }      
+        target.dealDamage(damage);
+        target.hitUI(damage, crit, critMult);
 
 
         return new AttackResult(log, hit,crit,damage);
+    }
+
+    public Attack chooseAttack()
+    {
+        return attacks[Calculator.rand.Next(0, attacks.Count)];//just use a random attack for now
     }
 
     public void setTempStats(Stats baseStats)
@@ -120,7 +142,27 @@ public class Entity: MonoBehaviour
         {
             stats.HP = 0;
         }
+    }
+
+    public void hitUI(double damage, bool crit, double mult)
+    {
         healthBar.fillAmount = (float)stats.HP / (float)baseStats.HP;
+
+        if(damage==0)
+        {
+            initCBT("Miss").GetComponent<Animator>().SetTrigger("Hit");//TODO: double check the output format
+            return;
+        }
+
+        if (crit)
+        {
+            initCBT(damage.ToString("##0.##") + " (x" + mult.ToString() + ")").GetComponent<Animator>().SetTrigger("Crit");//TODO: double check the output format
+        }
+        else
+        {
+            initCBT(damage.ToString("##0.##")).GetComponent<Animator>().SetTrigger("Hit");//TODO: double check the output format
+        }
+
     }
     public bool isDead()
     {

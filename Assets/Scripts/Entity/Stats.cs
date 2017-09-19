@@ -12,7 +12,7 @@ public class Stats
     public int speed;
     public double evasion;
     public int level;
-    public double critChance = .1;
+    public double critChance = .5;
 
     private int maxValue = 255;
     public Stats()//default constructor generates random values
