@@ -3043,12 +3043,12 @@ Prefab:
     - target: {fileID: 114254171344393948, guid: f71a625e13aa7264c86a3b70eac908bc,
         type: 2}
       propertyPath: enemyPositions.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114254171344393948, guid: f71a625e13aa7264c86a3b70eac908bc,
         type: 2}
       propertyPath: playerPositions.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4207017343762260, guid: f71a625e13aa7264c86a3b70eac908bc, type: 2}
       propertyPath: m_LocalPosition.x
