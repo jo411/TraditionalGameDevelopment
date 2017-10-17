@@ -211,6 +211,56 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224320351097852488, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 716.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224320351097852488, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -143.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_FontData.m_Alignment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114200073977225298, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224320351097852488, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 337.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224320351097852488, guid: f60f22151a423cb45990f86876a1a1b7,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 63.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f60f22151a423cb45990f86876a1a1b7, type: 2}
   m_IsPrefabParent: 0
@@ -616,6 +666,10 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: buttonAction
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621369357065030, guid: 9e5082cb72336804d8ece790d8a4b63f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e5082cb72336804d8ece790d8a4b63f, type: 2}

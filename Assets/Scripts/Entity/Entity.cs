@@ -9,7 +9,7 @@ public class Entity: MonoBehaviour
 {
 
     public List<Attack> attacks;
-
+    public List<Effect> effects;
     private Image healthBar;
     public GameObject combatText;
 
@@ -18,8 +18,8 @@ public class Entity: MonoBehaviour
     {
         
         healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();
-        attacks = new List<Attack>();
-        addDefaultAttacks();
+    
+       
     }
 
     public GameObject initCBT(string text)//TODO: a lot of finds and get components consider prefetching
@@ -38,10 +38,12 @@ public class Entity: MonoBehaviour
         return temp;
 
     }
-    public void addDefaultAttacks()
+    public void addAttacks()
     {
-        attacks.Add(new Attack("Fast Attack", 30, .95));
-        attacks.Add(new Attack("Strong Attack", 55, .6));
+        for(int i =0; i<2; i++)
+        {
+            attacks.Add(AttackList.getRandomAttack());
+        }
     }
     // Update is called once per frame
     void Update()
@@ -56,6 +58,9 @@ public class Entity: MonoBehaviour
    
     public void Initialize(string name)//calls constructor
     {
+        attacks = new List<Attack>();
+        effects = new List<Effect>();
+        addAttacks();
         noParamEntity(name);
     }
     public void noParamEntity(String name)
@@ -104,16 +109,38 @@ public class Entity: MonoBehaviour
             string hitString = critMod == 1 ? "hits" : "crits";
 
             damage = Calculator.getDamage(stats.level, getAttack(), target.getDefense(), attack.power, critMod);
+            
+            if(Calculator.checkProbability(attack.effectChance))
+            {
+                Effect newEffect = (Effect)Activator.CreateInstance(attack.effect.GetType());
+                target.effects.Add(newEffect);
+                newEffect.apply(target);
+            }
+
+
+
             log.Add(eName + " " + hitString + " for " + (int)damage + " damage!");
           
         }      
-        target.dealDamage(damage);
-        target.hitUI(damage, crit, critMult);
+        target.dealDamage(damage,crit,critMult);
+        //target.hitUI(damage, crit, critMult);
 
 
         return new AttackResult(log, hit,crit,damage);
     }
 
+    public void turnTick(bool isPlayerTurn)
+    {
+        
+      for(int i=effects.Count-1;i>=0;i--)
+        {
+            if (effects[i].update(isPlayerTurn, this))
+            {
+                effects.RemoveAt(i);
+            }
+        }
+       
+    }
     public Attack chooseAttack()
     {
         return attacks[Calculator.rand.Next(0, attacks.Count)];//just use a random attack for now
@@ -131,17 +158,32 @@ public class Entity: MonoBehaviour
     public override string ToString()
     {
         return "Name: " + this.eName + "\n"
+            +"Status: "+getStatusStrings()+"\n"
             + "Stats: " + "\n"
             + this.baseStats;
 
     }
-    public void dealDamage(double damage)
+    public string getStatusStrings()
     {
+        StringBuilder sb = new StringBuilder();
+        foreach(Effect current in effects)
+        {
+            sb.Append(" " + current.ToString());
+        }
+        return sb.ToString();
+    }
+    public void dealDamage(double damage, bool crit, double mult)
+    {
+        damage *= stats.incomingDamageMult;
         stats.HP -= (int)damage;
         if (stats.HP < 0)
         {
             stats.HP = 0;
+        }else if(stats.HP>baseStats.HP)
+        {
+            stats.HP = baseStats.HP;
         }
+        this.hitUI(damage, crit, mult);
     }
 
     public void hitUI(double damage, bool crit, double mult)
@@ -153,7 +195,11 @@ public class Entity: MonoBehaviour
             initCBT("Miss").GetComponent<Animator>().SetTrigger("Hit");//TODO: double check the output format
             return;
         }
-
+        if(damage<0)
+        {
+            initCBT("Healed: "+ damage*-1).GetComponent<Animator>().SetTrigger("Crit");//TODO: double check the output format
+            return;
+        }
         if (crit)
         {
             initCBT(damage.ToString("##0.##") + " (x" + mult.ToString() + ")").GetComponent<Animator>().SetTrigger("Crit");//TODO: double check the output format
@@ -196,6 +242,23 @@ public class Entity: MonoBehaviour
         return stats.evasion;
     }
 
+    public void setDamageMult(double value)
+    {
+        stats.incomingDamageMult = value;
+    }
+    public double getDamageMult()
+    {
+        return stats.incomingDamageMult;
+    }
+
+    public void setDefense(int value)
+    {
+        stats.defense = value;
+    }
+    public void setHP (int value)
+    {
+        stats.HP = Math.Min(getMaxHP(), value);
+    }
 }
 
 
