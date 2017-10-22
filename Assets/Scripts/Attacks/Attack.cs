@@ -28,6 +28,15 @@ public class Attack
         this.effectChance = effectChance;
     }
 
+    public int rollAttackPower()
+    {
+        if(power == 0)
+        {
+            return power;
+        }
+        return Random.Range(power - 5, power + 5);
+    }
+
     public override string ToString()
     {
        return "Attack: " + name + "\nPower:" + power + "\nAccuracy:" + accuracy + "\n\n" + flavorText;

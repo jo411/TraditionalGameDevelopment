@@ -108,7 +108,15 @@ public class Entity: MonoBehaviour
             crit= critMod !=1;
             string hitString = critMod == 1 ? "hits" : "crits";
 
-            damage = Calculator.getDamage(stats.level, getAttack(), target.getDefense(), attack.power, critMod);
+            // switch to true to turn off attack variance
+            if(false)
+            {
+                int power = attack.rollAttackPower();
+                print("base power: " + attack.power + "| actual power: " + power);
+                damage = Calculator.getDamage(stats.level, getAttack(), target.getDefense(), power, critMod);
+            } else {
+                damage = Calculator.getDamage(stats.level, getAttack(), target.getDefense(), attack.power, critMod);
+            }
             
             if(Calculator.checkProbability(attack.effectChance))
             {
