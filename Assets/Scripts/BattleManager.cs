@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour {
 
-    
-
+    bool battleOver = false;
 
     protected static BattleManager instance; // Needed
     public GameObject entityPrefab;
 
     public GameObject playerUI;
     public GameObject enemyUI;
+    public GameObject SplashUI;
 
     public GameObject turnMarker;
     
@@ -48,6 +48,109 @@ public class BattleManager : MonoBehaviour {
 
     float aiDelay = 3f;
     float delayTimer = 0f;
+
+    float gameOverDelay = 5f;
+    float gameOverTimer = 0f;
+
+
+    public List<GameObject> stagePrefabs;
+    private GameObject currentStage;
+
+    public void resetStage()
+    {
+        if (currentStage != null)//a stage has been created 
+        {
+            Destroy(currentStage);
+        }
+
+        players = new List<GameObject>();
+        enemies = new List<GameObject>();
+        playerPositions = new List<Transform>();
+        enemyPositions = new List<Transform>();
+
+        turnOrder = new List<GameObject>();
+        setupStage();
+        fillPositions();
+        placeEntities();//no game objects exists before this     
+        List<string> enemyNames = new List<string>();
+        foreach (GameObject enemy in enemies)
+        {
+            enemyNames.Add(enemy.GetComponent<Entity>().eName);
+        }
+
+        turnOrder.AddRange(players);
+        turnOrder.AddRange(enemies);
+
+        turnOrder = turnOrder.OrderByDescending(x => x.GetComponent<Entity>().getSpeed()).ToList();//sort by speed
+        turn = -1;
+
+         current=null;
+         currentTarget=null;
+         currentAttack = 0;  
+
+         isAiTurn = false;
+         waitTimer = 0f;       
+         delayTimer = 0f;
+        gameOverTimer = 0f;
+        battleOver = false;
+
+
+        Debug.Log("The stage has been reset with "+turnOrder.Count +" players");
+
+        advanceTurn();//set turn to zero
+    }
+    public void setupStage()
+    {
+        GameObject stagePrefab = stagePrefabs[Calculator.rand.Next(0,stagePrefabs.Count)];
+       
+
+        currentStage = Instantiate(stagePrefab);
+        currentStage.transform.position = new Vector3(0, 0, 0);//center the stage
+
+
+        GameObject cameraObj = GameObject.FindGameObjectWithTag("Camera Marker");
+
+        Transform cameraPos = cameraObj == null ? null : cameraObj.transform;
+
+        if (cameraPos == null)
+        {
+            Debug.LogError("This stage doesn't have a camera marker set up: " + this.name);
+        }
+        placeCamera(cameraPos); 
+
+    }
+   
+    public void placeCamera(Transform newPos)
+    {
+      
+        Camera.main.transform.position = newPos.position;
+        Camera.main.transform.rotation = newPos.rotation;
+
+    }
+    public void fillPositions()
+    {
+        for (int i = 1; i <= 4; i++)//search for Players
+        {
+            GameObject playerSearch = GameObject.Find("P" + i);
+            if (playerSearch != null)
+            {
+                playerPositions.Add(playerSearch.transform);
+            }
+
+        }
+
+        for (int i = 1; i <= 4; i++)//search for Enemies
+        {
+            GameObject playerSearch = GameObject.Find("E" + i);
+            if (playerSearch != null)
+            {
+                enemyPositions.Add(playerSearch.transform);
+            }
+
+        }       
+
+    }
+
     void Start()
     {
         attackMenu = GameObject.FindGameObjectWithTag("AttackMenu").GetComponent<Dropdown>();
@@ -57,28 +160,10 @@ public class BattleManager : MonoBehaviour {
         infoPane.SetActive(false);
 
         instance = this;
-        players = new List<GameObject>();
-        enemies = new List<GameObject>();
-        turnOrder = new List<GameObject>();
-
-        placeEntities();//no game objects exists before this     
-
-        List<string> enemyNames = new List<string>();
-        foreach(GameObject enemy in enemies)
-        {
-            enemyNames.Add(enemy.GetComponent<Entity>().eName);
-        }
-       // targetMenu.AddOptions(enemyNames);
-      
-        turnOrder.AddRange(players);
-        turnOrder.AddRange(enemies);
-
-        turnOrder = turnOrder.OrderByDescending(x => x.GetComponent<Entity>().getSpeed()).ToList();//sort by speed
 
         turnMarker = Instantiate(turnMarker);
-
-        advanceTurn();//set turn to zero
-        
+        // targetMenu.AddOptions(enemyNames);
+        resetStage();        
         
     }
     //TODO: Fix issues with updating infopanel on turn swap.
@@ -86,24 +171,41 @@ public class BattleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //if (isAiTurn) aiTurn();//run the ai turn if applicable
-
-        //waitTimer += Time.deltaTime;//update time
-
-        if(isAiTurn)
+       if( Input.GetMouseButtonDown(1))
         {
-            delayTimer += Time.deltaTime;
+            gameOver(true);
+        }
+       
+      if (battleOver)
+        {
+            gameOverTimer += Time.deltaTime;
+            if(gameOverTimer>=gameOverDelay)
+            {                
+                resetStage();
+                SplashUI.SetActive(false);
+                
+            }
         }
         else
         {
-            checkClicked();
-        }
-        if(delayTimer>=aiDelay)
-        {
-            delayTimer = 0;
-            aiTurn();
+            if (isAiTurn)
+            {
+                delayTimer += Time.deltaTime;
+            }
+            else
+            {
+                checkClicked();
+            }
+            if (delayTimer >= aiDelay)
+            {
+                delayTimer = 0;
+                aiTurn();
+            }
         }
 
-       
+    
+
+
 	}
 
     public void checkClicked()
@@ -177,6 +279,8 @@ public class BattleManager : MonoBehaviour {
     public void targetClicked(Entity clicked)
     {
         if (clicked == null) { return; }
+        if (clicked.isDead()) { return; }//can't click dead entities
+
         deselectTarget(currentTarget);
         currentTarget = clicked;
         selectTarget(currentTarget);
@@ -186,6 +290,7 @@ public class BattleManager : MonoBehaviour {
     private void selectTarget(Entity target)
     {
         if (target == null) { return; }
+
         target.gameObject.GetComponent<cakeslice.Outline>().enabled = true;
      
     }
@@ -332,16 +437,7 @@ public class BattleManager : MonoBehaviour {
         return newEntity;
     }
 
-    void waitForTime(float time)//TODO: This is bad bad bad probably. Do this without a busy loop
-    {
-        waitTimer = 0;
-        while(waitTimer<time)
-        {
-
-        }
-
-        
-    }
+ 
 
     private bool playerLost()
     {
@@ -368,20 +464,12 @@ public class BattleManager : MonoBehaviour {
     private void gameOver(bool won)
     {
         playerUI.SetActive(false);
-        enemyUI.SetActive(true);
-        enemyUI.GetComponentInChildren<Text>().text = "Match Over! You " +( won ? "won" : "lost");
-        //  Application.Quit();
+        enemyUI.SetActive(false);
+        SplashUI.SetActive(true);
+        SplashUI.GetComponentInChildren<Text>().text = "Battle Over! You " +( won ? "won!" : "lost...");
+        battleOver = true;
 
-        //TODO: Terible hacks, currently the game crashes unity on game over need to fix
-
-#if UNITY_EDITOR
-        // Application.Quit() does not work in the editor so
-        // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-         Application.Quit();
-#endif
-
+        
 
     }
 
