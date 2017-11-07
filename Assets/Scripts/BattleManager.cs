@@ -18,8 +18,8 @@ public class BattleManager : MonoBehaviour {
     public GameObject turnMarker;
     
 
-    public List<Transform> playerPositions;
-    public List<Transform> enemyPositions;
+    private List<Transform> playerPositions;
+    private List<Transform> enemyPositions;
 
     private List<GameObject> players;
     private List<GameObject> enemies;
@@ -29,15 +29,18 @@ public class BattleManager : MonoBehaviour {
     private int turn = -1;
 
     private Dropdown attackMenu;//selectors for attacks
-    private Dropdown targetMenu;//selector for targets 
+ //   private Dropdown targetMenu;//selector for targets 
 
     private GameObject infoPane;
     // public InputField input;//TODO: Bad use something else obviously 
 
+    public LayerMask inputMask;//masks out UI and other layers from the click input
+
     Entity current;
+    Entity currentTarget;
 
     int currentAttack = 0;
-    int currentTarget = 0;
+    //int currentTarget = 0;
 
     bool isAiTurn = false;
 
@@ -48,7 +51,7 @@ public class BattleManager : MonoBehaviour {
     void Start()
     {
         attackMenu = GameObject.FindGameObjectWithTag("AttackMenu").GetComponent<Dropdown>();
-        targetMenu = GameObject.FindGameObjectWithTag("TargetMenu").GetComponent<Dropdown>();
+      //  targetMenu = GameObject.FindGameObjectWithTag("TargetMenu").GetComponent<Dropdown>();
         infoPane = GameObject.FindGameObjectWithTag("InfoPane");
 
         infoPane.SetActive(false);
@@ -65,7 +68,7 @@ public class BattleManager : MonoBehaviour {
         {
             enemyNames.Add(enemy.GetComponent<Entity>().eName);
         }
-        targetMenu.AddOptions(enemyNames);
+       // targetMenu.AddOptions(enemyNames);
       
         turnOrder.AddRange(players);
         turnOrder.AddRange(enemies);
@@ -90,13 +93,35 @@ public class BattleManager : MonoBehaviour {
         {
             delayTimer += Time.deltaTime;
         }
+        else
+        {
+            checkClicked();
+        }
         if(delayTimer>=aiDelay)
         {
             delayTimer = 0;
             aiTurn();
         }
 
+       
 	}
+
+    public void checkClicked()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {           
+            RaycastHit hit;
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 100.0f,inputMask))
+            {
+                Debug.Log(hit.collider.gameObject.name);
+                if(hit.collider.gameObject.tag.Equals("Entity"))
+                {                    
+                    targetClicked(hit.collider.gameObject.GetComponent<Entity>());                    
+                }                
+            }
+        }
+    }
 
     public void placeEntities()
     {
@@ -121,7 +146,7 @@ public class BattleManager : MonoBehaviour {
                 setInfoPaneText(current.attacks[currentAttack].ToString());                
                 break;
             case 1:
-                setInfoPaneText(enemies[currentTarget].GetComponent<Entity>().ToString());               
+                setInfoPaneText(currentTarget.ToString());               
                 break;
             
         }
@@ -142,30 +167,46 @@ public class BattleManager : MonoBehaviour {
     }
     public void targetMenuAction(int selected)
     {
-        deselectTarget(currentTarget);
-        currentTarget = selected;
-        selectTarget(currentTarget);
-        HelpCallback(1);
+       // deselectTarget(currentTarget);
+       // currentTarget = selected;
+        //selectTarget(currentTarget);
+       // HelpCallback(1);
 
     }
 
-    private void selectTarget(int target)
+    public void targetClicked(Entity clicked)
     {
-      
-        enemies[target].GetComponent<cakeslice.Outline>().enabled = true;
+        if (clicked == null) { return; }
+        deselectTarget(currentTarget);
+        currentTarget = clicked;
+        selectTarget(currentTarget);
+        HelpCallback(1);
+    }
+
+    private void selectTarget(Entity target)
+    {
+        if (target == null) { return; }
+        target.gameObject.GetComponent<cakeslice.Outline>().enabled = true;
      
     }
 
-    private void deselectTarget(int target)
+    private void deselectTarget(Entity target)
     {
-        enemies[target].GetComponent<cakeslice.Outline>().enabled = false;
+        if (target == null) { return; }
+        target.gameObject.GetComponent<cakeslice.Outline>().enabled = false;
 
+    }
+
+    public void clearHighlights()
+    {
+       
+        deselectTarget(currentTarget);
     }
 
     public void buttonAction(int action)
     {
-        deselectTarget(currentTarget);//TODO: There may be a better place for this
-        attack(current, enemies[currentTarget].GetComponent<Entity>(), current.attacks[currentAttack]);
+        clearHighlights();
+        attack(current, currentTarget, current.attacks[currentAttack]);
              
         advanceTurn();
        
@@ -177,10 +218,21 @@ public class BattleManager : MonoBehaviour {
         AttackResult res = attacker.attackOther(defender, attack);
     }
 
+    public Entity getFirstEnemyTarget()//returns the first entity with health remaining else NULL
+    {
+        foreach(GameObject current in enemies)
+        {
+            if (!current.GetComponent<Entity>().isDead())
+            {
+                return current.GetComponent<Entity>();
+            }
+
+        }
+        return null;//Should never happen
+    }
 
     public void advanceTurn()
-    {
-  
+    {  
 
         if(playerLost())
         {
@@ -190,6 +242,9 @@ public class BattleManager : MonoBehaviour {
             gameOver(true);
         }else
         {
+           
+            targetClicked(currentTarget);
+
             turn++;
             //TODO: maybe bring these back
            // currentAttack = 0;
@@ -200,10 +255,15 @@ public class BattleManager : MonoBehaviour {
                 turn = 0;
             }
             current = turnOrder[turn].GetComponent<Entity>();
-            swapUI();
+            swapUI();            
 
+           
 
             isAiTurn = enemies.Contains(turnOrder[turn]);
+
+            if (isAiTurn){ clearHighlights(); }
+
+            targetClicked(getFirstEnemyTarget());
 
             turnMarker.transform.position = current.transform.position + new Vector3(0, 2, 0);
 
@@ -252,7 +312,7 @@ public class BattleManager : MonoBehaviour {
             }
             attackMenu.AddOptions(attackNames);
 
-            selectTarget(currentTarget);//TODO: temp try a better fix
+           // selectTarget(currentTarget);//TODO: temp try a better fix
             HelpCallback(0);
         }
         else

@@ -7,6 +7,8 @@ TagManager:
   - AttackMenu
   - TargetMenu
   - InfoPane
+  - Entity
+  - Camera Marker
   layers:
   - Default
   - TransparentFX
