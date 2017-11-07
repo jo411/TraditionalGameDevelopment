@@ -151,15 +151,15 @@ public class BattleManager : MonoBehaviour {
 
     private void selectTarget(int target)
     {
-       
-         enemies[currentTarget].GetComponent<Renderer>().material.shader = Shader.Find("Outlined/Custom");
+      
+        enemies[target].GetComponent<cakeslice.Outline>().enabled = true;
      
     }
 
     private void deselectTarget(int target)
     {
-        enemies[target].GetComponent<Renderer>().material.shader = Shader.Find("Diffuse");
-        
+        enemies[target].GetComponent<cakeslice.Outline>().enabled = false;
+
     }
 
     public void buttonAction(int action)

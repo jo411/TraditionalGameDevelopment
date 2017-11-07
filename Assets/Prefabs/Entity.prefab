@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23990305804581822}
   - component: {fileID: 114704015577939612}
   - component: {fileID: 114133494273587574}
+  - component: {fileID: 114153992249683800}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Untagged
@@ -110,7 +111,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079692136670958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.808414, y: 1.13, z: -12.05912}
+  m_LocalPosition: {x: -0.04, y: 1.23, z: -8.95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224578134370423970}
@@ -211,6 +212,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e93e5b760f8f6b243a3ba90e208a3cb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114153992249683800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079692136670958}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
 --- !u!114 &114436501011516446
 MonoBehaviour:
   m_ObjectHideFlags: 1
