@@ -60,7 +60,7 @@ public class BattleManager : MonoBehaviour {
     {
         if (currentStage != null)//a stage has been created 
         {
-            Destroy(currentStage);
+            destroyStage();
         }
 
         players = new List<GameObject>();
@@ -73,6 +73,7 @@ public class BattleManager : MonoBehaviour {
         fillPositions();
         placeEntities();//no game objects exists before this     
         List<string> enemyNames = new List<string>();
+
         foreach (GameObject enemy in enemies)
         {
             enemyNames.Add(enemy.GetComponent<Entity>().eName);
@@ -99,10 +100,16 @@ public class BattleManager : MonoBehaviour {
 
         advanceTurn();//set turn to zero
     }
+
+    public void destroyStage()
+    {
+        Destroy(currentStage);
+    }
+
     public void setupStage()
     {
-        GameObject stagePrefab = stagePrefabs[Calculator.rand.Next(0,stagePrefabs.Count)];
-       
+        GameObject stagePrefab = stagePrefabs[Calculator.rand.Next(0, stagePrefabs.Count)]; //   
+
 
         currentStage = Instantiate(stagePrefab);
         currentStage.transform.position = new Vector3(0, 0, 0);//center the stage

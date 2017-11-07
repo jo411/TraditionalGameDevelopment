@@ -356,12 +356,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 321728840}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &347434571 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114686039272958002, guid: 9e5082cb72336804d8ece790d8a4b63f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1039606278}
-  m_Script: {fileID: 575553740, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!4 &455831171 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4845870303349348, guid: e380b4021a6014849961f2ce2cda1ed9,
@@ -543,13 +537,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949846140}
-  m_LocalRotation: {x: 0.150503, y: -0.379542, z: 0.06272387, w: 0.9106934}
-  m_LocalPosition: {x: 13.51, y: 7.71, z: -7.87}
+  m_LocalRotation: {x: 0.16421942, y: -0.29249597, z: 0.0135399075, w: 0.94196326}
+  m_LocalPosition: {x: 11.73, y: 8.52, z: -13.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 18.768002, y: -45.249, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.5, y: -35.196003, z: -4.267}
 --- !u!1001 &1039606278
 Prefab:
   m_ObjectHideFlags: 0
@@ -1019,7 +1013,7 @@ Prefab:
         type: 2}
       propertyPath: input
       value: 
-      objectReference: {fileID: 347434571}
+      objectReference: {fileID: 0}
     - target: {fileID: 114254171344393948, guid: f71a625e13aa7264c86a3b70eac908bc,
         type: 2}
       propertyPath: playerPositions.Array.data[0]
