@@ -16,15 +16,15 @@ public class BattleManager : MonoBehaviour {
     public GameObject SplashUI;
 
     public GameObject turnMarker;
-    
 
-    private List<Transform> playerPositions;
-    private List<Transform> enemyPositions;
 
-    private List<GameObject> players;
-    private List<GameObject> enemies;
+    public List<Transform> playerPositions;
+    public List<Transform> enemyPositions;
 
-    private List<GameObject> turnOrder;
+    public List<GameObject> players;
+    public List<GameObject> enemies;
+
+    public List<GameObject> turnOrder;
 
     private int turn = -1;
 
@@ -43,6 +43,8 @@ public class BattleManager : MonoBehaviour {
     //int currentTarget = 0;
 
     bool isAiTurn = false;
+    bool playerReady = false;
+    bool destroyReady = true;
 
     float waitTimer=0f;
 
@@ -57,21 +59,18 @@ public class BattleManager : MonoBehaviour {
     private GameObject currentStage;
 
     public void resetStage()
-    {
-        if (currentStage != null)//a stage has been created 
-        {
-            destroyStage();
-        }
+    {       
 
         players = new List<GameObject>();
         enemies = new List<GameObject>();
         playerPositions = new List<Transform>();
         enemyPositions = new List<Transform>();
-
         turnOrder = new List<GameObject>();
+
         setupStage();
         fillPositions();
-        placeEntities();//no game objects exists before this     
+        placeEntities();//no game objects exists before this  
+        
         List<string> enemyNames = new List<string>();
 
         foreach (GameObject enemy in enemies)
@@ -94,7 +93,7 @@ public class BattleManager : MonoBehaviour {
          delayTimer = 0f;
         gameOverTimer = 0f;
         battleOver = false;
-
+        playerReady = false;
 
         Debug.Log("The stage has been reset with "+turnOrder.Count +" players");
 
@@ -129,7 +128,6 @@ public class BattleManager : MonoBehaviour {
    
     public void placeCamera(Transform newPos)
     {
-      
         Camera.main.transform.position = newPos.position;
         Camera.main.transform.rotation = newPos.rotation;
 
@@ -178,23 +176,41 @@ public class BattleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //if (isAiTurn) aiTurn();//run the ai turn if applicable
-       if( Input.GetMouseButtonDown(1))
+        
+        if ( Input.GetMouseButtonDown(1))
         {
             gameOver(true);
         }
-       
-      if (battleOver)
+
+
+
+        if (!destroyReady)
         {
+            destroyReady = true;
+            resetStage();
+            return;
+        }
+
+        if (battleOver)
+        {
+            if (currentStage != null)//a stage has been created 
+            {
+                destroyStage();
+                destroyReady = false;
+                
+            }
+            SplashUI.SetActive(false);
             gameOverTimer += Time.deltaTime;
             if(gameOverTimer>=gameOverDelay)
             {                
-                resetStage();
-                SplashUI.SetActive(false);
+               // resetStage();             
                 
             }
         }
         else
         {
+            
+
             if (isAiTurn)
             {
                 delayTimer += Time.deltaTime;
@@ -202,12 +218,17 @@ public class BattleManager : MonoBehaviour {
             else
             {
                 checkClicked();
+                if (playerReady)
+                {
+                    playerTurn();
+                }
             }
             if (delayTimer >= aiDelay)
             {
                 delayTimer = 0;
                 aiTurn();
             }
+            
         }
 
     
@@ -317,14 +338,17 @@ public class BattleManager : MonoBehaviour {
 
     public void buttonAction(int action)
     {
-        clearHighlights();
-        attack(current, currentTarget, current.attacks[currentAttack]);
-             
-        advanceTurn();
-       
+        playerReady = true;
     }
    
-  
+  public void playerTurn()
+    {
+        playerReady = false;
+        clearHighlights();
+        attack(current, currentTarget, current.attacks[currentAttack]);
+
+        advanceTurn();
+    }
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
         AttackResult res = attacker.attackOther(defender, attack);
@@ -387,14 +411,21 @@ public class BattleManager : MonoBehaviour {
 
             if (current.isDead())
             {
+                //playerReady = true;
                 advanceTurn();//skip this turn if a player is dead. will not infinite recurse as there must be at least once living char to reach this point
             }
+
+
+            Debug.Log(players[0].name + "first check");
         }   
       
     }
 
     public void aiTurn()
     {
+
+        Debug.Log(players[0].name + "ai turn");
+
         int target = aiTargetSelect();        
         attack(current, players[target].GetComponent<Entity>(), current.chooseAttack());
         advanceTurn();

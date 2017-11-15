@@ -16,10 +16,15 @@ public class Entity: MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        
         healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();
     
        
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log(StackTraceUtility.ExtractStackTrace());
+        Debug.Log("WHYYY IS THIS HAPPENING TO ME?");
     }
 
     public GameObject initCBT(string text)//TODO: a lot of finds and get components consider prefetching
@@ -30,7 +35,6 @@ public class Entity: MonoBehaviour
         tempRect.transform.localPosition = combatText.transform.localPosition;
         tempRect.transform.localScale = combatText.transform.localScale;
         tempRect.transform.localRotation = combatText.transform.localRotation;
-
 
         temp.GetComponent<Text>().text = text;
 
@@ -48,7 +52,6 @@ public class Entity: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
        
     }
 
