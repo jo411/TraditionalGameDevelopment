@@ -251,7 +251,7 @@ public class Entity: MonoBehaviour
     public Arm dropLoot()
     {
         // 25% chance to drop
-        if(Calculator.rand.Next(4) == 4)
+        if(Calculator.checkProbability(.25))
         {
             return chooseArm();
         }

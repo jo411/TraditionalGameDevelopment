@@ -26,8 +26,19 @@ public class battleOverManager : MonoBehaviour {
 
     public void loadData(List<GameObject> playerList, List<Arm>arms)
     {
-        players = playerList;
-        loot = arms;
+        loot = new List<Arm>();
+        players = new List<GameObject>();
+        foreach(GameObject current in playerList)
+        {
+            players.Add(current);
+        }
+
+        foreach (Arm current in arms)
+        {
+            loot.Add(current);
+        }
+        //players = playerList;
+        //loot = arms;
 
         currentArm = players.Count>0?0:-1;
         currentPlayer = loot.Count > 0 ? 0 : -1;
@@ -74,13 +85,13 @@ public class battleOverManager : MonoBehaviour {
     public void armChosen(int index)
     {
         currentArm = lootDropDown.value;
-        if (index < 0) return;
-        armDisplay.GetComponent<Text>().text = loot[index].ToString();
+        if (currentArm < 0) return;
+        armDisplay.GetComponentInChildren<Text>().text = loot[currentArm].ToString();
     }
 
     public void playerChosen(int index)
     {
-        
+        Debug.Log(index);
         currentPlayer = playerDropDown.value;
     }
 
