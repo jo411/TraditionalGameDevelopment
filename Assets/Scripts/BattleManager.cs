@@ -245,6 +245,7 @@ public class BattleManager : MonoBehaviour {
                     checkClicked();
                     if (playerReady)
                     {
+                        print(current.st)
                         playerReady = false;
                         advanceTurn();
                     }
@@ -360,19 +361,19 @@ public class BattleManager : MonoBehaviour {
 
     public void leftButtonAction(int action)
     {
-        playerAttackWith(current.leftArm());
+        playerAttackWith(current.leftArm);
         playerReady = true;
     }
 
     public void rightButtonAction(int action)
     {
-        playerAttackWith(current.rightArm());
+        playerAttackWith(current.rightArm);
         playerReady = true;
     }
 
     public void leftInfoButtonAction(int action)
     {
-        setInfoPaneText(current.leftArm().attack.ToString());
+        setInfoPaneText(current.leftArm.attack.ToString());
 
         int infoIndex = 1;
         toggleExtraInfo(infoIndex);
@@ -380,7 +381,7 @@ public class BattleManager : MonoBehaviour {
 
     public void rightInfoButtonAction(int action)
     {
-        setInfoPaneText(current.rightArm().attack.ToString());
+        setInfoPaneText(current.rightArm.attack.ToString());
 
         int infoIndex = 0;
         toggleExtraInfo(infoIndex);

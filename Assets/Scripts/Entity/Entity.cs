@@ -9,7 +9,8 @@ public class Entity: MonoBehaviour
 {
   
 
-    private List<Arm> arms;
+    public Arm leftArm;
+    public Arm rightArm;
  
 
     public List<Effect> effects;
@@ -46,11 +47,30 @@ public class Entity: MonoBehaviour
     }
     public void addAttacks()
     {
-        for(int i =0; i<2; i++)
-        {
-            arms.Add(new Arm());
-        }
+        equipArm(new Arm(false));
+        equipArm(new Arm(true));
     }
+
+    public void equipArm(Arm arm)
+    {
+        Arm armToRemove;
+        if(arm.isRight)
+        {
+            armToRemove = rightArm;
+            rightArm = arm;
+        }
+        else
+        {
+            armToRemove = leftArm;
+            leftArm = arm;
+        }
+        if(armToRemove != null)
+        {
+            stats -= armToRemove.stats;
+        }
+        stats += arm.stats;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -59,10 +79,9 @@ public class Entity: MonoBehaviour
    
     public void Initialize(string name, int statTotal)//calls constructor
     {
-        arms = new List<Arm>();
         effects = new List<Effect>();
-        addAttacks();
         noParamEntity(name,statTotal);
+        addAttacks();
     }
     public void noParamEntity(String name, int statTotal)
     {
@@ -152,7 +171,8 @@ public class Entity: MonoBehaviour
     }
     public Attack chooseAttack()
     {
-        return arms[Calculator.rand.Next(0, arms.Count)].attack;//just use a random attack for now
+
+        return Calculator.rand.Next(0, 1) == 0 ? leftArm.attack : rightArm.attack;//just use a random attack for now
     }
 
     public void setTempStats(Stats baseStats)
@@ -188,9 +208,9 @@ public class Entity: MonoBehaviour
         if (stats.HP < 0)
         {
             stats.HP = 0;
-        }else if(stats.HP>baseStats.HP)
+        }else if(stats.HP>getMaxHP())
         {
-            stats.HP = baseStats.HP;
+            stats.HP = getMaxHP();
         }
         this.hitUI(damage, crit, mult);
     }
@@ -224,16 +244,6 @@ public class Entity: MonoBehaviour
         return getHP() == 0;//if no hp this entity is dead
     }
 
-    public Arm leftArm()
-    {
-        return arms[1];
-    }
-
-    public Arm rightArm()
-    {
-        return arms[0];
-    }
-
     //These methods will allow for adding modifiers to any stat 
     public int getHP()
     {
@@ -241,7 +251,7 @@ public class Entity: MonoBehaviour
     }
     public int getMaxHP()
     {
-        return baseStats.HP;
+        return baseStats.HP + leftArm.stats.HP + rightArm.stats.HP;
     }
     public int getAttack()
     {

@@ -156,5 +156,28 @@ public class Stats
 
         return randomList; //return the new random list
     }
+
+    public static Stats operator+(Stats baseStats, Stats stats)
+    {
+        baseStats.HP += stats.HP;
+        baseStats.attack += stats.attack;
+        baseStats.defense += stats.defense;
+        baseStats.speed += stats.speed;
+        baseStats.evasion += stats.evasion;
+        baseStats.level += stats.level;
+        return baseStats;
+    }
+
+
+    public static Stats operator -(Stats baseStats, Stats stats)
+    {
+        baseStats.HP -= stats.HP;
+        baseStats.attack -= stats.attack;
+        baseStats.defense -= stats.defense;
+        baseStats.speed -= stats.speed;
+        baseStats.evasion -= stats.evasion;
+        baseStats.level -= stats.level;
+        return baseStats;
+    }
 }
 

@@ -18,8 +18,9 @@ public class Arm
     public Stats stats;
     public Attack attack;
 
-    public Arm()
+    public Arm(bool isRight)
     {
+        this.isRight = isRight;
         attack = AttackList.getRandomAttack();
         stats = new Stats(30);
     }
