@@ -102,14 +102,23 @@ public class Stats
     }
     public override string ToString()
     {
-        return "Rank: " + getClassString() + "\n"
-            + "Level: " + level + "\n"
+        return "Rank: " + getClassString() + "\n"            
            + "HP: " + HP + "\n"
             + "Attack: " + attack + "\n"
              + "Defense: " + defense + "\n"
               + "Speed: " + speed + "\n"
                + "Evasion: " + evasion + "\n";
     }
+    public string getStatString()
+    {
+        return 
+           "HP: " + HP + "\n"
+            + "Attack: " + attack + "\n"
+             + "Defense: " + defense + "\n"
+              + "Speed: " + speed + "\n"
+               + "Evasion: " + evasion + "\n";
+    }
+
 
     /// <summary>
     /// Calculate a random stat distribution

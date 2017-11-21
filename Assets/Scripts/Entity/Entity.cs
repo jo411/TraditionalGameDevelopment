@@ -172,7 +172,12 @@ public class Entity: MonoBehaviour
     public Attack chooseAttack()
     {
 
-        return Calculator.rand.Next(0, 1) == 0 ? leftArm.attack : rightArm.attack;//just use a random attack for now
+        return chooseArm().attack;//just use a random attack for now
+    }
+
+    public Arm chooseArm()
+    {
+        return Calculator.rand.Next(0, 1) == 0 ? leftArm : rightArm;
     }
 
     public void setTempStats(Stats baseStats)
@@ -189,9 +194,12 @@ public class Entity: MonoBehaviour
         return "Name: " + this.eName + "\n"
             +"Status: "+getStatusStrings()+"\n"
             + "Stats: " + "\n"
+            +"Current HP: "+getHP()+"\n"
             + this.baseStats;
 
     }
+
+    
     public string getStatusStrings()
     {
         StringBuilder sb = new StringBuilder();
@@ -239,6 +247,17 @@ public class Entity: MonoBehaviour
         }
 
     }
+
+    public Arm dropLoot()
+    {
+        // 25% chance to drop
+        if(Calculator.rand.Next(4) == 4)
+        {
+            return chooseArm();
+        }
+        return null;
+    }
+
     public bool isDead()
     {
         return getHP() == 0;//if no hp this entity is dead

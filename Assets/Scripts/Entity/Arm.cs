@@ -26,4 +26,8 @@ public class Arm
     }
 
     
+    public override string ToString()
+    {
+        return attack.ToString() + "\n\n" + "Stat Bonuses:\n" +stats.getStatString();
+    }
 }

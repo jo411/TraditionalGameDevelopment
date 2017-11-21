@@ -99,6 +99,7 @@ public class BattleManager : MonoBehaviour {
         battleOver = false;
         playerReady = false;
 
+        SplashUI.SetActive(false);
 
         audioSystem.requestSong("Combat");
         advanceTurn();//set turn to zero
@@ -206,7 +207,7 @@ public class BattleManager : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(1))
             {
-                gameOver(false);
+                gameOver(true);
             }
 
             if (!destroyReady)
@@ -245,7 +246,6 @@ public class BattleManager : MonoBehaviour {
                     checkClicked();
                     if (playerReady)
                     {
-                        print(current.st)
                         playerReady = false;
                         advanceTurn();
                     }
@@ -262,10 +262,23 @@ public class BattleManager : MonoBehaviour {
         }
         else//handle pre game things
         {
-
+            if (!SplashUI.activeInHierarchy)
+            {
+                playerUI.SetActive(false);
+                enemyUI.SetActive(false);
+                SplashUI.SetActive(true);
+            }
         }
 
 	}
+
+
+    public void playerReadyToStart()
+    {
+        gameReady = true;
+        allPlayers = GameObject.FindObjectOfType<battleOverManager>().getPlayers();
+        SplashUI.SetActive(false);
+    }
 
     public void checkClicked()
     {
@@ -403,7 +416,12 @@ public class BattleManager : MonoBehaviour {
 
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
+        audioSystem.requestSound(attack.sound);
         AttackResult res = attacker.attackOther(defender, attack);
+       foreach(string current in res.log)
+        {
+            Debug.Log(current);
+        }
     }
 
     public Entity getFirstEnemyTarget()//returns the first entity with health remaining else NULL
@@ -525,10 +543,22 @@ public class BattleManager : MonoBehaviour {
 
     }
 
+    private List<Arm> lootEnemies()
+    {
+        List<Arm> loot = new List<Arm>();
+        foreach (GameObject entity in enemies)
+        {
+            Arm lootedArm = entity.GetComponent<Entity>().dropLoot();
+            loot.Add(lootedArm);
+        }
+        return loot;
+    }
+
  
 
     private bool playerLost()
     {
+        Debug.Log(players.Count);
         foreach(GameObject curr in players)
         {
             if(!curr.GetComponent<Entity>().isDead())
@@ -557,7 +587,10 @@ public class BattleManager : MonoBehaviour {
         SplashUI.GetComponentInChildren<Text>().text = "Battle Over! You " +( won ? "won!" : "lost...");
         battleOver = true;
         audioSystem.stopAll();
-        
+        gameReady = false;
+
+
+        GameObject.FindObjectOfType<battleOverManager>().loadData(allPlayers, lootEnemies());//TODO: Send in arm loot here
         if(!won)
         {
             GameObject.FindObjectOfType<GameFeedback>().logMessage("You lost! Your team survived "+ rounds +" rounds!");
