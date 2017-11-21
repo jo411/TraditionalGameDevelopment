@@ -89,14 +89,9 @@ public class battleOverManager : MonoBehaviour {
         bool right = GameObject.Find("Toggle").GetComponent<Toggle>().isOn;
 
         if (currentPlayer < 0 || currentArm < 0) return;
-        if(right)
-        {
-            players[currentPlayer].GetComponent<Entity>().rightArm = loot[currentArm];
-        }
-        else
-        {
-            players[currentPlayer].GetComponent<Entity>().leftArm = loot[currentArm];
-        }
+
+        loot[currentArm].isRight = right;
+        players[currentPlayer].GetComponent<Entity>().equipArm(loot[currentArm]);
         loot.RemoveAt(currentArm);
         displayData();
     }
