@@ -55,6 +55,7 @@ MonoBehaviour:
     type: 2}
   playerUI: {fileID: 0}
   enemyUI: {fileID: 0}
+  SplashUI: {fileID: 0}
   turnMarker: {fileID: 1230178002669124, guid: df5097d08666248488fe5974c92f7a8e, type: 2}
   playerPositions:
   - {fileID: 0}
@@ -66,4 +67,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  input: {fileID: 0}
+  allPlayers: []
+  players: []
+  enemies: []
+  turnOrder: []
+  inputMask:
+    serializedVersion: 2
+    m_Bits: 4294967263
+  stagePrefabs:
+  - {fileID: 1327596449339846, guid: 19461006c3a56f64fae1382ae3616f3f, type: 2}
+  - {fileID: 1713715928748292, guid: 1ab98a2fbec5e994eaa0dac5a5ced601, type: 2}
+  - {fileID: 1327596449339846, guid: e9d70d5cce404cf4680547b6c582cad2, type: 2}

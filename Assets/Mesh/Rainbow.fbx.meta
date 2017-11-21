@@ -1,0 +1,711 @@
+fileFormatVersion: 2
+guid: daea7e1c3af5b9e4fb27059e644ead53
+timeCreated: 1511253298
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Female_box_head_attached_done:bottom
+    100002: Female_box_head_attached_done:group
+    100004: Female_box_head_attached_done:group1
+    100006: Female_box_head_attached_done:group2
+    100008: Female_box_head_attached_done:group3
+    100010: Female_box_head_attached_done:group3_pasted__pCube4
+    100012: Female_box_head_attached_done:imagePlane1
+    100014: Female_box_head_attached_done:imagePlane10
+    100016: Female_box_head_attached_done:imagePlane2
+    100018: Female_box_head_attached_done:imagePlane3
+    100020: Female_box_head_attached_done:imagePlane4
+    100022: Female_box_head_attached_done:imagePlane5
+    100024: Female_box_head_attached_done:imagePlane6
+    100026: Female_box_head_attached_done:imagePlane7
+    100028: Female_box_head_attached_done:imagePlane8
+    100030: Female_box_head_attached_done:imagePlane9
+    100032: Female_box_head_attached_done:left
+    100034: Female_box_head_attached_done:pasted__pCube4
+    100036: Female_box_head_attached_done:pasted__pCube4 1
+    100038: Female_box_head_attached_done:pasted__pCube4 2
+    100040: Female_box_head_attached_done:pasted__pCube4 3
+    100042: Female_box_head_attached_done:pCube1
+    100044: Female_box_head_attached_done:pCube10
+    100046: Female_box_head_attached_done:pCube11
+    100048: Female_box_head_attached_done:pCube12
+    100050: Female_box_head_attached_done:pCube2
+    100052: Female_box_head_attached_done:pCube3
+    100054: Female_box_head_attached_done:pCube4
+    100056: Female_box_head_attached_done:pCube6
+    100058: Female_box_head_attached_done:pCube8
+    100060: Female_box_head_attached_done:pCube9
+    100062: Female_box_head_attached_done:polySurface4
+    100064: Female_box_head_attached_done:pPlane1
+    100066: Female_box_head_attached_done:transform1
+    100068: Female_box_head_attached_done:transform10
+    100070: Female_box_head_attached_done:transform11
+    100072: Female_box_head_attached_done:transform12
+    100074: Female_box_head_attached_done:transform13
+    100076: Female_box_head_attached_done:transform14
+    100078: Female_box_head_attached_done:transform15
+    100080: Female_box_head_attached_done:transform16
+    100082: Female_box_head_attached_done:transform2
+    100084: Female_box_head_attached_done:transform3
+    100086: Female_box_head_attached_done:transform4
+    100088: Female_box_head_attached_done:transform5
+    100090: Female_box_head_attached_done:transform6
+    100092: Female_box_head_attached_done:transform7
+    100094: Female_box_head_attached_done:transform8
+    100096: Female_box_head_attached_done:transform9
+    100098: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube13
+    100100: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube14
+    100102: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:polySurface5
+    100104: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pPlane1
+    100106: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform17
+    100108: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform18
+    100110: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform19
+    100112: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform20
+    100114: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:pCube1
+    100116: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:polySurface5
+    100118: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube13
+    100120: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    100122: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:polySurface5
+    100124: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pPlane1
+    100126: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform17
+    100128: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform18
+    100130: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform19
+    100132: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform20
+    100134: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:pCube1
+    100136: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:polySurface5
+    100138: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube13
+    100140: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube14
+    100142: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:polySurface5
+    100144: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pPlane1
+    100146: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform17
+    100148: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform18
+    100150: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform19
+    100152: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform20
+    100154: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:pCube1
+    100156: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:polySurface5
+    100158: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube13
+    100160: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube14
+    100162: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:polySurface5
+    100164: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pPlane1
+    100166: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform17
+    100168: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform18
+    100170: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform19
+    100172: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform20
+    100174: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:pCube1
+    100176: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:polySurface5
+    100178: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube13
+    100180: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube14
+    100182: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:polySurface5
+    100184: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pPlane1
+    100186: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform17
+    100188: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform18
+    100190: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform19
+    100192: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform20
+    100194: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:pCube1
+    100196: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:polySurface5
+    100198: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube13
+    100200: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube14
+    100202: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:polySurface5
+    100204: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pPlane1
+    100206: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform17
+    100208: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform18
+    100210: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform19
+    100212: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform20
+    100214: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:pCube1
+    100216: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:polySurface5
+    100218: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube13
+    100220: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube14
+    100222: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:polySurface5
+    100224: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pPlane1
+    100226: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform17
+    100228: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform18
+    100230: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform19
+    100232: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform20
+    100234: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:pCube1
+    100236: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:polySurface5
+    100238: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube13
+    100240: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube14
+    100242: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:polySurface5
+    100244: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pPlane1
+    100246: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform17
+    100248: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform18
+    100250: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform19
+    100252: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform20
+    100254: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:pCube1
+    100256: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:polySurface5
+    100258: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube13
+    100260: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube14
+    100262: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:polySurface5
+    100264: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pPlane1
+    100266: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform17
+    100268: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform18
+    100270: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform19
+    100272: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform20
+    100274: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:pCube1
+    100276: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:polySurface5
+    100278: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    100280: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group
+    100282: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group1
+    100284: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group2
+    100286: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3
+    100288: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3_pasted__pCube4
+    100290: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane1
+    100292: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane10
+    100294: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane2
+    100296: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane3
+    100298: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane4
+    100300: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane5
+    100302: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane6
+    100304: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane7
+    100306: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane8
+    100308: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane9
+    100310: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    100312: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+    100314: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      1
+    100316: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      2
+    100318: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      3
+    100320: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube1
+    100322: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube10
+    100324: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube11
+    100326: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube12
+    100328: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube13
+    100330: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube14
+    100332: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube2
+    100334: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube3
+    100336: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube4
+    100338: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube6
+    100340: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube8
+    100342: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube9
+    100344: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface4
+    100346: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface5
+    100348: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pPlane1
+    100350: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform1
+    100352: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform10
+    100354: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform11
+    100356: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform12
+    100358: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform13
+    100360: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform14
+    100362: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform15
+    100364: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform16
+    100366: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform17
+    100368: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform18
+    100370: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform19
+    100372: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform2
+    100374: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform20
+    100376: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform3
+    100378: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform4
+    100380: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform5
+    100382: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform6
+    100384: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform7
+    100386: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform8
+    100388: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform9
+    100390: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:pCube1
+    100392: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:polySurface5
+    100394: group
+    100396: group1
+    100398: group2
+    100400: group3
+    100402: group4
+    100404: group5
+    100406: group6
+    100408: group7
+    100410: group8
+    100412: pasted__group
+    100414: pasted__group 1
+    100416: pasted__group 2
+    100418: pasted__group 3
+    100420: pasted__group 4
+    100422: pasted__group 5
+    100424: pasted__group 6
+    100426: pasted__polySurface1
+    100428: pasted__polySurface1 1
+    100430: pasted__polySurface1 2
+    100432: pasted__polySurface1 3
+    100434: pasted__polySurface1 4
+    100436: pasted__polySurface1 5
+    100438: pasted__polySurface1 6
+    100440: pasted__polySurface2
+    100442: pasted__polySurface2 1
+    100444: pasted__polySurface2 10
+    100446: pasted__polySurface2 11
+    100448: pasted__polySurface2 12
+    100450: pasted__polySurface2 13
+    100452: pasted__polySurface2 2
+    100454: pasted__polySurface2 3
+    100456: pasted__polySurface2 4
+    100458: pasted__polySurface2 5
+    100460: pasted__polySurface2 6
+    100462: pasted__polySurface2 7
+    100464: pasted__polySurface2 8
+    100466: pasted__polySurface2 9
+    100468: pasted__polySurface3
+    100470: pasted__polySurface3 1
+    100472: pasted__polySurface3 2
+    100474: pasted__polySurface3 3
+    100476: pasted__polySurface3 4
+    100478: pasted__polySurface3 5
+    100480: pasted__polySurface3 6
+    100482: pasted__polySurface4
+    100484: pasted__polySurface4 1
+    100486: pasted__polySurface4 2
+    100488: pasted__polySurface4 3
+    100490: pasted__polySurface4 4
+    100492: pasted__polySurface4 5
+    100494: pasted__polySurface4 6
+    100496: pasted__transform1
+    100498: pasted__transform1 1
+    100500: pasted__transform1 2
+    100502: pasted__transform1 3
+    100504: pasted__transform1 4
+    100506: pasted__transform1 5
+    100508: pasted__transform1 6
+    100510: pasted__transform2
+    100512: pasted__transform2 1
+    100514: pasted__transform2 2
+    100516: pasted__transform2 3
+    100518: pasted__transform2 4
+    100520: pasted__transform2 5
+    100522: pasted__transform2 6
+    100524: pasted__transform3
+    100526: pasted__transform3 1
+    100528: pasted__transform3 2
+    100530: pasted__transform3 3
+    100532: pasted__transform3 4
+    100534: pasted__transform3 5
+    100536: pasted__transform3 6
+    100538: pasted__transform4
+    100540: pasted__transform4 1
+    100542: pasted__transform4 2
+    100544: pasted__transform4 3
+    100546: pasted__transform4 4
+    100548: pasted__transform4 5
+    100550: pasted__transform4 6
+    100552: pasted__transform5
+    100554: pasted__transform5 1
+    100556: pasted__transform5 2
+    100558: pasted__transform5 3
+    100560: pasted__transform5 4
+    100562: pasted__transform5 5
+    100564: pasted__transform5 6
+    100566: polySurface1
+    100568: polySurface2
+    100570: polySurface2 1
+    100572: polySurface3
+    100574: polySurface4
+    100576: //RootNode
+    100578: transform1
+    100580: transform2
+    100582: transform3
+    100584: transform4
+    100586: transform5
+    400000: Female_box_head_attached_done:bottom
+    400002: Female_box_head_attached_done:group
+    400004: Female_box_head_attached_done:group1
+    400006: Female_box_head_attached_done:group2
+    400008: Female_box_head_attached_done:group3
+    400010: Female_box_head_attached_done:group3_pasted__pCube4
+    400012: Female_box_head_attached_done:imagePlane1
+    400014: Female_box_head_attached_done:imagePlane10
+    400016: Female_box_head_attached_done:imagePlane2
+    400018: Female_box_head_attached_done:imagePlane3
+    400020: Female_box_head_attached_done:imagePlane4
+    400022: Female_box_head_attached_done:imagePlane5
+    400024: Female_box_head_attached_done:imagePlane6
+    400026: Female_box_head_attached_done:imagePlane7
+    400028: Female_box_head_attached_done:imagePlane8
+    400030: Female_box_head_attached_done:imagePlane9
+    400032: Female_box_head_attached_done:left
+    400034: Female_box_head_attached_done:pasted__pCube4
+    400036: Female_box_head_attached_done:pasted__pCube4 1
+    400038: Female_box_head_attached_done:pasted__pCube4 2
+    400040: Female_box_head_attached_done:pasted__pCube4 3
+    400042: Female_box_head_attached_done:pCube1
+    400044: Female_box_head_attached_done:pCube10
+    400046: Female_box_head_attached_done:pCube11
+    400048: Female_box_head_attached_done:pCube12
+    400050: Female_box_head_attached_done:pCube2
+    400052: Female_box_head_attached_done:pCube3
+    400054: Female_box_head_attached_done:pCube4
+    400056: Female_box_head_attached_done:pCube6
+    400058: Female_box_head_attached_done:pCube8
+    400060: Female_box_head_attached_done:pCube9
+    400062: Female_box_head_attached_done:polySurface4
+    400064: Female_box_head_attached_done:pPlane1
+    400066: Female_box_head_attached_done:transform1
+    400068: Female_box_head_attached_done:transform10
+    400070: Female_box_head_attached_done:transform11
+    400072: Female_box_head_attached_done:transform12
+    400074: Female_box_head_attached_done:transform13
+    400076: Female_box_head_attached_done:transform14
+    400078: Female_box_head_attached_done:transform15
+    400080: Female_box_head_attached_done:transform16
+    400082: Female_box_head_attached_done:transform2
+    400084: Female_box_head_attached_done:transform3
+    400086: Female_box_head_attached_done:transform4
+    400088: Female_box_head_attached_done:transform5
+    400090: Female_box_head_attached_done:transform6
+    400092: Female_box_head_attached_done:transform7
+    400094: Female_box_head_attached_done:transform8
+    400096: Female_box_head_attached_done:transform9
+    400098: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube13
+    400100: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube14
+    400102: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:polySurface5
+    400104: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pPlane1
+    400106: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform17
+    400108: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform18
+    400110: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform19
+    400112: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform20
+    400114: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:pCube1
+    400116: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:polySurface5
+    400118: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube13
+    400120: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    400122: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:polySurface5
+    400124: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pPlane1
+    400126: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform17
+    400128: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform18
+    400130: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform19
+    400132: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform20
+    400134: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:pCube1
+    400136: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:polySurface5
+    400138: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube13
+    400140: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube14
+    400142: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:polySurface5
+    400144: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pPlane1
+    400146: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform17
+    400148: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform18
+    400150: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform19
+    400152: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform20
+    400154: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:pCube1
+    400156: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:polySurface5
+    400158: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube13
+    400160: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube14
+    400162: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:polySurface5
+    400164: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pPlane1
+    400166: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform17
+    400168: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform18
+    400170: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform19
+    400172: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform20
+    400174: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:pCube1
+    400176: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:polySurface5
+    400178: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube13
+    400180: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube14
+    400182: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:polySurface5
+    400184: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pPlane1
+    400186: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform17
+    400188: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform18
+    400190: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform19
+    400192: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform20
+    400194: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:pCube1
+    400196: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:polySurface5
+    400198: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube13
+    400200: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube14
+    400202: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:polySurface5
+    400204: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pPlane1
+    400206: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform17
+    400208: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform18
+    400210: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform19
+    400212: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform20
+    400214: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:pCube1
+    400216: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:polySurface5
+    400218: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube13
+    400220: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube14
+    400222: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:polySurface5
+    400224: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pPlane1
+    400226: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform17
+    400228: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform18
+    400230: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform19
+    400232: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform20
+    400234: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:pCube1
+    400236: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:polySurface5
+    400238: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube13
+    400240: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube14
+    400242: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:polySurface5
+    400244: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pPlane1
+    400246: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform17
+    400248: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform18
+    400250: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform19
+    400252: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform20
+    400254: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:pCube1
+    400256: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:polySurface5
+    400258: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube13
+    400260: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube14
+    400262: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:polySurface5
+    400264: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pPlane1
+    400266: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform17
+    400268: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform18
+    400270: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform19
+    400272: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform20
+    400274: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:pCube1
+    400276: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:polySurface5
+    400278: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    400280: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group
+    400282: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group1
+    400284: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group2
+    400286: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3
+    400288: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3_pasted__pCube4
+    400290: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane1
+    400292: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane10
+    400294: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane2
+    400296: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane3
+    400298: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane4
+    400300: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane5
+    400302: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane6
+    400304: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane7
+    400306: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane8
+    400308: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane9
+    400310: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    400312: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+    400314: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      1
+    400316: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      2
+    400318: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      3
+    400320: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube1
+    400322: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube10
+    400324: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube11
+    400326: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube12
+    400328: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube13
+    400330: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube14
+    400332: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube2
+    400334: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube3
+    400336: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube4
+    400338: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube6
+    400340: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube8
+    400342: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube9
+    400344: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface4
+    400346: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface5
+    400348: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pPlane1
+    400350: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform1
+    400352: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform10
+    400354: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform11
+    400356: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform12
+    400358: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform13
+    400360: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform14
+    400362: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform15
+    400364: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform16
+    400366: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform17
+    400368: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform18
+    400370: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform19
+    400372: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform2
+    400374: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform20
+    400376: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform3
+    400378: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform4
+    400380: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform5
+    400382: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform6
+    400384: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform7
+    400386: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform8
+    400388: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform9
+    400390: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:pCube1
+    400392: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:polySurface5
+    400394: group
+    400396: group1
+    400398: group2
+    400400: group3
+    400402: group4
+    400404: group5
+    400406: group6
+    400408: group7
+    400410: group8
+    400412: pasted__group
+    400414: pasted__group 1
+    400416: pasted__group 2
+    400418: pasted__group 3
+    400420: pasted__group 4
+    400422: pasted__group 5
+    400424: pasted__group 6
+    400426: pasted__polySurface1
+    400428: pasted__polySurface1 1
+    400430: pasted__polySurface1 2
+    400432: pasted__polySurface1 3
+    400434: pasted__polySurface1 4
+    400436: pasted__polySurface1 5
+    400438: pasted__polySurface1 6
+    400440: pasted__polySurface2
+    400442: pasted__polySurface2 1
+    400444: pasted__polySurface2 10
+    400446: pasted__polySurface2 11
+    400448: pasted__polySurface2 12
+    400450: pasted__polySurface2 13
+    400452: pasted__polySurface2 2
+    400454: pasted__polySurface2 3
+    400456: pasted__polySurface2 4
+    400458: pasted__polySurface2 5
+    400460: pasted__polySurface2 6
+    400462: pasted__polySurface2 7
+    400464: pasted__polySurface2 8
+    400466: pasted__polySurface2 9
+    400468: pasted__polySurface3
+    400470: pasted__polySurface3 1
+    400472: pasted__polySurface3 2
+    400474: pasted__polySurface3 3
+    400476: pasted__polySurface3 4
+    400478: pasted__polySurface3 5
+    400480: pasted__polySurface3 6
+    400482: pasted__polySurface4
+    400484: pasted__polySurface4 1
+    400486: pasted__polySurface4 2
+    400488: pasted__polySurface4 3
+    400490: pasted__polySurface4 4
+    400492: pasted__polySurface4 5
+    400494: pasted__polySurface4 6
+    400496: pasted__transform1
+    400498: pasted__transform1 1
+    400500: pasted__transform1 2
+    400502: pasted__transform1 3
+    400504: pasted__transform1 4
+    400506: pasted__transform1 5
+    400508: pasted__transform1 6
+    400510: pasted__transform2
+    400512: pasted__transform2 1
+    400514: pasted__transform2 2
+    400516: pasted__transform2 3
+    400518: pasted__transform2 4
+    400520: pasted__transform2 5
+    400522: pasted__transform2 6
+    400524: pasted__transform3
+    400526: pasted__transform3 1
+    400528: pasted__transform3 2
+    400530: pasted__transform3 3
+    400532: pasted__transform3 4
+    400534: pasted__transform3 5
+    400536: pasted__transform3 6
+    400538: pasted__transform4
+    400540: pasted__transform4 1
+    400542: pasted__transform4 2
+    400544: pasted__transform4 3
+    400546: pasted__transform4 4
+    400548: pasted__transform4 5
+    400550: pasted__transform4 6
+    400552: pasted__transform5
+    400554: pasted__transform5 1
+    400556: pasted__transform5 2
+    400558: pasted__transform5 3
+    400560: pasted__transform5 4
+    400562: pasted__transform5 5
+    400564: pasted__transform5 6
+    400566: polySurface1
+    400568: polySurface2
+    400570: polySurface2 1
+    400572: polySurface3
+    400574: polySurface4
+    400576: //RootNode
+    400578: transform1
+    400580: transform2
+    400582: transform3
+    400584: transform4
+    400586: transform5
+    2000000: Female_box_head_attached_done:bottom
+    2000002: Female_box_head_attached_done:left
+    2000004: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    2000006: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    2300000: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    2300002: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube14
+    2300004: pasted__polySurface2
+    2300006: pasted__polySurface2 1
+    2300008: pasted__polySurface2 2
+    2300010: pasted__polySurface2 3
+    2300012: pasted__polySurface2 4
+    2300014: pasted__polySurface2 5
+    2300016: pasted__polySurface2 6
+    2300018: polySurface2
+    3300000: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    3300002: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube14
+    3300004: pasted__polySurface2
+    3300006: pasted__polySurface2 1
+    3300008: pasted__polySurface2 2
+    3300010: pasted__polySurface2 3
+    3300012: pasted__polySurface2 4
+    3300014: pasted__polySurface2 5
+    3300016: pasted__polySurface2 6
+    3300018: polySurface2
+    4300000: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube14
+    4300002: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    4300004: polySurface2
+    4300006: pasted__polySurface2
+    4300008: pasted__polySurface2
+    4300010: pasted__polySurface2
+    4300012: pasted__polySurface2
+    4300014: pasted__polySurface2
+    4300016: pasted__polySurface2
+    4300018: pasted__polySurface2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

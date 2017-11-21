@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: 564410eecd21dcf4d9b525ba2a7c4e90
+timeCreated: 1511253290
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Calisium:pCube1
+    100002: Calisium:pCube2
+    100004: Calisium:pCube3
+    100006: Calisium:pCube4
+    100008: Calisium:pCube5
+    100010: Calisium:transform1
+    100012: Calisium:transform2
+    100014: Calisium:transform3
+    100016: Calisium:transform4
+    100018: Female_box_head_attached_done:bottom
+    100020: Female_box_head_attached_done:callis
+    100022: Female_box_head_attached_done:group
+    100024: Female_box_head_attached_done:group1
+    100026: Female_box_head_attached_done:group2
+    100028: Female_box_head_attached_done:group3
+    100030: Female_box_head_attached_done:group3_pasted__pCube4
+    100032: Female_box_head_attached_done:imagePlane1
+    100034: Female_box_head_attached_done:imagePlane10
+    100036: Female_box_head_attached_done:imagePlane2
+    100038: Female_box_head_attached_done:imagePlane3
+    100040: Female_box_head_attached_done:imagePlane4
+    100042: Female_box_head_attached_done:imagePlane5
+    100044: Female_box_head_attached_done:imagePlane6
+    100046: Female_box_head_attached_done:imagePlane7
+    100048: Female_box_head_attached_done:imagePlane8
+    100050: Female_box_head_attached_done:imagePlane9
+    100052: Female_box_head_attached_done:left
+    100054: Female_box_head_attached_done:pasted__pCube4
+    100056: Female_box_head_attached_done:pasted__pCube4 1
+    100058: Female_box_head_attached_done:pasted__pCube4 2
+    100060: Female_box_head_attached_done:pasted__pCube4 3
+    100062: Female_box_head_attached_done:pCube1
+    100064: Female_box_head_attached_done:pCube10
+    100066: Female_box_head_attached_done:pCube11
+    100068: Female_box_head_attached_done:pCube12
+    100070: Female_box_head_attached_done:pCube13
+    100072: Female_box_head_attached_done:pCube14
+    100074: Female_box_head_attached_done:pCube2
+    100076: Female_box_head_attached_done:pCube3
+    100078: Female_box_head_attached_done:pCube4
+    100080: Female_box_head_attached_done:pCube6
+    100082: Female_box_head_attached_done:pCube8
+    100084: Female_box_head_attached_done:pCube9
+    100086: Female_box_head_attached_done:polySurface4
+    100088: Female_box_head_attached_done:polySurface5
+    100090: Female_box_head_attached_done:polySurface7
+    100092: Female_box_head_attached_done:pPlane1
+    100094: Female_box_head_attached_done:transform1
+    100096: Female_box_head_attached_done:transform10
+    100098: Female_box_head_attached_done:transform11
+    100100: Female_box_head_attached_done:transform12
+    100102: Female_box_head_attached_done:transform13
+    100104: Female_box_head_attached_done:transform14
+    100106: Female_box_head_attached_done:transform15
+    100108: Female_box_head_attached_done:transform16
+    100110: Female_box_head_attached_done:transform17
+    100112: Female_box_head_attached_done:transform18
+    100114: Female_box_head_attached_done:transform19
+    100116: Female_box_head_attached_done:transform2
+    100118: Female_box_head_attached_done:transform20
+    100120: Female_box_head_attached_done:transform21
+    100122: Female_box_head_attached_done:transform3
+    100124: Female_box_head_attached_done:transform4
+    100126: Female_box_head_attached_done:transform5
+    100128: Female_box_head_attached_done:transform6
+    100130: Female_box_head_attached_done:transform7
+    100132: Female_box_head_attached_done:transform8
+    100134: Female_box_head_attached_done:transform9
+    100136: group
+    100138: group1
+    100140: group2
+    100142: group3
+    100144: group4
+    100146: group5
+    100148: group6
+    100150: pasted__group
+    100152: pasted__group2
+    100154: pasted__group4
+    100156: pasted__group5
+    100158: pasted__pasted__group4
+    100160: pasted__pasted__pasted__pCube2
+    100162: pasted__pasted__pasted__place3dTexture1
+    100164: pasted__pasted__pCube2
+    100166: pasted__pasted__pCube2 1
+    100168: pasted__pasted__place3dTexture1
+    100170: pasted__pasted__place3dTexture1 1
+    100172: pasted__pCube2
+    100174: pasted__pCube2 1
+    100176: pasted__place3dTexture1
+    100178: pasted__place3dTexture1 1
+    100180: pCube1
+    100182: pCube2
+    100184: place3dTexture1
+    100186: polySurface5
+    100188: //RootNode
+    400000: Calisium:pCube1
+    400002: Calisium:pCube2
+    400004: Calisium:pCube3
+    400006: Calisium:pCube4
+    400008: Calisium:pCube5
+    400010: Calisium:transform1
+    400012: Calisium:transform2
+    400014: Calisium:transform3
+    400016: Calisium:transform4
+    400018: Female_box_head_attached_done:bottom
+    400020: Female_box_head_attached_done:callis
+    400022: Female_box_head_attached_done:group
+    400024: Female_box_head_attached_done:group1
+    400026: Female_box_head_attached_done:group2
+    400028: Female_box_head_attached_done:group3
+    400030: Female_box_head_attached_done:group3_pasted__pCube4
+    400032: Female_box_head_attached_done:imagePlane1
+    400034: Female_box_head_attached_done:imagePlane10
+    400036: Female_box_head_attached_done:imagePlane2
+    400038: Female_box_head_attached_done:imagePlane3
+    400040: Female_box_head_attached_done:imagePlane4
+    400042: Female_box_head_attached_done:imagePlane5
+    400044: Female_box_head_attached_done:imagePlane6
+    400046: Female_box_head_attached_done:imagePlane7
+    400048: Female_box_head_attached_done:imagePlane8
+    400050: Female_box_head_attached_done:imagePlane9
+    400052: Female_box_head_attached_done:left
+    400054: Female_box_head_attached_done:pasted__pCube4
+    400056: Female_box_head_attached_done:pasted__pCube4 1
+    400058: Female_box_head_attached_done:pasted__pCube4 2
+    400060: Female_box_head_attached_done:pasted__pCube4 3
+    400062: Female_box_head_attached_done:pCube1
+    400064: Female_box_head_attached_done:pCube10
+    400066: Female_box_head_attached_done:pCube11
+    400068: Female_box_head_attached_done:pCube12
+    400070: Female_box_head_attached_done:pCube13
+    400072: Female_box_head_attached_done:pCube14
+    400074: Female_box_head_attached_done:pCube2
+    400076: Female_box_head_attached_done:pCube3
+    400078: Female_box_head_attached_done:pCube4
+    400080: Female_box_head_attached_done:pCube6
+    400082: Female_box_head_attached_done:pCube8
+    400084: Female_box_head_attached_done:pCube9
+    400086: Female_box_head_attached_done:polySurface4
+    400088: Female_box_head_attached_done:polySurface5
+    400090: Female_box_head_attached_done:polySurface7
+    400092: Female_box_head_attached_done:pPlane1
+    400094: Female_box_head_attached_done:transform1
+    400096: Female_box_head_attached_done:transform10
+    400098: Female_box_head_attached_done:transform11
+    400100: Female_box_head_attached_done:transform12
+    400102: Female_box_head_attached_done:transform13
+    400104: Female_box_head_attached_done:transform14
+    400106: Female_box_head_attached_done:transform15
+    400108: Female_box_head_attached_done:transform16
+    400110: Female_box_head_attached_done:transform17
+    400112: Female_box_head_attached_done:transform18
+    400114: Female_box_head_attached_done:transform19
+    400116: Female_box_head_attached_done:transform2
+    400118: Female_box_head_attached_done:transform20
+    400120: Female_box_head_attached_done:transform21
+    400122: Female_box_head_attached_done:transform3
+    400124: Female_box_head_attached_done:transform4
+    400126: Female_box_head_attached_done:transform5
+    400128: Female_box_head_attached_done:transform6
+    400130: Female_box_head_attached_done:transform7
+    400132: Female_box_head_attached_done:transform8
+    400134: Female_box_head_attached_done:transform9
+    400136: group
+    400138: group1
+    400140: group2
+    400142: group3
+    400144: group4
+    400146: group5
+    400148: group6
+    400150: pasted__group
+    400152: pasted__group2
+    400154: pasted__group4
+    400156: pasted__group5
+    400158: pasted__pasted__group4
+    400160: pasted__pasted__pasted__pCube2
+    400162: pasted__pasted__pasted__place3dTexture1
+    400164: pasted__pasted__pCube2
+    400166: pasted__pasted__pCube2 1
+    400168: pasted__pasted__place3dTexture1
+    400170: pasted__pasted__place3dTexture1 1
+    400172: pasted__pCube2
+    400174: pasted__pCube2 1
+    400176: pasted__place3dTexture1
+    400178: pasted__place3dTexture1 1
+    400180: pCube1
+    400182: pCube2
+    400184: place3dTexture1
+    400186: polySurface5
+    400188: //RootNode
+    2000000: Female_box_head_attached_done:bottom
+    2000002: Female_box_head_attached_done:left
+    2300000: Female_box_head_attached_done:callis
+    2300002: Female_box_head_attached_done:pCube14
+    2300004: Female_box_head_attached_done:polySurface7
+    2300006: pasted__pasted__pasted__pCube2
+    2300008: pasted__pasted__pCube2
+    2300010: pasted__pasted__pCube2 1
+    2300012: pasted__pCube2
+    2300014: pasted__pCube2 1
+    2300016: pCube2
+    3300000: Female_box_head_attached_done:callis
+    3300002: Female_box_head_attached_done:pCube14
+    3300004: Female_box_head_attached_done:polySurface7
+    3300006: pasted__pasted__pasted__pCube2
+    3300008: pasted__pasted__pCube2
+    3300010: pasted__pasted__pCube2 1
+    3300012: pasted__pCube2
+    3300014: pasted__pCube2 1
+    3300016: pCube2
+    4300000: Female_box_head_attached_done:pCube14
+    4300002: Female_box_head_attached_done:callis
+    4300004: Female_box_head_attached_done:polySurface7
+    4300006: pCube2
+    4300008: pasted__pCube2
+    4300010: pasted__pasted__pCube2
+    4300012: pasted__pCube2
+    4300014: pasted__pasted__pCube2
+    4300016: pasted__pasted__pasted__pCube2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

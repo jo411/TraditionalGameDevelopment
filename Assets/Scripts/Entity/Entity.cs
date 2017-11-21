@@ -54,16 +54,16 @@ public class Entity: MonoBehaviour
     Stats stats;
     public string eName;
    
-    public void Initialize(string name)//calls constructor
+    public void Initialize(string name, int statTotal)//calls constructor
     {
         attacks = new List<Attack>();
         effects = new List<Effect>();
         addAttacks();
-        noParamEntity(name);
+        noParamEntity(name,statTotal);
     }
-    public void noParamEntity(String name)
+    public void noParamEntity(String name, int statTotal)
     {
-        this.baseStats = new Stats();//random stats
+        this.baseStats = new Stats(statTotal);//random stats
         this.eName = name;
         resetTempStats();
     }

@@ -267,7 +267,7 @@ public class BattleManager : MonoBehaviour {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit, 100.0f,inputMask))
             {
-                Debug.Log(hit.collider.gameObject.name);
+
                 if(hit.collider.gameObject.tag.Equals("Entity"))
                 {                    
                     targetClicked(hit.collider.gameObject.GetComponent<Entity>());                    
@@ -281,7 +281,7 @@ public class BattleManager : MonoBehaviour {
         
         foreach(Transform current in enemyPositions)
         {
-            enemies.Add(createEntity(NameGen.getName(), current));               
+            enemies.Add(createEntity(NameGen.getName(), current,100));               
         }
 
 
@@ -289,19 +289,20 @@ public class BattleManager : MonoBehaviour {
         {
             for(int i=0; i<4;i++)
             {
-                allPlayers.Add(createEntity(NameGen.getName(),null ));
+                allPlayers.Add(createEntity(NameGen.getName(),null ,100));
+                allPlayers[i].SetActive(false);
             }
         }
+
         
-                   
             for(int i=0;i<playerPositions.Count;i++)
             {
                  players.Add(allPlayers[i]);
-            players[i].transform.SetParent(playerPositions[i]);
-            players[i].transform.localPosition = new Vector3(0, 0, 0);
-            players[i].SetActive(true);
-            }
-        
+                 players[i].transform.SetParent(playerPositions[i]);
+                 players[i].transform.localPosition = new Vector3(0, 0, 0);
+                 players[i].SetActive(true);
+          
+            }      
     }
 
      public void HelpCallback(int selection)
@@ -459,9 +460,6 @@ public class BattleManager : MonoBehaviour {
 
     public void aiTurn()
     {
-
-        Debug.Log(players[0].name + "ai turn");
-
         int target = aiTargetSelect();        
         attack(current, players[target].GetComponent<Entity>(), current.chooseAttack());
         advanceTurn();
@@ -503,18 +501,19 @@ public class BattleManager : MonoBehaviour {
     }
 
 
-    public static GameObject createEntity(string name,Transform pos)
+    public static GameObject createEntity(string name,Transform pos, int difficulty)
     {
+        difficulty = 100; 
         GameObject newEntity;
         if (pos!=null)
         {
              newEntity = Object.Instantiate(instance.entityPrefab, pos);
-            newEntity.GetComponent<Entity>().Initialize(name);
+            newEntity.GetComponent<Entity>().Initialize(name,difficulty);//TODO: use difficulty scaling
             newEntity.transform.position = pos.position;
             return newEntity;
         }
          newEntity = Object.Instantiate(instance.entityPrefab);
-        newEntity.GetComponent<Entity>().Initialize(name);               
+        newEntity.GetComponent<Entity>().Initialize(name, difficulty);           //TODO: use difficulty scaling    
         return newEntity;
 
     }

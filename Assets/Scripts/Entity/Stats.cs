@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Stats
 {
+
+    
+
     private string[] powerClass = new string[] { "Whelp", "Average", "Hero", "Legendary", "Godlike" };
 
     public int HP;
@@ -17,14 +21,26 @@ public class Stats
    
 
     private int maxValue = 255;
-    public Stats()//default constructor generates random values
+    public Stats(int statTotal)//
     {
+
+        List<double> distribution = getDistribution();
+
+        HP = (int)(distribution[0] * statTotal);
+        attack = (int)(distribution[1] * statTotal);
+        defense= (int)(distribution[2] * statTotal);
+        speed = (int)(distribution[3] * statTotal);
+
+        evasion = Calculator.rand.Next(1, 101) / 100.0;      
+        level = 20;      
+
+
         //super basic heuristic will weight lower stats if the previous was high and the other way around.
-        //Should make all  stats somewhat balanced. But it tends to only create heroes because obviously its just an average......
-        HP = Calculator.rand.Next(1, maxValue + 1);
-        attack = Calculator.rand.Next(maxValue + 1 - HP, maxValue + 1);
-        defense = Calculator.rand.Next(maxValue + 1 - attack, maxValue + 1);
-        speed = Calculator.rand.Next(maxValue + 1 - defense, maxValue + 1);
+        ////Should make all  stats somewhat balanced. But it tends to only create heroes because obviously its just an average......
+        //HP = Calculator.rand.Next(1, maxValue + 1);
+        //attack = Calculator.rand.Next(maxValue + 1 - HP, maxValue + 1);
+        //defense = Calculator.rand.Next(maxValue + 1 - attack, maxValue + 1);
+        //speed = Calculator.rand.Next(maxValue + 1 - defense, maxValue + 1);
 
 
         //HP = Calculator.rand.Next(1, maxValue + 1);
@@ -32,11 +48,6 @@ public class Stats
         //defense = Calculator.rand.Next(1, maxValue + 1);
         //speed = Calculator.rand.Next(1, maxValue + 1);
 
-
-
-        evasion = Calculator.rand.Next(1, 101) / 100.0;
-       // level = Calculator.rand.Next(1, 101);
-        level = 20;
 
 
     }
@@ -98,6 +109,52 @@ public class Stats
              + "Defense: " + defense + "\n"
               + "Speed: " + speed + "\n"
                + "Evasion: " + evasion + "\n";
+    }
+
+    /// <summary>
+    /// Calculate a random stat distribution
+    /// </summary>
+    /// <returns></returns>
+    public List<double> getDistribution()
+    {
+        List<double> percents = new List<double>();
+        double[] nums = new double[5];
+        nums[0] = 0;
+        nums[4] = 100;
+
+
+        for(int i=1;i<=3;i++)
+        {
+            nums[i] = Calculator.rand.Next(0, 101);
+        }
+
+        Array.Sort(nums);
+
+        double sum = 0;
+        for(int i=0;i<4;i++)
+        {
+            percents.Add( (nums[i + 1] - nums[i]) / 100);
+            sum += percents[i];
+        }
+        
+        
+        return ShuffleList(percents);//reorder which stats are which
+    }
+
+    private List<E> ShuffleList<E>(List<E> inputList)
+    {
+        List<E> randomList = new List<E>();
+
+       
+        int randomIndex = 0;
+        while (inputList.Count > 0)
+        {
+            randomIndex = Calculator.rand.Next(0, inputList.Count); //Choose a random object in the list
+            randomList.Add(inputList[randomIndex]); //add it to the new, random list
+            inputList.RemoveAt(randomIndex); //remove to avoid duplicates
+        }
+
+        return randomList; //return the new random list
     }
 }
 
