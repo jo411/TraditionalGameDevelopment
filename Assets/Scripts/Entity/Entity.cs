@@ -13,6 +13,10 @@ public class Entity: MonoBehaviour
     private Image healthBar;
     public GameObject combatText;
 
+    private Stats baseStats;
+    Stats stats;
+    public string eName;
+
     // Use this for initialization
     void Start()
     {
@@ -49,10 +53,6 @@ public class Entity: MonoBehaviour
     {
        
     }
-
-    private Stats baseStats;
-    Stats stats;
-    public string eName;
    
     public void Initialize(string name, int statTotal)//calls constructor
     {

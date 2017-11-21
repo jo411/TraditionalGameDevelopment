@@ -33,7 +33,7 @@ public class BattleManager : MonoBehaviour {
     private Dropdown attackMenu;//selectors for attacks
  //   private Dropdown targetMenu;//selector for targets 
 
-    private GameObject infoPane;
+    private GameObject selectedInfoPane;
     // public InputField input;//TODO: Bad use something else obviously 
 
     public LayerMask inputMask;//masks out UI and other layers from the click input
@@ -180,9 +180,9 @@ public class BattleManager : MonoBehaviour {
     {
         attackMenu = GameObject.FindGameObjectWithTag("AttackMenu").GetComponent<Dropdown>();
       //  targetMenu = GameObject.FindGameObjectWithTag("TargetMenu").GetComponent<Dropdown>();
-        infoPane = GameObject.FindGameObjectWithTag("InfoPane");
+        selectedInfoPane = GameObject.FindGameObjectWithTag("SelectedInfoPane");
 
-        infoPane.SetActive(false);
+        selectedInfoPane.SetActive(false);
 
         instance = this;
 
@@ -321,11 +321,11 @@ public class BattleManager : MonoBehaviour {
 
     public void toggleExtraInfo()
     {
-        infoPane.SetActive(!infoPane.activeInHierarchy);
+        selectedInfoPane.SetActive(!selectedInfoPane.activeInHierarchy);
     }
     private void setInfoPaneText(string text)
     {
-        infoPane.GetComponentInChildren<Text>().text = text;
+        selectedInfoPane.GetComponentInChildren<Text>().text = text;
     }
     public void attackMenuAction(int selected)
     {
@@ -373,12 +373,36 @@ public class BattleManager : MonoBehaviour {
         deselectTarget(currentTarget);
     }
 
-    public void buttonAction(int action)
+    //public void buttonAction(int action)
+    //{
+    //    playerReady = true;
+    //}
+
+    public void leftButtonAction(int action)
     {
-        playerReady = true;
+        // TODO: implement 
+        print("Left Attack");
     }
-   
-  public void playerTurn()
+
+    public void rightButtonAction(int action)
+    {
+        // TODO: implement 
+        print("Right Attack");
+    }
+
+    public void leftInfoButtonAction(int action)
+    {
+        // TODO: implement 
+        print("Left Info");
+    }
+
+    public void rightInfoButtonAction(int action)
+    {
+        // TODO: implement 
+        print("Right Info");
+    }
+
+    public void playerTurn()
     {
         playerReady = false;
         clearHighlights();
