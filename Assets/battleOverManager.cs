@@ -52,7 +52,7 @@ public class battleOverManager : MonoBehaviour {
         foreach (GameObject pane in GameObject.FindGameObjectsWithTag("PlayerText"))
         {
             Text display = pane.GetComponentInChildren<Text>();
-            display.text = players[count].GetComponent<Entity>().ToString()+"\nArms:\n" + "Right:\n"+players[count].GetComponent<Entity>().arms[0]+"\n" + "Left:\n" + players[count].GetComponent<Entity>().arms[1] + "\n";
+            display.text = players[count].GetComponent<Entity>().ToString()+"\nArms:\n" + "Right:\n"+players[count].GetComponent<Entity>().rightArm+"\n" + "Left:\n" + players[count].GetComponent<Entity>().leftArm + "\n";
             count++;
         }
 
