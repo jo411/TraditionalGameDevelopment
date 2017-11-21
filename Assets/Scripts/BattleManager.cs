@@ -101,6 +101,7 @@ public class BattleManager : MonoBehaviour {
         battleOver = false;
         playerReady = false;
 
+        SplashUI.SetActive(false);
 
         audioSystem.requestSong("Combat");
         advanceTurn();//set turn to zero
@@ -209,7 +210,7 @@ public class BattleManager : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(1))
             {
-                gameOver(false);
+                gameOver(true);
             }
 
             if (!destroyReady)
@@ -263,10 +264,23 @@ public class BattleManager : MonoBehaviour {
         }
         else//handle pre game things
         {
-
+            if (!SplashUI.activeInHierarchy)
+            {
+                playerUI.SetActive(false);
+                enemyUI.SetActive(false);
+                SplashUI.SetActive(true);
+            }
         }
 
 	}
+
+
+    public void playerReadyToStart()
+    {
+        gameReady = true;
+        allPlayers = GameObject.FindObjectOfType<battleOverManager>().getPlayers();
+        SplashUI.SetActive(false);
+    }
 
     public void checkClicked()
     {
@@ -565,7 +579,9 @@ public class BattleManager : MonoBehaviour {
         SplashUI.GetComponentInChildren<Text>().text = "Battle Over! You " +( won ? "won!" : "lost...");
         battleOver = true;
         audioSystem.stopAll();
-        
+        gameReady = false;
+
+        GameObject.FindObjectOfType<battleOverManager>().loadPlayers(allPlayers);
         if(!won)
         {
             GameObject.FindObjectOfType<GameFeedback>().logMessage("You lost! Your team survived "+ rounds +" rounds!");

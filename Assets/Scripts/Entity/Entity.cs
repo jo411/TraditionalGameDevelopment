@@ -169,9 +169,12 @@ public class Entity: MonoBehaviour
         return "Name: " + this.eName + "\n"
             +"Status: "+getStatusStrings()+"\n"
             + "Stats: " + "\n"
+            +"Current HP: "+getHP()+"\n"
             + this.baseStats;
 
     }
+
+    
     public string getStatusStrings()
     {
         StringBuilder sb = new StringBuilder();

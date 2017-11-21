@@ -9,6 +9,8 @@ TagManager:
   - InfoPane
   - Entity
   - Camera Marker
+  - PlayerDisplay
+  - PlayerText
   layers:
   - Default
   - TransparentFX
