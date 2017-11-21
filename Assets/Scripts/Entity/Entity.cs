@@ -7,8 +7,11 @@ using UnityEngine.UI;
 
 public class Entity: MonoBehaviour
 {
+  
 
-    public List<Attack> attacks;
+    public List<Arm> arms;
+ 
+
     public List<Effect> effects;
     private Image healthBar;
     public GameObject combatText;
@@ -41,7 +44,7 @@ public class Entity: MonoBehaviour
     {
         for(int i =0; i<2; i++)
         {
-            attacks.Add(AttackList.getRandomAttack());
+            arms.Add(new Arm());
         }
     }
     // Update is called once per frame
@@ -56,7 +59,7 @@ public class Entity: MonoBehaviour
    
     public void Initialize(string name, int statTotal)//calls constructor
     {
-        attacks = new List<Attack>();
+        arms = new List<Arm>();
         effects = new List<Effect>();
         addAttacks();
         noParamEntity(name,statTotal);
@@ -149,7 +152,7 @@ public class Entity: MonoBehaviour
     }
     public Attack chooseAttack()
     {
-        return attacks[Calculator.rand.Next(0, attacks.Count)];//just use a random attack for now
+        return arms[Calculator.rand.Next(0, arms.Count)].attack;//just use a random attack for now
     }
 
     public void setTempStats(Stats baseStats)
