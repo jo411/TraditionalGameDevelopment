@@ -225,7 +225,7 @@ public class Entity: MonoBehaviour
 
     public void hitUI(double damage, bool crit, double mult)
     {
-        healthBar.fillAmount = (float)stats.HP / (float)baseStats.HP;
+        healthBar.fillAmount = (float)stats.HP / (float)getMaxHP();
 
         if(damage==0)
         {
