@@ -32,10 +32,8 @@ public class BattleManager : MonoBehaviour {
 
     private int turn = -1;
 
-    private Dropdown attackMenu;//selectors for attacks
- //   private Dropdown targetMenu;//selector for targets 
-
     private GameObject selectedInfoPane;
+    private int lastInfoPane;
     // public InputField input;//TODO: Bad use something else obviously 
 
     public LayerMask inputMask;//masks out UI and other layers from the click input
@@ -181,21 +179,16 @@ public class BattleManager : MonoBehaviour {
 
     void Start()
     {
-        attackMenu = GameObject.FindGameObjectWithTag("AttackMenu").GetComponent<Dropdown>();
       //  targetMenu = GameObject.FindGameObjectWithTag("TargetMenu").GetComponent<Dropdown>();
-        selectedInfoPane = GameObject.FindGameObjectWithTag("SelectedInfoPane");
-
-<<<<<<< HEAD
-        selectedInfoPane.SetActive(false);
-=======
+        selectedInfoPane = GameObject.FindGameObjectWithTag("InfoPane");
+        
         audioSystem = GameObject.FindObjectOfType<SoundRequest>();
         if(audioSystem==null)
         {
             Debug.LogError("No sound manager was found!");
         }
 
-        infoPane.SetActive(false);
->>>>>>> 567258839f386470ffc7eaad8121b3309907e61a
+        selectedInfoPane.SetActive(false);
 
         instance = this;
 
@@ -252,7 +245,8 @@ public class BattleManager : MonoBehaviour {
                     checkClicked();
                     if (playerReady)
                     {
-                        playerTurn();
+                        playerReady = false;
+                        advanceTurn();
                     }
                 }
                 if (delayTimer >= aiDelay)
@@ -318,40 +312,18 @@ public class BattleManager : MonoBehaviour {
             }      
     }
 
-     public void HelpCallback(int selection)
+    public void toggleExtraInfo(int selectedInfoIndex)
     {
-        switch (selection)
+        if (!selectedInfoPane.activeSelf || lastInfoPane == selectedInfoIndex)
         {
-            case 0:
-                setInfoPaneText(current.arms[currentAttack].ToString());                
-                break;
-            case 1:
-                setInfoPaneText(currentTarget.ToString());               
-                break;
-            
+            selectedInfoPane.SetActive(!selectedInfoPane.activeInHierarchy);
         }
+        lastInfoPane = selectedInfoIndex;
     }
 
-    public void toggleExtraInfo()
-    {
-        selectedInfoPane.SetActive(!selectedInfoPane.activeInHierarchy);
-    }
     private void setInfoPaneText(string text)
     {
         selectedInfoPane.GetComponentInChildren<Text>().text = text;
-    }
-    public void attackMenuAction(int selected)
-    {
-        currentAttack = selected;
-        HelpCallback(0);
-    }
-    public void targetMenuAction(int selected)
-    {
-       // deselectTarget(currentTarget);
-       // currentTarget = selected;
-        //selectTarget(currentTarget);
-       // HelpCallback(1);
-
     }
 
     public void targetClicked(Entity clicked)
@@ -362,7 +334,7 @@ public class BattleManager : MonoBehaviour {
         deselectTarget(currentTarget);
         currentTarget = clicked;
         selectTarget(currentTarget);
-        HelpCallback(1);
+        setInfoPaneText(currentTarget.ToString());
     }
 
     private void selectTarget(Entity target)
@@ -386,43 +358,48 @@ public class BattleManager : MonoBehaviour {
         deselectTarget(currentTarget);
     }
 
-    //public void buttonAction(int action)
-    //{
-    //    playerReady = true;
-    //}
-
     public void leftButtonAction(int action)
     {
-        // TODO: implement 
-        print("Left Attack");
+        playerAttackWith(current.leftArm());
+        playerReady = true;
     }
 
     public void rightButtonAction(int action)
     {
-        // TODO: implement 
-        print("Right Attack");
+        playerAttackWith(current.rightArm());
+        playerReady = true;
     }
 
     public void leftInfoButtonAction(int action)
     {
-        // TODO: implement 
-        print("Left Info");
+        setInfoPaneText(current.leftArm().attack.ToString());
+
+        int infoIndex = 1;
+        toggleExtraInfo(infoIndex);
     }
 
     public void rightInfoButtonAction(int action)
     {
-        // TODO: implement 
-        print("Right Info");
+        setInfoPaneText(current.rightArm().attack.ToString());
+
+        int infoIndex = 0;
+        toggleExtraInfo(infoIndex);
     }
 
-    public void playerTurn()
+    public void infoButtonAction(int action)
     {
-        playerReady = false;
-        clearHighlights();
-        attack(current, currentTarget, current.arms[currentAttack].attack);
+        setInfoPaneText(currentTarget.ToString());
 
-        advanceTurn();
+        int infoIndex = 3;
+        toggleExtraInfo(infoIndex);
     }
+
+    public void playerAttackWith(Arm arm)
+    {
+        clearHighlights();
+        attack(current, currentTarget, arm.attack);
+    }
+
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
         AttackResult res = attacker.attackOther(defender, attack);
@@ -518,16 +495,8 @@ public class BattleManager : MonoBehaviour {
             playerUI.SetActive(true);
             enemyUI.SetActive(false);
 
-            attackMenu.options.Clear();//clear previous attacks
-            List<string> attackNames = new List<string>();
-            foreach(Arm arm in current.arms)
-            {
-                attackNames.Add(arm.attack.name);
-            }
-            attackMenu.AddOptions(attackNames);
-
-           // selectTarget(currentTarget);//TODO: temp try a better fix
-            HelpCallback(0);
+            // selectTarget(currentTarget);//TODO: temp try a better fix
+            selectedInfoPane.SetActive(false);
         }
         else
         {

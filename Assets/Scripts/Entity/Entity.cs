@@ -9,7 +9,7 @@ public class Entity: MonoBehaviour
 {
   
 
-    public List<Arm> arms;
+    private List<Arm> arms;
  
 
     public List<Effect> effects;
@@ -222,6 +222,16 @@ public class Entity: MonoBehaviour
     public bool isDead()
     {
         return getHP() == 0;//if no hp this entity is dead
+    }
+
+    public Arm leftArm()
+    {
+        return arms[1];
+    }
+
+    public Arm rightArm()
+    {
+        return arms[0];
     }
 
     //These methods will allow for adding modifiers to any stat 
