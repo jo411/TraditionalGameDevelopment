@@ -11,16 +11,21 @@ public class Attack
     public Effect effect;
     public double effectChance;
     public string sound;
-    public Attack(string name, int power, double accuracy,string text,string sound)
+
+    public int usesLeft;
+    public int uses;
+    public Attack(string name, int power, double accuracy,string text,string sound, int uses)
     {
         this.name = name;
         this.power = power;
         this.accuracy = accuracy;
         this.flavorText = text;
         this.sound = sound;
+        this.usesLeft = uses;
+        this.uses = uses;
     }
 
-    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text, string sound)
+    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text, string sound, int uses)
     {
         this.name = name;
         this.power = power;
@@ -29,6 +34,8 @@ public class Attack
         this.effect = effect;
         this.effectChance = effectChance;
         this.sound = sound;
+        this.usesLeft = uses;
+        this.uses = uses;
     }
 
     public int rollAttackPower()
@@ -42,7 +49,7 @@ public class Attack
 
     public override string ToString()
     {
-       return "Attack: " + name + "\nPower:" + power + "\nAccuracy:" + accuracy + "\n\n" + flavorText;
+       return "Attack: " + name +"Uses: "+usesLeft+"\\"+uses+"\n"+ "\nPower:" + power + "\nAccuracy:" + accuracy + "\n\n" + flavorText;
     }
 
 }

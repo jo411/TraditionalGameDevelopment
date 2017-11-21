@@ -416,6 +416,15 @@ public class BattleManager : MonoBehaviour {
 
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
+        if(attack.usesLeft<=0)
+        {
+            attack = AttackList.getDefaultAttack();
+        }
+        else
+        {
+            attack.usesLeft--;
+        }
+
         audioSystem.requestSound(attack.sound);
         AttackResult res = attacker.attackOther(defender, attack);
        foreach(string current in res.log)
@@ -588,7 +597,6 @@ public class BattleManager : MonoBehaviour {
         battleOver = true;
         audioSystem.stopAll();
         gameReady = false;
-
 
         GameObject.FindObjectOfType<battleOverManager>().loadData(allPlayers, lootEnemies());//TODO: Send in arm loot here
         if(!won)
