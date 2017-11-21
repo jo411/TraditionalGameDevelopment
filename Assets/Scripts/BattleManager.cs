@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour {
 
+    int rounds = 0;
     bool battleOver = false;
 
     protected static BattleManager instance; // Needed
@@ -57,13 +59,14 @@ public class BattleManager : MonoBehaviour {
     float gameOverDelay = 5f;
     float gameOverTimer = 0f;
 
+    private SoundRequest audioSystem;
 
     public List<GameObject> stagePrefabs;
     private GameObject currentStage;
 
     public void resetStage()
     {
-
+        rounds++;
         players = new List<GameObject>();       
         enemies = new List<GameObject>();
         playerPositions = new List<Transform>();
@@ -99,7 +102,7 @@ public class BattleManager : MonoBehaviour {
         playerReady = false;
 
 
-
+        audioSystem.requestSong("Combat");
         advanceTurn();//set turn to zero
     }
     private void detatchPlayers()
@@ -182,7 +185,17 @@ public class BattleManager : MonoBehaviour {
       //  targetMenu = GameObject.FindGameObjectWithTag("TargetMenu").GetComponent<Dropdown>();
         selectedInfoPane = GameObject.FindGameObjectWithTag("SelectedInfoPane");
 
+<<<<<<< HEAD
         selectedInfoPane.SetActive(false);
+=======
+        audioSystem = GameObject.FindObjectOfType<SoundRequest>();
+        if(audioSystem==null)
+        {
+            Debug.LogError("No sound manager was found!");
+        }
+
+        infoPane.SetActive(false);
+>>>>>>> 567258839f386470ffc7eaad8121b3309907e61a
 
         instance = this;
 
@@ -200,7 +213,7 @@ public class BattleManager : MonoBehaviour {
         {
             if (Input.GetMouseButtonDown(1))
             {
-                gameOver(true);
+                gameOver(false);
             }
 
             if (!destroyReady)
@@ -281,7 +294,7 @@ public class BattleManager : MonoBehaviour {
         
         foreach(Transform current in enemyPositions)
         {
-            enemies.Add(createEntity(NameGen.getName(), current,100));               
+            enemies.Add(createEntity(NameGen.getName(), current,rounds*50));               
         }
 
 
@@ -289,7 +302,7 @@ public class BattleManager : MonoBehaviour {
         {
             for(int i=0; i<4;i++)
             {
-                allPlayers.Add(createEntity(NameGen.getName(),null ,100));
+                allPlayers.Add(createEntity(NameGen.getName(),null ,255));
                 allPlayers[i].SetActive(false);
             }
         }
@@ -310,7 +323,7 @@ public class BattleManager : MonoBehaviour {
         switch (selection)
         {
             case 0:
-                setInfoPaneText(current.attacks[currentAttack].ToString());                
+                setInfoPaneText(current.arms[currentAttack].ToString());                
                 break;
             case 1:
                 setInfoPaneText(currentTarget.ToString());               
@@ -406,7 +419,7 @@ public class BattleManager : MonoBehaviour {
     {
         playerReady = false;
         clearHighlights();
-        attack(current, currentTarget, current.attacks[currentAttack]);
+        attack(current, currentTarget, current.arms[currentAttack].attack);
 
         advanceTurn();
     }
@@ -507,9 +520,9 @@ public class BattleManager : MonoBehaviour {
 
             attackMenu.options.Clear();//clear previous attacks
             List<string> attackNames = new List<string>();
-            foreach(Attack attack in current.attacks)
+            foreach(Arm arm in current.arms)
             {
-                attackNames.Add(attack.name);
+                attackNames.Add(arm.attack.name);
             }
             attackMenu.AddOptions(attackNames);
 
@@ -573,8 +586,13 @@ public class BattleManager : MonoBehaviour {
         SplashUI.SetActive(true);
         SplashUI.GetComponentInChildren<Text>().text = "Battle Over! You " +( won ? "won!" : "lost...");
         battleOver = true;
-
+        audioSystem.stopAll();
         
+        if(!won)
+        {
+            GameObject.FindObjectOfType<GameFeedback>().logMessage("You lost! Your team survived "+ rounds +" rounds!");
+            GameObject.FindObjectOfType<levelSwap>().loadGame("GameOver");
+        }
 
     }
 

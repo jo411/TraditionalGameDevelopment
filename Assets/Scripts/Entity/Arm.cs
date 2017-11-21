@@ -23,4 +23,6 @@ public class Arm
         attack = AttackList.getRandomAttack();
         stats = new Stats(30);
     }
+
+    
 }

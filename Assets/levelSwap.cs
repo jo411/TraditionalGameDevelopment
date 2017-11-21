@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class levelSwap : MonoBehaviour {
 
-public void loadGame()
+    void Start()
     {
-        SceneManager.LoadScene("Game");
+        DontDestroyOnLoad(transform.gameObject);
+    }
+
+public void loadGame(string name)
+    {
+        SceneManager.LoadScene(name);
     }
 }
