@@ -64,6 +64,7 @@ public class battleOverManager : MonoBehaviour {
         List<string> names = new List<string>();
         foreach (Arm current in loot)
         {
+            current.attack.usesLeft = current.attack.uses;
             names.Add(current.attack.name);
         }
         lootDropDown.AddOptions(names);
@@ -90,15 +91,12 @@ public class battleOverManager : MonoBehaviour {
         if (currentPlayer < 0 || currentArm < 0) return;
         if(right)
         {
-
+            players[currentPlayer].GetComponent<Entity>().rightArm = loot[currentArm];
         }
         else
         {
-
+            players[currentPlayer].GetComponent<Entity>().leftArm = loot[currentArm];
         }
-
-
-        players[currentPlayer].GetComponent<Entity>().arms[right == true ? 0 : 1] = loot[currentArm];
         loot.RemoveAt(currentArm);
         displayData();
     }

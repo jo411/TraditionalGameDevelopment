@@ -411,6 +411,16 @@ public class BattleManager : MonoBehaviour {
     }
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
+        if(attack.usesLeft<=0)
+        {
+            attack = AttackList.getDefaultAttack();
+        }
+        else
+        {
+            attack.usesLeft--;
+        }
+
+
         audioSystem.requestSound(attack.sound);
         AttackResult res = attacker.attackOther(defender, attack);
        foreach(string current in res.log)
