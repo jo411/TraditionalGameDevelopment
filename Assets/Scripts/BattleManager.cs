@@ -397,7 +397,12 @@ public class BattleManager : MonoBehaviour {
     }
     public void attack(Entity attacker, Entity defender, Attack attack)
     {
+        audioSystem.requestSound(attack.sound);
         AttackResult res = attacker.attackOther(defender, attack);
+       foreach(string current in res.log)
+        {
+            Debug.Log(current);
+        }
     }
 
     public Entity getFirstEnemyTarget()//returns the first entity with health remaining else NULL
@@ -531,6 +536,7 @@ public class BattleManager : MonoBehaviour {
 
     private bool playerLost()
     {
+        Debug.Log(players.Count);
         foreach(GameObject curr in players)
         {
             if(!curr.GetComponent<Entity>().isDead())

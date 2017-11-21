@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackResult {
-    List<string> log;
+   public List<string> log;
     bool hit;
     bool crit;
     double damage;
