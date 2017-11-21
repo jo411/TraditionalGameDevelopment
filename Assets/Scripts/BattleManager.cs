@@ -581,7 +581,7 @@ public class BattleManager : MonoBehaviour {
         audioSystem.stopAll();
         gameReady = false;
 
-        GameObject.FindObjectOfType<battleOverManager>().loadPlayers(allPlayers);
+        GameObject.FindObjectOfType<battleOverManager>().loadData(allPlayers,new List<Arm>());//TODO: Send in arm loot here
         if(!won)
         {
             GameObject.FindObjectOfType<GameFeedback>().logMessage("You lost! Your team survived "+ rounds +" rounds!");

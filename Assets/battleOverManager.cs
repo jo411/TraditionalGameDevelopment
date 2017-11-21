@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class battleOverManager : MonoBehaviour {
     List<GameObject> players;
-
+    List<Arm> loot;
     public GameObject UI;
 	// Use this for initialization
 	void Start () {
@@ -18,9 +18,10 @@ public class battleOverManager : MonoBehaviour {
 		
 	}
 
-    public void loadPlayers(List<GameObject> playerList)
+    public void loadData(List<GameObject> playerList, List<Arm>arms)
     {
         players = playerList;
+        loot = arms;
         displayData();
     }
 
@@ -37,7 +38,7 @@ public class battleOverManager : MonoBehaviour {
         foreach (GameObject pane in GameObject.FindGameObjectsWithTag("PlayerText"))
         {
             Text display = pane.GetComponentInChildren<Text>();
-             display.text = players[count].GetComponent<Entity>().ToString()+"\nArms:\n" + "Right:\n"+players[count].GetComponent<Entity>().arms[0]+"\n" + "Left:\n" + players[count].GetComponent<Entity>().arms[1] + "\n";
+            display.text = players[count].GetComponent<Entity>().ToString()+"\nArms:\n" + "Right:\n"+players[count].GetComponent<Entity>().arms[0]+"\n" + "Left:\n" + players[count].GetComponent<Entity>().arms[1] + "\n";
             count++;
         }
 
