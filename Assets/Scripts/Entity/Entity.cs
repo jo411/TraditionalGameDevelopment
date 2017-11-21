@@ -21,11 +21,6 @@ public class Entity: MonoBehaviour
        
     }
 
-    private void OnDestroy()
-    {
-        Debug.Log(StackTraceUtility.ExtractStackTrace());
-        Debug.Log("WHYYY IS THIS HAPPENING TO ME?");
-    }
 
     public GameObject initCBT(string text)//TODO: a lot of finds and get components consider prefetching
     {

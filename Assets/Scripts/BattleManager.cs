@@ -21,6 +21,8 @@ public class BattleManager : MonoBehaviour {
     public List<Transform> playerPositions;
     public List<Transform> enemyPositions;
 
+    public List<GameObject> allPlayers;
+
     public List<GameObject> players;
     public List<GameObject> enemies;
 
@@ -45,6 +47,7 @@ public class BattleManager : MonoBehaviour {
     bool isAiTurn = false;
     bool playerReady = false;
     bool destroyReady = true;
+    bool gameReady = true;//Is the game ready to be played
 
     float waitTimer=0f;
 
@@ -59,9 +62,9 @@ public class BattleManager : MonoBehaviour {
     private GameObject currentStage;
 
     public void resetStage()
-    {       
+    {
 
-        players = new List<GameObject>();
+        players = new List<GameObject>();       
         enemies = new List<GameObject>();
         playerPositions = new List<Transform>();
         enemyPositions = new List<Transform>();
@@ -95,13 +98,28 @@ public class BattleManager : MonoBehaviour {
         battleOver = false;
         playerReady = false;
 
-        Debug.Log("The stage has been reset with "+turnOrder.Count +" players");
+
 
         advanceTurn();//set turn to zero
+    }
+    private void detatchPlayers()
+    {
+        if(players.Count>0)
+        {
+            foreach (Transform current in playerPositions)
+            {
+                current.DetachChildren();
+            }
+        }
+       for(int i=0;i<allPlayers.Count; i++)
+        {
+            allPlayers[i].SetActive(false);
+        }
     }
 
     public void destroyStage()
     {
+        detatchPlayers();
         Destroy(currentStage);
     }
 
@@ -134,15 +152,17 @@ public class BattleManager : MonoBehaviour {
     }
     public void fillPositions()
     {
-        for (int i = 1; i <= 4; i++)//search for Players
-        {
-            GameObject playerSearch = GameObject.Find("P" + i);
-            if (playerSearch != null)
+            for (int i = 1; i <= 4; i++)//search for Players
             {
-                playerPositions.Add(playerSearch.transform);
-            }
+                GameObject playerSearch = GameObject.Find("P" + i);
+                if (playerSearch != null)
+                {
+                    playerPositions.Add(playerSearch.transform);
+                }
 
-        }
+            }
+        
+      
 
         for (int i = 1; i <= 4; i++)//search for Enemies
         {
@@ -176,63 +196,66 @@ public class BattleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //if (isAiTurn) aiTurn();//run the ai turn if applicable
-        
-        if ( Input.GetMouseButtonDown(1))
+        if (gameReady)
         {
-            gameOver(true);
-        }
-
-
-
-        if (!destroyReady)
-        {
-            destroyReady = true;
-            resetStage();
-            return;
-        }
-
-        if (battleOver)
-        {
-            if (currentStage != null)//a stage has been created 
+            if (Input.GetMouseButtonDown(1))
             {
-                destroyStage();
-                destroyReady = false;
-                
+                gameOver(true);
             }
-            SplashUI.SetActive(false);
-            gameOverTimer += Time.deltaTime;
-            if(gameOverTimer>=gameOverDelay)
-            {                
-               // resetStage();             
-                
-            }
-        }
-        else
-        {
-            
 
-            if (isAiTurn)
+            if (!destroyReady)
             {
-                delayTimer += Time.deltaTime;
+                destroyReady = true;
+                resetStage();
+                return;
+            }
+
+            if (battleOver)
+            {
+                if (currentStage != null)//a stage has been created 
+                {
+                    destroyStage();
+                    destroyReady = false;
+
+                }
+                SplashUI.SetActive(false);
+                gameOverTimer += Time.deltaTime;
+                if (gameOverTimer >= gameOverDelay)
+                {
+                    // resetStage();             
+
+                }
             }
             else
             {
-                checkClicked();
-                if (playerReady)
+
+
+                if (isAiTurn)
                 {
-                    playerTurn();
+                    delayTimer += Time.deltaTime;
                 }
+                else
+                {
+                    checkClicked();
+                    if (playerReady)
+                    {
+                        playerTurn();
+                    }
+                }
+                if (delayTimer >= aiDelay)
+                {
+                    delayTimer = 0;
+                    aiTurn();
+                }
+
             }
-            if (delayTimer >= aiDelay)
-            {
-                delayTimer = 0;
-                aiTurn();
-            }
-            
+
+
         }
+        else//handle pre game things
+        {
 
-    
-
+        }
 
 	}
 
@@ -262,10 +285,23 @@ public class BattleManager : MonoBehaviour {
         }
 
 
-        foreach (Transform current in playerPositions)
+        if (allPlayers.Count == 0)//first time no players TODO: later we should have some char creation maybe
         {
-            players.Add(createEntity(NameGen.getName(), current));
+            for(int i=0; i<4;i++)
+            {
+                allPlayers.Add(createEntity(NameGen.getName(),null ));
+            }
         }
+        
+                   
+            for(int i=0;i<playerPositions.Count;i++)
+            {
+                 players.Add(allPlayers[i]);
+            players[i].transform.SetParent(playerPositions[i]);
+            players[i].transform.localPosition = new Vector3(0, 0, 0);
+            players[i].SetActive(true);
+            }
+        
     }
 
      public void HelpCallback(int selection)
@@ -416,7 +452,7 @@ public class BattleManager : MonoBehaviour {
             }
 
 
-            Debug.Log(players[0].name + "first check");
+
         }   
       
     }
@@ -469,10 +505,18 @@ public class BattleManager : MonoBehaviour {
 
     public static GameObject createEntity(string name,Transform pos)
     {
-        GameObject newEntity = Object.Instantiate(instance.entityPrefab,pos);
-        newEntity.GetComponent<Entity>().Initialize(name);
-        newEntity.transform.position = pos.position;     
+        GameObject newEntity;
+        if (pos!=null)
+        {
+             newEntity = Object.Instantiate(instance.entityPrefab, pos);
+            newEntity.GetComponent<Entity>().Initialize(name);
+            newEntity.transform.position = pos.position;
+            return newEntity;
+        }
+         newEntity = Object.Instantiate(instance.entityPrefab);
+        newEntity.GetComponent<Entity>().Initialize(name);               
         return newEntity;
+
     }
 
  

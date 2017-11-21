@@ -10,15 +10,17 @@ public class Attack
     public string flavorText;
     public Effect effect;
     public double effectChance;
-    public Attack(string name, int power, double accuracy,string text)
+    public string sound;
+    public Attack(string name, int power, double accuracy,string text,string sound)
     {
         this.name = name;
         this.power = power;
         this.accuracy = accuracy;
         this.flavorText = text;
+        this.sound = sound;
     }
 
-    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text)
+    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text, string sound)
     {
         this.name = name;
         this.power = power;
@@ -26,6 +28,7 @@ public class Attack
         this.flavorText = text;
         this.effect = effect;
         this.effectChance = effectChance;
+        this.sound = sound;
     }
 
     public int rollAttackPower()
