@@ -60,7 +60,7 @@ public class battleOverManager : MonoBehaviour {
     }
     public void loadLoot()
     {
-
+        
         List<string> names = new List<string>();
         foreach (Arm current in loot)
         {

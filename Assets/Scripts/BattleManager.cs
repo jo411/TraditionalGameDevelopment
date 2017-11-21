@@ -480,7 +480,7 @@ public class BattleManager : MonoBehaviour {
 
             targetClicked(getFirstEnemyTarget());
 
-            turnMarker.transform.position = current.transform.position + new Vector3(0, 2, 0);
+            turnMarker.transform.position = current.transform.position + new Vector3(0, 3, 0);
 
             foreach (GameObject currentEntity in turnOrder)
             {
@@ -558,7 +558,7 @@ public class BattleManager : MonoBehaviour {
         foreach (GameObject entity in enemies)
         {
             Arm lootedArm = entity.GetComponent<Entity>().dropLoot();
-            loot.Add(lootedArm);
+            if(lootedArm!=null)loot.Add(lootedArm);
         }
         return loot;
     }
