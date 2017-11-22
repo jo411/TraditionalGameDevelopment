@@ -47,7 +47,8 @@ public class battleOverManager : MonoBehaviour {
 
     void displayData()
     {
-        
+        playerDropDown.ClearOptions();
+        lootDropDown.ClearOptions();
 
         int count = 0;
         List<string> names = new List<string>();
