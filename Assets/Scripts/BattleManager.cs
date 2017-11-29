@@ -205,10 +205,12 @@ public class BattleManager : MonoBehaviour {
         //if (isAiTurn) aiTurn();//run the ai turn if applicable
         if (gameReady)
         {
+            /* uncomment to be able to end game on right click
             if (Input.GetMouseButtonDown(1))
             {
                 gameOver(true);
             }
+            */
 
             if (!destroyReady)
             {
