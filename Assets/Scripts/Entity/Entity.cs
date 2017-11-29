@@ -20,12 +20,12 @@ public class Entity: MonoBehaviour
     private Stats baseStats;
     Stats stats;
     public string eName;
-
+    private Text namebar;
     // Use this for initialization
     void Start()
     {
         healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();
-    
+        loadName();
        
     }
 
@@ -95,6 +95,19 @@ public class Entity: MonoBehaviour
         this.baseStats = stats;
         this.eName = name;
         resetTempStats();
+    }
+
+    public void loadName()
+    {
+        foreach(Component current in GetComponentsInChildren<Text>())
+        {
+            if(current.tag.Equals("NameBar"))
+            {
+                namebar = current.GetComponent<Text>();
+            }
+        }
+        
+        namebar.text = this.eName;
     }
 
     /// <summary>

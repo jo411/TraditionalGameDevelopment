@@ -11,6 +11,7 @@ TagManager:
   - Camera Marker
   - PlayerDisplay
   - PlayerText
+  - NameBar
   layers:
   - Default
   - TransparentFX
