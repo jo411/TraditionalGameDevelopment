@@ -31,7 +31,7 @@ public class Stats
         defense= (int)(distribution[2] * statTotal);
         speed = (int)(distribution[3] * statTotal);
 
-        evasion = Calculator.rand.Next(1, 101) / 100.0;      
+        evasion = Calculator.rand.Next(1, 25) / 100.0;      
         level = 20;      
 
 

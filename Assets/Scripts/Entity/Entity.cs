@@ -20,12 +20,11 @@ public class Entity: MonoBehaviour
     private Stats baseStats;
     Stats stats;
     public string eName;
-    private Text namebar;
+    public Text namebar;
     // Use this for initialization
     void Start()
     {
-        healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();
-        loadName();
+        healthBar = transform.Find("EntityCanvas").Find("HealthBG").Find("Health").GetComponent<Image>();     
        
     }
 
@@ -82,6 +81,7 @@ public class Entity: MonoBehaviour
         effects = new List<Effect>();
         noParamEntity(name,statTotal);
         addAttacks();
+        loadName();
     }
     public void noParamEntity(String name, int statTotal)
     {

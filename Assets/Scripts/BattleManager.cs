@@ -302,7 +302,7 @@ public class BattleManager : MonoBehaviour {
         
         foreach(Transform current in enemyPositions)
         {
-            enemies.Add(createEntity(NameGen.getName(), current,rounds*50));               
+            enemies.Add(createEntity(NameGen.getName(), current,rounds* 50,false));               
         }
 
 
@@ -310,8 +310,8 @@ public class BattleManager : MonoBehaviour {
         {
             for(int i=0; i<4;i++)
             {
-                allPlayers.Add(createEntity(NameGen.getName(),null ,255));
-                allPlayers[i].SetActive(false);
+                allPlayers.Add(createEntity(NameGen.getName(),null ,255,true));
+                allPlayers[i].SetActive(false);               
             }
         }
 
@@ -322,7 +322,6 @@ public class BattleManager : MonoBehaviour {
                  players[i].transform.SetParent(playerPositions[i]);
                  players[i].transform.localPosition = new Vector3(0, 0, 0);
                  players[i].SetActive(true);
-          
             }      
     }
 
@@ -535,7 +534,7 @@ public class BattleManager : MonoBehaviour {
     }
 
 
-    public static GameObject createEntity(string name,Transform pos, int difficulty)
+    public static GameObject createEntity(string name,Transform pos, int difficulty, bool player)
     {
         difficulty = 100; 
         GameObject newEntity;
@@ -547,7 +546,9 @@ public class BattleManager : MonoBehaviour {
             return newEntity;
         }
          newEntity = Object.Instantiate(instance.entityPrefab);
-        newEntity.GetComponent<Entity>().Initialize(name, difficulty);           //TODO: use difficulty scaling    
+        newEntity.GetComponent<Entity>().Initialize(name, difficulty);           //TODO: use difficulty scaling 
+        if(player)
+        newEntity.GetComponent<Entity>().namebar.GetComponent<Text>().color = Color.green;
         return newEntity;
 
     }
