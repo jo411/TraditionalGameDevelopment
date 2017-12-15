@@ -12,6 +12,8 @@ TagManager:
   - PlayerDisplay
   - PlayerText
   - NameBar
+  - LeftPane
+  - RightPane
   layers:
   - Default
   - TransparentFX
