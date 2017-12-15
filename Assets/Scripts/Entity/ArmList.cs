@@ -8,10 +8,28 @@ public class ArmList : MonoBehaviour {
     public  List<GameObject> arms;
 
         // Use this for initialization
-       
+      
+        
+        
+        void Start()
+    {
+        DontDestroyOnLoad(this);
+    } 
     public  GameObject getRandomArm()
     {
         return arms[Calculator.rand.Next(0, arms.Count)];
+    }
+
+    public GameObject getTaggedArm(string tag)
+    {
+        foreach(GameObject current in arms)
+        {
+            if(current.GetComponent<TagList>().hasTag(tag))
+            {
+                return current;
+            }
+        }
+        return getRandomArm();
     }
 
 }

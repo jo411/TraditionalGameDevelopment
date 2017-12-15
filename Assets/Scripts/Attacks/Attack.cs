@@ -16,7 +16,7 @@ public class Attack
     public int uses;
 
     public string tag;
-    public Attack(string name, int power, double accuracy,string text,string sound, int uses)
+    public Attack(string name, int power, double accuracy,string text,string sound, int uses, string tag)
     {
         this.name = name;
         this.power = power;
@@ -25,9 +25,10 @@ public class Attack
         this.sound = sound;
         this.usesLeft = uses;
         this.uses = uses;
+        this.tag = tag;
     }
 
-    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text, string sound, int uses)
+    public Attack(string name, int power, double accuracy, Effect effect, double effectChance ,string text, string sound, int uses, string tag)
     {
         this.name = name;
         this.power = power;
@@ -38,6 +39,7 @@ public class Attack
         this.sound = sound;
         this.usesLeft = uses;
         this.uses = uses;
+        this.tag = tag;
     }
 
     public int rollAttackPower()

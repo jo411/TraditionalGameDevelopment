@@ -81,6 +81,7 @@ public class Entity: MonoBehaviour
         effects = new List<Effect>();
         noParamEntity(name,statTotal);
         addAttacks();
+        //GetComponent<AddArms>().loadArms();
         loadName();
     }
     public void noParamEntity(String name, int statTotal)

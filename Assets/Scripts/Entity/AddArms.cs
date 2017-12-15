@@ -10,17 +10,29 @@ public class AddArms : MonoBehaviour {
     private GameObject rightArm;
     private ArmList armList;
 
+    private Entity entity;
+
 	// Use this for initialization
-	void Start () {
-        DontDestroyOnLoad(this);
+	void Start () {        
         leftArm = transform.Find("Left").gameObject;
         rightArm = transform.Find("Right").gameObject;
         armList = GameObject.Find("ArmManager").GetComponent<ArmList>();
+        Debug.Log(GameObject.Find("ArmManager").GetComponent<ArmList>());
 
-        attachArm(leftArm, armList.getRandomArm());
-        attachArm(rightArm, armList.getRandomArm());
+        loadArms();
     }
 	
+    public void loadArms()
+    {
+        entity = GetComponent<Entity>();
+        if(armList==null)
+        {
+            Debug.Log("BAd");
+        }
+        attachArm(leftArm, armList.getTaggedArm(entity.leftArm.attack.tag));
+        attachArm(rightArm, armList.getTaggedArm(entity.rightArm.attack.tag));
+    }
+
     public void attachArm(GameObject arm, GameObject armPrefab)
     {
         GameObject newArm= Instantiate(armPrefab);     

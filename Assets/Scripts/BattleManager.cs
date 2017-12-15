@@ -192,7 +192,7 @@ public class BattleManager : MonoBehaviour {
             Debug.LogError("No sound manager was found!");
         }
 
-        selectedInfoPane.SetActive(false);
+        //selectedInfoPane.SetActive(false);
 
         instance = this;
 

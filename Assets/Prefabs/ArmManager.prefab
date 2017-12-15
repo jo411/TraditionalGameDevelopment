@@ -54,3 +54,7 @@ MonoBehaviour:
   arms:
   - {fileID: 1855991597685562, guid: 448fc35c1c78df848aede5f27a73a20a, type: 2}
   - {fileID: 1074678361301640, guid: d761303dcfdf73944ad41cda09c59b95, type: 2}
+  - {fileID: 1047218680041938, guid: a025265b28b85c24cb11d319dabfdefa, type: 2}
+  - {fileID: 1638869592568012, guid: 31a677350af7a784a880a0191ffd34bd, type: 2}
+  - {fileID: 1455313515128268, guid: 32990840309af7b4297babe04b77f54d, type: 2}
+  - {fileID: 1475690326328330, guid: 23cf82a4c7062634484d5107b2aae219, type: 2}
