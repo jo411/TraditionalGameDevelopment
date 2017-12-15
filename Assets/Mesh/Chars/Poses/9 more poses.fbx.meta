@@ -1,0 +1,2281 @@
+fileFormatVersion: 2
+guid: 81e7bdda8b80e464dbf318217388c722
+timeCreated: 1513371002
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Female_box_head_attached_done:bottom
+    100004: Female_box_head_attached_done:group
+    100006: Female_box_head_attached_done:group1
+    100008: Female_box_head_attached_done:group2
+    100010: Female_box_head_attached_done:group3
+    100012: Female_box_head_attached_done:group3_pasted__pCube4
+    100014: Female_box_head_attached_done:imagePlane1
+    100016: Female_box_head_attached_done:imagePlane10
+    100018: Female_box_head_attached_done:imagePlane2
+    100020: Female_box_head_attached_done:imagePlane3
+    100022: Female_box_head_attached_done:imagePlane4
+    100024: Female_box_head_attached_done:imagePlane5
+    100026: Female_box_head_attached_done:imagePlane6
+    100028: Female_box_head_attached_done:imagePlane7
+    100030: Female_box_head_attached_done:imagePlane8
+    100032: Female_box_head_attached_done:imagePlane9
+    100034: Female_box_head_attached_done:left
+    100036: Female_box_head_attached_done:pasted__pCube4
+    100038: Female_box_head_attached_done:pasted__pCube4 1
+    100040: Female_box_head_attached_done:pasted__pCube4 2
+    100042: Female_box_head_attached_done:pasted__pCube4 3
+    100044: Female_box_head_attached_done:pCube1
+    100046: Female_box_head_attached_done:pCube10
+    100048: Female_box_head_attached_done:pCube11
+    100050: Female_box_head_attached_done:pCube12
+    100052: Female_box_head_attached_done:pCube2
+    100054: Female_box_head_attached_done:pCube3
+    100056: Female_box_head_attached_done:pCube4
+    100058: Female_box_head_attached_done:pCube6
+    100060: Female_box_head_attached_done:pCube8
+    100062: Female_box_head_attached_done:pCube9
+    100064: Female_box_head_attached_done:polySurface4
+    100066: Female_box_head_attached_done:pPlane1
+    100068: Female_box_head_attached_done:transform1
+    100070: Female_box_head_attached_done:transform10
+    100072: Female_box_head_attached_done:transform11
+    100074: Female_box_head_attached_done:transform12
+    100076: Female_box_head_attached_done:transform13
+    100078: Female_box_head_attached_done:transform14
+    100080: Female_box_head_attached_done:transform15
+    100082: Female_box_head_attached_done:transform16
+    100084: Female_box_head_attached_done:transform2
+    100086: Female_box_head_attached_done:transform3
+    100088: Female_box_head_attached_done:transform4
+    100090: Female_box_head_attached_done:transform5
+    100092: Female_box_head_attached_done:transform6
+    100094: Female_box_head_attached_done:transform7
+    100096: Female_box_head_attached_done:transform8
+    100098: Female_box_head_attached_done:transform9
+    100100: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube13
+    100102: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube14
+    100104: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:polySurface5
+    100106: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pPlane1
+    100108: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform17
+    100110: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform18
+    100112: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform19
+    100114: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform20
+    100116: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:pCube1
+    100118: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:polySurface5
+    100120: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube13
+    100122: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    100124: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:polySurface5
+    100126: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pPlane1
+    100128: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform17
+    100130: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform18
+    100132: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform19
+    100134: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform20
+    100136: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:pCube1
+    100138: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:polySurface5
+    100140: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube13
+    100142: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube14
+    100144: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:polySurface5
+    100146: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pPlane1
+    100148: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform17
+    100150: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform18
+    100152: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform19
+    100154: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform20
+    100156: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:pCube1
+    100158: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:polySurface5
+    100160: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube13
+    100162: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube14
+    100164: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:polySurface5
+    100166: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pPlane1
+    100168: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform17
+    100170: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform18
+    100172: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform19
+    100174: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform20
+    100176: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:pCube1
+    100178: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:polySurface5
+    100180: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube13
+    100182: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube14
+    100184: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:polySurface5
+    100186: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pPlane1
+    100188: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform17
+    100190: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform18
+    100192: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform19
+    100194: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform20
+    100196: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:pCube1
+    100198: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:polySurface5
+    100200: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube13
+    100202: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube14
+    100204: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:polySurface5
+    100206: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pPlane1
+    100208: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform17
+    100210: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform18
+    100212: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform19
+    100214: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform20
+    100216: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:pCube1
+    100218: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:polySurface5
+    100220: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube13
+    100222: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube14
+    100224: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:polySurface5
+    100226: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pPlane1
+    100228: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform17
+    100230: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform18
+    100232: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform19
+    100234: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform20
+    100236: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:pCube1
+    100238: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:polySurface5
+    100240: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube13
+    100242: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube14
+    100244: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:polySurface5
+    100246: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pPlane1
+    100248: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform17
+    100250: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform18
+    100252: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform19
+    100254: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform20
+    100256: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:pCube1
+    100258: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:polySurface5
+    100260: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube13
+    100262: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube14
+    100264: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:polySurface5
+    100266: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pPlane1
+    100268: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform17
+    100270: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform18
+    100272: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform19
+    100274: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform20
+    100276: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:pCube1
+    100278: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:polySurface5
+    100280: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    100282: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group
+    100284: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group1
+    100286: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group2
+    100288: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3
+    100290: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3_pasted__pCube4
+    100292: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane1
+    100294: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane10
+    100296: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane2
+    100298: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane3
+    100300: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane4
+    100302: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane5
+    100304: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane6
+    100306: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane7
+    100308: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane8
+    100310: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane9
+    100312: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    100314: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+    100316: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      1
+    100318: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      2
+    100320: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      3
+    100322: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube1
+    100324: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube10
+    100326: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube11
+    100328: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube12
+    100330: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube13
+    100332: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube2
+    100334: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube3
+    100336: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube4
+    100338: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube6
+    100340: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube8
+    100342: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube9
+    100344: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface4
+    100346: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface5
+    100348: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pPlane1
+    100350: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform1
+    100352: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform10
+    100354: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform11
+    100356: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform12
+    100358: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform13
+    100360: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform14
+    100362: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform15
+    100364: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform16
+    100366: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform17
+    100368: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform18
+    100370: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform19
+    100372: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform2
+    100374: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform20
+    100376: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform3
+    100378: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform4
+    100380: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform5
+    100382: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform6
+    100384: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform7
+    100386: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform8
+    100388: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform9
+    100390: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:pCube1
+    100392: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:polySurface5
+    100394: group
+    100396: group1
+    100398: group2
+    100400: group3
+    100402: group4
+    100404: group5
+    100406: group6
+    100408: group7
+    100410: group8
+    100412: Head
+    100414: Head 1
+    100416: Head 2
+    100418: Head 3
+    100420: Head 4
+    100422: Head 5
+    100424: Head 6
+    100426: Head 7
+    100428: Head 8
+    100430: Hips
+    100432: Hips 1
+    100434: Hips 2
+    100436: Hips 3
+    100438: Hips 4
+    100440: Hips 5
+    100442: Hips 6
+    100444: Hips 7
+    100446: Hips 8
+    100448: LeftArm
+    100450: LeftArm 1
+    100452: LeftArm 2
+    100454: LeftArm 3
+    100456: LeftArm 4
+    100458: LeftArm 5
+    100460: LeftArm 6
+    100462: LeftArm 7
+    100464: LeftArm 8
+    100466: LeftFoot
+    100468: LeftFoot 1
+    100470: LeftFoot 2
+    100472: LeftFoot 3
+    100474: LeftFoot 4
+    100476: LeftFoot 5
+    100478: LeftFoot 6
+    100480: LeftFoot 7
+    100482: LeftFoot 8
+    100484: LeftForeArm
+    100486: LeftForeArm 1
+    100488: LeftForeArm 2
+    100490: LeftForeArm 3
+    100492: LeftForeArm 4
+    100494: LeftForeArm 5
+    100496: LeftForeArm 6
+    100498: LeftForeArm 7
+    100500: LeftForeArm 8
+    100502: LeftHand
+    100504: LeftHand 1
+    100506: LeftHand 2
+    100508: LeftHand 3
+    100510: LeftHand 4
+    100512: LeftHand 5
+    100514: LeftHand 6
+    100516: LeftHand 7
+    100518: LeftHand 8
+    100520: LeftLeg
+    100522: LeftLeg 1
+    100524: LeftLeg 2
+    100526: LeftLeg 3
+    100528: LeftLeg 4
+    100530: LeftLeg 5
+    100532: LeftLeg 6
+    100534: LeftLeg 7
+    100536: LeftLeg 8
+    100538: LeftShoulder
+    100540: LeftShoulder 1
+    100542: LeftShoulder 2
+    100544: LeftShoulder 3
+    100546: LeftShoulder 4
+    100548: LeftShoulder 5
+    100550: LeftShoulder 6
+    100552: LeftShoulder 7
+    100554: LeftShoulder 8
+    100556: LeftToeBase
+    100558: LeftToeBase 1
+    100560: LeftToeBase 2
+    100562: LeftToeBase 3
+    100564: LeftToeBase 4
+    100566: LeftToeBase 5
+    100568: LeftToeBase 6
+    100570: LeftToeBase 7
+    100572: LeftToeBase 8
+    100574: LeftUpLeg
+    100576: LeftUpLeg 1
+    100578: LeftUpLeg 2
+    100580: LeftUpLeg 3
+    100582: LeftUpLeg 4
+    100584: LeftUpLeg 5
+    100586: LeftUpLeg 6
+    100588: LeftUpLeg 7
+    100590: LeftUpLeg 8
+    100592: Neck
+    100594: Neck 1
+    100596: Neck 2
+    100598: Neck 3
+    100600: Neck 4
+    100602: Neck 5
+    100604: Neck 6
+    100606: Neck 7
+    100608: Neck 8
+    100610: pasted__group
+    100612: pasted__group 1
+    100614: pasted__group 2
+    100616: pasted__group 3
+    100618: pasted__group 4
+    100620: pasted__group 5
+    100622: pasted__group 6
+    100624: pasted__polySurface1
+    100626: pasted__polySurface1 1
+    100628: pasted__polySurface1 2
+    100630: pasted__polySurface1 3
+    100632: pasted__polySurface1 4
+    100634: pasted__polySurface1 5
+    100636: pasted__polySurface1 6
+    100638: pasted__polySurface2
+    100640: pasted__polySurface2 1
+    100642: pasted__polySurface2 10
+    100644: pasted__polySurface2 11
+    100646: pasted__polySurface2 12
+    100648: pasted__polySurface2 13
+    100650: pasted__polySurface2 2
+    100652: pasted__polySurface2 3
+    100654: pasted__polySurface2 4
+    100656: pasted__polySurface2 5
+    100658: pasted__polySurface2 6
+    100660: pasted__polySurface2 7
+    100662: pasted__polySurface2 8
+    100664: pasted__polySurface2 9
+    100666: pasted__polySurface3
+    100668: pasted__polySurface3 1
+    100670: pasted__polySurface3 2
+    100672: pasted__polySurface3 3
+    100674: pasted__polySurface3 4
+    100676: pasted__polySurface3 5
+    100678: pasted__polySurface3 6
+    100680: pasted__polySurface4
+    100682: pasted__polySurface4 1
+    100684: pasted__polySurface4 2
+    100686: pasted__polySurface4 3
+    100688: pasted__polySurface4 4
+    100690: pasted__polySurface4 5
+    100692: pasted__polySurface4 6
+    100694: pasted__transform1
+    100696: pasted__transform1 1
+    100698: pasted__transform1 2
+    100700: pasted__transform1 3
+    100702: pasted__transform1 4
+    100704: pasted__transform1 5
+    100706: pasted__transform1 6
+    100708: pasted__transform2
+    100710: pasted__transform2 1
+    100712: pasted__transform2 2
+    100714: pasted__transform2 3
+    100716: pasted__transform2 4
+    100718: pasted__transform2 5
+    100720: pasted__transform2 6
+    100722: pasted__transform3
+    100724: pasted__transform3 1
+    100726: pasted__transform3 2
+    100728: pasted__transform3 3
+    100730: pasted__transform3 4
+    100732: pasted__transform3 5
+    100734: pasted__transform3 6
+    100736: pasted__transform4
+    100738: pasted__transform4 1
+    100740: pasted__transform4 2
+    100742: pasted__transform4 3
+    100744: pasted__transform4 4
+    100746: pasted__transform4 5
+    100748: pasted__transform4 6
+    100750: pasted__transform5
+    100752: pasted__transform5 1
+    100754: pasted__transform5 2
+    100756: pasted__transform5 3
+    100758: pasted__transform5 4
+    100760: pasted__transform5 5
+    100762: pasted__transform5 6
+    100764: polySurface1
+    100766: polySurface2
+    100768: polySurface2 1
+    100770: polySurface3
+    100772: polySurface4
+    100774: QuickRigCharacter1_Ctrl_ChestEndEffector
+    100776: QuickRigCharacter1_Ctrl_ChestOriginEffector
+    100778: QuickRigCharacter1_Ctrl_Head
+    100780: QuickRigCharacter1_Ctrl_HeadEffector
+    100782: QuickRigCharacter1_Ctrl_Hips
+    100784: QuickRigCharacter1_Ctrl_HipsEffector
+    100786: QuickRigCharacter1_Ctrl_LeftAnkleEffector
+    100788: QuickRigCharacter1_Ctrl_LeftArm
+    100790: QuickRigCharacter1_Ctrl_LeftElbowEffector
+    100792: QuickRigCharacter1_Ctrl_LeftFoot
+    100794: QuickRigCharacter1_Ctrl_LeftFootEffector
+    100796: QuickRigCharacter1_Ctrl_LeftForeArm
+    100798: QuickRigCharacter1_Ctrl_LeftHand
+    100800: QuickRigCharacter1_Ctrl_LeftHipEffector
+    100802: QuickRigCharacter1_Ctrl_LeftKneeEffector
+    100804: QuickRigCharacter1_Ctrl_LeftLeg
+    100806: QuickRigCharacter1_Ctrl_LeftShoulder
+    100808: QuickRigCharacter1_Ctrl_LeftShoulderEffector
+    100810: QuickRigCharacter1_Ctrl_LeftToeBase
+    100812: QuickRigCharacter1_Ctrl_LeftUpLeg
+    100814: QuickRigCharacter1_Ctrl_LeftWristEffector
+    100816: QuickRigCharacter1_Ctrl_Neck
+    100818: QuickRigCharacter1_Ctrl_Reference
+    100820: QuickRigCharacter1_Ctrl_RightAnkleEffector
+    100822: QuickRigCharacter1_Ctrl_RightArm
+    100824: QuickRigCharacter1_Ctrl_RightElbowEffector
+    100826: QuickRigCharacter1_Ctrl_RightFoot
+    100828: QuickRigCharacter1_Ctrl_RightFootEffector
+    100830: QuickRigCharacter1_Ctrl_RightForeArm
+    100832: QuickRigCharacter1_Ctrl_RightHand
+    100834: QuickRigCharacter1_Ctrl_RightHipEffector
+    100836: QuickRigCharacter1_Ctrl_RightKneeEffector
+    100838: QuickRigCharacter1_Ctrl_RightLeg
+    100840: QuickRigCharacter1_Ctrl_RightShoulder
+    100842: QuickRigCharacter1_Ctrl_RightShoulderEffector
+    100844: QuickRigCharacter1_Ctrl_RightToeBase
+    100846: QuickRigCharacter1_Ctrl_RightUpLeg
+    100848: QuickRigCharacter1_Ctrl_RightWristEffector
+    100850: QuickRigCharacter1_Ctrl_Spine
+    100852: QuickRigCharacter1_Ctrl_Spine1
+    100854: QuickRigCharacter1_Ctrl_Spine2
+    100856: QuickRigCharacter1_Guides
+    100858: QuickRigCharacter1_Head
+    100860: QuickRigCharacter1_Hips
+    100862: QuickRigCharacter1_LeftArm
+    100864: QuickRigCharacter1_LeftFoot
+    100866: QuickRigCharacter1_LeftForeArm
+    100868: QuickRigCharacter1_LeftHand
+    100870: QuickRigCharacter1_LeftLeg
+    100872: QuickRigCharacter1_LeftShoulder
+    100874: QuickRigCharacter1_LeftToeBase
+    100876: QuickRigCharacter1_LeftUpLeg
+    100878: QuickRigCharacter1_Neck
+    100880: QuickRigCharacter1_Reference
+    100882: QuickRigCharacter1_RightArm
+    100884: QuickRigCharacter1_RightFoot
+    100886: QuickRigCharacter1_RightForeArm
+    100888: QuickRigCharacter1_RightHand
+    100890: QuickRigCharacter1_RightLeg
+    100892: QuickRigCharacter1_RightShoulder
+    100894: QuickRigCharacter1_RightToeBase
+    100896: QuickRigCharacter1_RightUpLeg
+    100898: QuickRigCharacter1_Spine
+    100900: QuickRigCharacter1_Spine1
+    100902: QuickRigCharacter1_Spine2
+    100904: QuickRigCharacter2_Ctrl_ChestEndEffector
+    100906: QuickRigCharacter2_Ctrl_ChestOriginEffector
+    100908: QuickRigCharacter2_Ctrl_Head
+    100910: QuickRigCharacter2_Ctrl_HeadEffector
+    100912: QuickRigCharacter2_Ctrl_Hips
+    100914: QuickRigCharacter2_Ctrl_HipsEffector
+    100916: QuickRigCharacter2_Ctrl_LeftAnkleEffector
+    100918: QuickRigCharacter2_Ctrl_LeftArm
+    100920: QuickRigCharacter2_Ctrl_LeftElbowEffector
+    100922: QuickRigCharacter2_Ctrl_LeftFoot
+    100924: QuickRigCharacter2_Ctrl_LeftFootEffector
+    100926: QuickRigCharacter2_Ctrl_LeftForeArm
+    100928: QuickRigCharacter2_Ctrl_LeftHand
+    100930: QuickRigCharacter2_Ctrl_LeftHipEffector
+    100932: QuickRigCharacter2_Ctrl_LeftKneeEffector
+    100934: QuickRigCharacter2_Ctrl_LeftLeg
+    100936: QuickRigCharacter2_Ctrl_LeftShoulder
+    100938: QuickRigCharacter2_Ctrl_LeftShoulderEffector
+    100940: QuickRigCharacter2_Ctrl_LeftToeBase
+    100942: QuickRigCharacter2_Ctrl_LeftUpLeg
+    100944: QuickRigCharacter2_Ctrl_LeftWristEffector
+    100946: QuickRigCharacter2_Ctrl_Neck
+    100948: QuickRigCharacter2_Ctrl_Reference
+    100950: QuickRigCharacter2_Ctrl_RightAnkleEffector
+    100952: QuickRigCharacter2_Ctrl_RightArm
+    100954: QuickRigCharacter2_Ctrl_RightElbowEffector
+    100956: QuickRigCharacter2_Ctrl_RightFoot
+    100958: QuickRigCharacter2_Ctrl_RightFootEffector
+    100960: QuickRigCharacter2_Ctrl_RightForeArm
+    100962: QuickRigCharacter2_Ctrl_RightHand
+    100964: QuickRigCharacter2_Ctrl_RightHipEffector
+    100966: QuickRigCharacter2_Ctrl_RightKneeEffector
+    100968: QuickRigCharacter2_Ctrl_RightLeg
+    100970: QuickRigCharacter2_Ctrl_RightShoulder
+    100972: QuickRigCharacter2_Ctrl_RightShoulderEffector
+    100974: QuickRigCharacter2_Ctrl_RightToeBase
+    100976: QuickRigCharacter2_Ctrl_RightUpLeg
+    100978: QuickRigCharacter2_Ctrl_RightWristEffector
+    100980: QuickRigCharacter2_Ctrl_Spine
+    100982: QuickRigCharacter2_Ctrl_Spine1
+    100984: QuickRigCharacter2_Ctrl_Spine2
+    100986: QuickRigCharacter2_Guides
+    100988: QuickRigCharacter2_Head
+    100990: QuickRigCharacter2_Hips
+    100992: QuickRigCharacter2_LeftArm
+    100994: QuickRigCharacter2_LeftFoot
+    100996: QuickRigCharacter2_LeftForeArm
+    100998: QuickRigCharacter2_LeftHand
+    101000: QuickRigCharacter2_LeftLeg
+    101002: QuickRigCharacter2_LeftShoulder
+    101004: QuickRigCharacter2_LeftToeBase
+    101006: QuickRigCharacter2_LeftUpLeg
+    101008: QuickRigCharacter2_Neck
+    101010: QuickRigCharacter2_Reference
+    101012: QuickRigCharacter2_RightArm
+    101014: QuickRigCharacter2_RightFoot
+    101016: QuickRigCharacter2_RightForeArm
+    101018: QuickRigCharacter2_RightHand
+    101020: QuickRigCharacter2_RightLeg
+    101022: QuickRigCharacter2_RightShoulder
+    101024: QuickRigCharacter2_RightToeBase
+    101026: QuickRigCharacter2_RightUpLeg
+    101028: QuickRigCharacter2_Spine
+    101030: QuickRigCharacter2_Spine1
+    101032: QuickRigCharacter2_Spine2
+    101034: QuickRigCharacter3_Ctrl_ChestEndEffector
+    101036: QuickRigCharacter3_Ctrl_ChestOriginEffector
+    101038: QuickRigCharacter3_Ctrl_Head
+    101040: QuickRigCharacter3_Ctrl_HeadEffector
+    101042: QuickRigCharacter3_Ctrl_Hips
+    101044: QuickRigCharacter3_Ctrl_HipsEffector
+    101046: QuickRigCharacter3_Ctrl_LeftAnkleEffector
+    101048: QuickRigCharacter3_Ctrl_LeftArm
+    101050: QuickRigCharacter3_Ctrl_LeftElbowEffector
+    101052: QuickRigCharacter3_Ctrl_LeftFoot
+    101054: QuickRigCharacter3_Ctrl_LeftFootEffector
+    101056: QuickRigCharacter3_Ctrl_LeftForeArm
+    101058: QuickRigCharacter3_Ctrl_LeftHand
+    101060: QuickRigCharacter3_Ctrl_LeftHipEffector
+    101062: QuickRigCharacter3_Ctrl_LeftKneeEffector
+    101064: QuickRigCharacter3_Ctrl_LeftLeg
+    101066: QuickRigCharacter3_Ctrl_LeftShoulder
+    101068: QuickRigCharacter3_Ctrl_LeftShoulderEffector
+    101070: QuickRigCharacter3_Ctrl_LeftToeBase
+    101072: QuickRigCharacter3_Ctrl_LeftUpLeg
+    101074: QuickRigCharacter3_Ctrl_LeftWristEffector
+    101076: QuickRigCharacter3_Ctrl_Neck
+    101078: QuickRigCharacter3_Ctrl_Reference
+    101080: QuickRigCharacter3_Ctrl_RightAnkleEffector
+    101082: QuickRigCharacter3_Ctrl_RightArm
+    101084: QuickRigCharacter3_Ctrl_RightElbowEffector
+    101086: QuickRigCharacter3_Ctrl_RightFoot
+    101088: QuickRigCharacter3_Ctrl_RightFootEffector
+    101090: QuickRigCharacter3_Ctrl_RightForeArm
+    101092: QuickRigCharacter3_Ctrl_RightHand
+    101094: QuickRigCharacter3_Ctrl_RightHipEffector
+    101096: QuickRigCharacter3_Ctrl_RightKneeEffector
+    101098: QuickRigCharacter3_Ctrl_RightLeg
+    101100: QuickRigCharacter3_Ctrl_RightShoulder
+    101102: QuickRigCharacter3_Ctrl_RightShoulderEffector
+    101104: QuickRigCharacter3_Ctrl_RightToeBase
+    101106: QuickRigCharacter3_Ctrl_RightUpLeg
+    101108: QuickRigCharacter3_Ctrl_RightWristEffector
+    101110: QuickRigCharacter3_Ctrl_Spine
+    101112: QuickRigCharacter3_Ctrl_Spine1
+    101114: QuickRigCharacter3_Ctrl_Spine2
+    101116: QuickRigCharacter3_Guides
+    101118: QuickRigCharacter3_Head
+    101120: QuickRigCharacter3_Hips
+    101122: QuickRigCharacter3_LeftArm
+    101124: QuickRigCharacter3_LeftFoot
+    101126: QuickRigCharacter3_LeftForeArm
+    101128: QuickRigCharacter3_LeftHand
+    101130: QuickRigCharacter3_LeftLeg
+    101132: QuickRigCharacter3_LeftShoulder
+    101134: QuickRigCharacter3_LeftToeBase
+    101136: QuickRigCharacter3_LeftUpLeg
+    101138: QuickRigCharacter3_Neck
+    101140: QuickRigCharacter3_Reference
+    101142: QuickRigCharacter3_RightArm
+    101144: QuickRigCharacter3_RightFoot
+    101146: QuickRigCharacter3_RightForeArm
+    101148: QuickRigCharacter3_RightHand
+    101150: QuickRigCharacter3_RightLeg
+    101152: QuickRigCharacter3_RightShoulder
+    101154: QuickRigCharacter3_RightToeBase
+    101156: QuickRigCharacter3_RightUpLeg
+    101158: QuickRigCharacter3_Spine
+    101160: QuickRigCharacter3_Spine1
+    101162: QuickRigCharacter3_Spine2
+    101164: QuickRigCharacter4_Ctrl_ChestEndEffector
+    101166: QuickRigCharacter4_Ctrl_ChestOriginEffector
+    101168: QuickRigCharacter4_Ctrl_Head
+    101170: QuickRigCharacter4_Ctrl_HeadEffector
+    101172: QuickRigCharacter4_Ctrl_Hips
+    101174: QuickRigCharacter4_Ctrl_HipsEffector
+    101176: QuickRigCharacter4_Ctrl_LeftAnkleEffector
+    101178: QuickRigCharacter4_Ctrl_LeftArm
+    101180: QuickRigCharacter4_Ctrl_LeftElbowEffector
+    101182: QuickRigCharacter4_Ctrl_LeftFoot
+    101184: QuickRigCharacter4_Ctrl_LeftFootEffector
+    101186: QuickRigCharacter4_Ctrl_LeftForeArm
+    101188: QuickRigCharacter4_Ctrl_LeftHand
+    101190: QuickRigCharacter4_Ctrl_LeftHipEffector
+    101192: QuickRigCharacter4_Ctrl_LeftKneeEffector
+    101194: QuickRigCharacter4_Ctrl_LeftLeg
+    101196: QuickRigCharacter4_Ctrl_LeftShoulder
+    101198: QuickRigCharacter4_Ctrl_LeftShoulderEffector
+    101200: QuickRigCharacter4_Ctrl_LeftToeBase
+    101202: QuickRigCharacter4_Ctrl_LeftUpLeg
+    101204: QuickRigCharacter4_Ctrl_LeftWristEffector
+    101206: QuickRigCharacter4_Ctrl_Neck
+    101208: QuickRigCharacter4_Ctrl_Reference
+    101210: QuickRigCharacter4_Ctrl_RightAnkleEffector
+    101212: QuickRigCharacter4_Ctrl_RightArm
+    101214: QuickRigCharacter4_Ctrl_RightElbowEffector
+    101216: QuickRigCharacter4_Ctrl_RightFoot
+    101218: QuickRigCharacter4_Ctrl_RightFootEffector
+    101220: QuickRigCharacter4_Ctrl_RightForeArm
+    101222: QuickRigCharacter4_Ctrl_RightHand
+    101224: QuickRigCharacter4_Ctrl_RightHipEffector
+    101226: QuickRigCharacter4_Ctrl_RightKneeEffector
+    101228: QuickRigCharacter4_Ctrl_RightLeg
+    101230: QuickRigCharacter4_Ctrl_RightShoulder
+    101232: QuickRigCharacter4_Ctrl_RightShoulderEffector
+    101234: QuickRigCharacter4_Ctrl_RightToeBase
+    101236: QuickRigCharacter4_Ctrl_RightUpLeg
+    101238: QuickRigCharacter4_Ctrl_RightWristEffector
+    101240: QuickRigCharacter4_Ctrl_Spine
+    101242: QuickRigCharacter4_Ctrl_Spine1
+    101244: QuickRigCharacter4_Ctrl_Spine2
+    101246: QuickRigCharacter4_Guides
+    101248: QuickRigCharacter4_Head
+    101250: QuickRigCharacter4_Hips
+    101252: QuickRigCharacter4_LeftArm
+    101254: QuickRigCharacter4_LeftFoot
+    101256: QuickRigCharacter4_LeftForeArm
+    101258: QuickRigCharacter4_LeftHand
+    101260: QuickRigCharacter4_LeftLeg
+    101262: QuickRigCharacter4_LeftShoulder
+    101264: QuickRigCharacter4_LeftToeBase
+    101266: QuickRigCharacter4_LeftUpLeg
+    101268: QuickRigCharacter4_Neck
+    101270: QuickRigCharacter4_Reference
+    101272: QuickRigCharacter4_RightArm
+    101274: QuickRigCharacter4_RightFoot
+    101276: QuickRigCharacter4_RightForeArm
+    101278: QuickRigCharacter4_RightHand
+    101280: QuickRigCharacter4_RightLeg
+    101282: QuickRigCharacter4_RightShoulder
+    101284: QuickRigCharacter4_RightToeBase
+    101286: QuickRigCharacter4_RightUpLeg
+    101288: QuickRigCharacter4_Spine
+    101290: QuickRigCharacter4_Spine1
+    101292: QuickRigCharacter4_Spine2
+    101294: QuickRigCharacter5_Ctrl_ChestEndEffector
+    101296: QuickRigCharacter5_Ctrl_ChestOriginEffector
+    101298: QuickRigCharacter5_Ctrl_Head
+    101300: QuickRigCharacter5_Ctrl_HeadEffector
+    101302: QuickRigCharacter5_Ctrl_Hips
+    101304: QuickRigCharacter5_Ctrl_HipsEffector
+    101306: QuickRigCharacter5_Ctrl_LeftAnkleEffector
+    101308: QuickRigCharacter5_Ctrl_LeftArm
+    101310: QuickRigCharacter5_Ctrl_LeftElbowEffector
+    101312: QuickRigCharacter5_Ctrl_LeftFoot
+    101314: QuickRigCharacter5_Ctrl_LeftFootEffector
+    101316: QuickRigCharacter5_Ctrl_LeftForeArm
+    101318: QuickRigCharacter5_Ctrl_LeftHand
+    101320: QuickRigCharacter5_Ctrl_LeftHipEffector
+    101322: QuickRigCharacter5_Ctrl_LeftKneeEffector
+    101324: QuickRigCharacter5_Ctrl_LeftLeg
+    101326: QuickRigCharacter5_Ctrl_LeftShoulder
+    101328: QuickRigCharacter5_Ctrl_LeftShoulderEffector
+    101330: QuickRigCharacter5_Ctrl_LeftToeBase
+    101332: QuickRigCharacter5_Ctrl_LeftUpLeg
+    101334: QuickRigCharacter5_Ctrl_LeftWristEffector
+    101336: QuickRigCharacter5_Ctrl_Neck
+    101338: QuickRigCharacter5_Ctrl_Reference
+    101340: QuickRigCharacter5_Ctrl_RightAnkleEffector
+    101342: QuickRigCharacter5_Ctrl_RightArm
+    101344: QuickRigCharacter5_Ctrl_RightElbowEffector
+    101346: QuickRigCharacter5_Ctrl_RightFoot
+    101348: QuickRigCharacter5_Ctrl_RightFootEffector
+    101350: QuickRigCharacter5_Ctrl_RightForeArm
+    101352: QuickRigCharacter5_Ctrl_RightHand
+    101354: QuickRigCharacter5_Ctrl_RightHipEffector
+    101356: QuickRigCharacter5_Ctrl_RightKneeEffector
+    101358: QuickRigCharacter5_Ctrl_RightLeg
+    101360: QuickRigCharacter5_Ctrl_RightShoulder
+    101362: QuickRigCharacter5_Ctrl_RightShoulderEffector
+    101364: QuickRigCharacter5_Ctrl_RightToeBase
+    101366: QuickRigCharacter5_Ctrl_RightUpLeg
+    101368: QuickRigCharacter5_Ctrl_RightWristEffector
+    101370: QuickRigCharacter5_Ctrl_Spine
+    101372: QuickRigCharacter5_Ctrl_Spine1
+    101374: QuickRigCharacter5_Ctrl_Spine2
+    101376: QuickRigCharacter5_Guides
+    101378: QuickRigCharacter5_Head
+    101380: QuickRigCharacter5_Hips
+    101382: QuickRigCharacter5_LeftArm
+    101384: QuickRigCharacter5_LeftFoot
+    101386: QuickRigCharacter5_LeftForeArm
+    101388: QuickRigCharacter5_LeftHand
+    101390: QuickRigCharacter5_LeftLeg
+    101392: QuickRigCharacter5_LeftShoulder
+    101394: QuickRigCharacter5_LeftToeBase
+    101396: QuickRigCharacter5_LeftUpLeg
+    101398: QuickRigCharacter5_Neck
+    101400: QuickRigCharacter5_Reference
+    101402: QuickRigCharacter5_RightArm
+    101404: QuickRigCharacter5_RightFoot
+    101406: QuickRigCharacter5_RightForeArm
+    101408: QuickRigCharacter5_RightHand
+    101410: QuickRigCharacter5_RightLeg
+    101412: QuickRigCharacter5_RightShoulder
+    101414: QuickRigCharacter5_RightToeBase
+    101416: QuickRigCharacter5_RightUpLeg
+    101418: QuickRigCharacter5_Spine
+    101420: QuickRigCharacter5_Spine1
+    101422: QuickRigCharacter5_Spine2
+    101424: QuickRigCharacter6_Ctrl_ChestEndEffector
+    101426: QuickRigCharacter6_Ctrl_ChestOriginEffector
+    101428: QuickRigCharacter6_Ctrl_Head
+    101430: QuickRigCharacter6_Ctrl_HeadEffector
+    101432: QuickRigCharacter6_Ctrl_Hips
+    101434: QuickRigCharacter6_Ctrl_HipsEffector
+    101436: QuickRigCharacter6_Ctrl_LeftAnkleEffector
+    101438: QuickRigCharacter6_Ctrl_LeftArm
+    101440: QuickRigCharacter6_Ctrl_LeftElbowEffector
+    101442: QuickRigCharacter6_Ctrl_LeftFoot
+    101444: QuickRigCharacter6_Ctrl_LeftFootEffector
+    101446: QuickRigCharacter6_Ctrl_LeftForeArm
+    101448: QuickRigCharacter6_Ctrl_LeftHand
+    101450: QuickRigCharacter6_Ctrl_LeftHipEffector
+    101452: QuickRigCharacter6_Ctrl_LeftKneeEffector
+    101454: QuickRigCharacter6_Ctrl_LeftLeg
+    101456: QuickRigCharacter6_Ctrl_LeftShoulder
+    101458: QuickRigCharacter6_Ctrl_LeftShoulderEffector
+    101460: QuickRigCharacter6_Ctrl_LeftToeBase
+    101462: QuickRigCharacter6_Ctrl_LeftUpLeg
+    101464: QuickRigCharacter6_Ctrl_LeftWristEffector
+    101466: QuickRigCharacter6_Ctrl_Neck
+    101468: QuickRigCharacter6_Ctrl_Reference
+    101470: QuickRigCharacter6_Ctrl_RightAnkleEffector
+    101472: QuickRigCharacter6_Ctrl_RightArm
+    101474: QuickRigCharacter6_Ctrl_RightElbowEffector
+    101476: QuickRigCharacter6_Ctrl_RightFoot
+    101478: QuickRigCharacter6_Ctrl_RightFootEffector
+    101480: QuickRigCharacter6_Ctrl_RightForeArm
+    101482: QuickRigCharacter6_Ctrl_RightHand
+    101484: QuickRigCharacter6_Ctrl_RightHipEffector
+    101486: QuickRigCharacter6_Ctrl_RightKneeEffector
+    101488: QuickRigCharacter6_Ctrl_RightLeg
+    101490: QuickRigCharacter6_Ctrl_RightShoulder
+    101492: QuickRigCharacter6_Ctrl_RightShoulderEffector
+    101494: QuickRigCharacter6_Ctrl_RightToeBase
+    101496: QuickRigCharacter6_Ctrl_RightUpLeg
+    101498: QuickRigCharacter6_Ctrl_RightWristEffector
+    101500: QuickRigCharacter6_Ctrl_Spine
+    101502: QuickRigCharacter6_Ctrl_Spine1
+    101504: QuickRigCharacter6_Ctrl_Spine2
+    101506: QuickRigCharacter6_Guides
+    101508: QuickRigCharacter6_Head
+    101510: QuickRigCharacter6_Hips
+    101512: QuickRigCharacter6_LeftArm
+    101514: QuickRigCharacter6_LeftFoot
+    101516: QuickRigCharacter6_LeftForeArm
+    101518: QuickRigCharacter6_LeftHand
+    101520: QuickRigCharacter6_LeftLeg
+    101522: QuickRigCharacter6_LeftShoulder
+    101524: QuickRigCharacter6_LeftToeBase
+    101526: QuickRigCharacter6_LeftUpLeg
+    101528: QuickRigCharacter6_Neck
+    101530: QuickRigCharacter6_Reference
+    101532: QuickRigCharacter6_RightArm
+    101534: QuickRigCharacter6_RightFoot
+    101536: QuickRigCharacter6_RightForeArm
+    101538: QuickRigCharacter6_RightHand
+    101540: QuickRigCharacter6_RightLeg
+    101542: QuickRigCharacter6_RightShoulder
+    101544: QuickRigCharacter6_RightToeBase
+    101546: QuickRigCharacter6_RightUpLeg
+    101548: QuickRigCharacter6_Spine
+    101550: QuickRigCharacter6_Spine1
+    101552: QuickRigCharacter6_Spine2
+    101554: QuickRigCharacter7_Ctrl_ChestEndEffector
+    101556: QuickRigCharacter7_Ctrl_ChestOriginEffector
+    101558: QuickRigCharacter7_Ctrl_Head
+    101560: QuickRigCharacter7_Ctrl_HeadEffector
+    101562: QuickRigCharacter7_Ctrl_Hips
+    101564: QuickRigCharacter7_Ctrl_HipsEffector
+    101566: QuickRigCharacter7_Ctrl_LeftAnkleEffector
+    101568: QuickRigCharacter7_Ctrl_LeftArm
+    101570: QuickRigCharacter7_Ctrl_LeftElbowEffector
+    101572: QuickRigCharacter7_Ctrl_LeftFoot
+    101574: QuickRigCharacter7_Ctrl_LeftFootEffector
+    101576: QuickRigCharacter7_Ctrl_LeftForeArm
+    101578: QuickRigCharacter7_Ctrl_LeftHand
+    101580: QuickRigCharacter7_Ctrl_LeftHipEffector
+    101582: QuickRigCharacter7_Ctrl_LeftKneeEffector
+    101584: QuickRigCharacter7_Ctrl_LeftLeg
+    101586: QuickRigCharacter7_Ctrl_LeftShoulder
+    101588: QuickRigCharacter7_Ctrl_LeftShoulderEffector
+    101590: QuickRigCharacter7_Ctrl_LeftToeBase
+    101592: QuickRigCharacter7_Ctrl_LeftUpLeg
+    101594: QuickRigCharacter7_Ctrl_LeftWristEffector
+    101596: QuickRigCharacter7_Ctrl_Neck
+    101598: QuickRigCharacter7_Ctrl_Reference
+    101600: QuickRigCharacter7_Ctrl_RightAnkleEffector
+    101602: QuickRigCharacter7_Ctrl_RightArm
+    101604: QuickRigCharacter7_Ctrl_RightElbowEffector
+    101606: QuickRigCharacter7_Ctrl_RightFoot
+    101608: QuickRigCharacter7_Ctrl_RightFootEffector
+    101610: QuickRigCharacter7_Ctrl_RightForeArm
+    101612: QuickRigCharacter7_Ctrl_RightHand
+    101614: QuickRigCharacter7_Ctrl_RightHipEffector
+    101616: QuickRigCharacter7_Ctrl_RightKneeEffector
+    101618: QuickRigCharacter7_Ctrl_RightLeg
+    101620: QuickRigCharacter7_Ctrl_RightShoulder
+    101622: QuickRigCharacter7_Ctrl_RightShoulderEffector
+    101624: QuickRigCharacter7_Ctrl_RightToeBase
+    101626: QuickRigCharacter7_Ctrl_RightUpLeg
+    101628: QuickRigCharacter7_Ctrl_RightWristEffector
+    101630: QuickRigCharacter7_Ctrl_Spine
+    101632: QuickRigCharacter7_Ctrl_Spine1
+    101634: QuickRigCharacter7_Ctrl_Spine2
+    101636: QuickRigCharacter7_Guides
+    101638: QuickRigCharacter7_Head
+    101640: QuickRigCharacter7_Hips
+    101642: QuickRigCharacter7_LeftArm
+    101644: QuickRigCharacter7_LeftFoot
+    101646: QuickRigCharacter7_LeftForeArm
+    101648: QuickRigCharacter7_LeftHand
+    101650: QuickRigCharacter7_LeftLeg
+    101652: QuickRigCharacter7_LeftShoulder
+    101654: QuickRigCharacter7_LeftToeBase
+    101656: QuickRigCharacter7_LeftUpLeg
+    101658: QuickRigCharacter7_Neck
+    101660: QuickRigCharacter7_Reference
+    101662: QuickRigCharacter7_RightArm
+    101664: QuickRigCharacter7_RightFoot
+    101666: QuickRigCharacter7_RightForeArm
+    101668: QuickRigCharacter7_RightHand
+    101670: QuickRigCharacter7_RightLeg
+    101672: QuickRigCharacter7_RightShoulder
+    101674: QuickRigCharacter7_RightToeBase
+    101676: QuickRigCharacter7_RightUpLeg
+    101678: QuickRigCharacter7_Spine
+    101680: QuickRigCharacter7_Spine1
+    101682: QuickRigCharacter7_Spine2
+    101684: QuickRigCharacter8_Ctrl_ChestEndEffector
+    101686: QuickRigCharacter8_Ctrl_ChestOriginEffector
+    101688: QuickRigCharacter8_Ctrl_Head
+    101690: QuickRigCharacter8_Ctrl_HeadEffector
+    101692: QuickRigCharacter8_Ctrl_Hips
+    101694: QuickRigCharacter8_Ctrl_HipsEffector
+    101696: QuickRigCharacter8_Ctrl_LeftAnkleEffector
+    101698: QuickRigCharacter8_Ctrl_LeftArm
+    101700: QuickRigCharacter8_Ctrl_LeftElbowEffector
+    101702: QuickRigCharacter8_Ctrl_LeftFoot
+    101704: QuickRigCharacter8_Ctrl_LeftFootEffector
+    101706: QuickRigCharacter8_Ctrl_LeftForeArm
+    101708: QuickRigCharacter8_Ctrl_LeftHand
+    101710: QuickRigCharacter8_Ctrl_LeftHipEffector
+    101712: QuickRigCharacter8_Ctrl_LeftKneeEffector
+    101714: QuickRigCharacter8_Ctrl_LeftLeg
+    101716: QuickRigCharacter8_Ctrl_LeftShoulder
+    101718: QuickRigCharacter8_Ctrl_LeftShoulderEffector
+    101720: QuickRigCharacter8_Ctrl_LeftToeBase
+    101722: QuickRigCharacter8_Ctrl_LeftUpLeg
+    101724: QuickRigCharacter8_Ctrl_LeftWristEffector
+    101726: QuickRigCharacter8_Ctrl_Neck
+    101728: QuickRigCharacter8_Ctrl_Reference
+    101730: QuickRigCharacter8_Ctrl_RightAnkleEffector
+    101732: QuickRigCharacter8_Ctrl_RightArm
+    101734: QuickRigCharacter8_Ctrl_RightElbowEffector
+    101736: QuickRigCharacter8_Ctrl_RightFoot
+    101738: QuickRigCharacter8_Ctrl_RightFootEffector
+    101740: QuickRigCharacter8_Ctrl_RightForeArm
+    101742: QuickRigCharacter8_Ctrl_RightHand
+    101744: QuickRigCharacter8_Ctrl_RightHipEffector
+    101746: QuickRigCharacter8_Ctrl_RightKneeEffector
+    101748: QuickRigCharacter8_Ctrl_RightLeg
+    101750: QuickRigCharacter8_Ctrl_RightShoulder
+    101752: QuickRigCharacter8_Ctrl_RightShoulderEffector
+    101754: QuickRigCharacter8_Ctrl_RightToeBase
+    101756: QuickRigCharacter8_Ctrl_RightUpLeg
+    101758: QuickRigCharacter8_Ctrl_RightWristEffector
+    101760: QuickRigCharacter8_Ctrl_Spine
+    101762: QuickRigCharacter8_Ctrl_Spine1
+    101764: QuickRigCharacter8_Ctrl_Spine2
+    101766: QuickRigCharacter8_Guides
+    101768: QuickRigCharacter8_Head
+    101770: QuickRigCharacter8_Hips
+    101772: QuickRigCharacter8_LeftArm
+    101774: QuickRigCharacter8_LeftFoot
+    101776: QuickRigCharacter8_LeftForeArm
+    101778: QuickRigCharacter8_LeftHand
+    101780: QuickRigCharacter8_LeftLeg
+    101782: QuickRigCharacter8_LeftShoulder
+    101784: QuickRigCharacter8_LeftToeBase
+    101786: QuickRigCharacter8_LeftUpLeg
+    101788: QuickRigCharacter8_Neck
+    101790: QuickRigCharacter8_Reference
+    101792: QuickRigCharacter8_RightArm
+    101794: QuickRigCharacter8_RightFoot
+    101796: QuickRigCharacter8_RightForeArm
+    101798: QuickRigCharacter8_RightHand
+    101800: QuickRigCharacter8_RightLeg
+    101802: QuickRigCharacter8_RightShoulder
+    101804: QuickRigCharacter8_RightToeBase
+    101806: QuickRigCharacter8_RightUpLeg
+    101808: QuickRigCharacter8_Spine
+    101810: QuickRigCharacter8_Spine1
+    101812: QuickRigCharacter8_Spine2
+    101814: QuickRigCharacter_Ctrl_ChestEndEffector
+    101816: QuickRigCharacter_Ctrl_ChestOriginEffector
+    101818: QuickRigCharacter_Ctrl_Head
+    101820: QuickRigCharacter_Ctrl_HeadEffector
+    101822: QuickRigCharacter_Ctrl_Hips
+    101824: QuickRigCharacter_Ctrl_HipsEffector
+    101826: QuickRigCharacter_Ctrl_LeftAnkleEffector
+    101828: QuickRigCharacter_Ctrl_LeftArm
+    101830: QuickRigCharacter_Ctrl_LeftElbowEffector
+    101832: QuickRigCharacter_Ctrl_LeftFoot
+    101834: QuickRigCharacter_Ctrl_LeftFootEffector
+    101836: QuickRigCharacter_Ctrl_LeftForeArm
+    101838: QuickRigCharacter_Ctrl_LeftHand
+    101840: QuickRigCharacter_Ctrl_LeftHipEffector
+    101842: QuickRigCharacter_Ctrl_LeftKneeEffector
+    101844: QuickRigCharacter_Ctrl_LeftLeg
+    101846: QuickRigCharacter_Ctrl_LeftShoulder
+    101848: QuickRigCharacter_Ctrl_LeftShoulderEffector
+    101850: QuickRigCharacter_Ctrl_LeftToeBase
+    101852: QuickRigCharacter_Ctrl_LeftUpLeg
+    101854: QuickRigCharacter_Ctrl_LeftWristEffector
+    101856: QuickRigCharacter_Ctrl_Neck
+    101858: QuickRigCharacter_Ctrl_Reference
+    101860: QuickRigCharacter_Ctrl_RightAnkleEffector
+    101862: QuickRigCharacter_Ctrl_RightArm
+    101864: QuickRigCharacter_Ctrl_RightElbowEffector
+    101866: QuickRigCharacter_Ctrl_RightFoot
+    101868: QuickRigCharacter_Ctrl_RightFootEffector
+    101870: QuickRigCharacter_Ctrl_RightForeArm
+    101872: QuickRigCharacter_Ctrl_RightHand
+    101874: QuickRigCharacter_Ctrl_RightHipEffector
+    101876: QuickRigCharacter_Ctrl_RightKneeEffector
+    101878: QuickRigCharacter_Ctrl_RightLeg
+    101880: QuickRigCharacter_Ctrl_RightShoulder
+    101882: QuickRigCharacter_Ctrl_RightShoulderEffector
+    101884: QuickRigCharacter_Ctrl_RightToeBase
+    101886: QuickRigCharacter_Ctrl_RightUpLeg
+    101888: QuickRigCharacter_Ctrl_RightWristEffector
+    101890: QuickRigCharacter_Ctrl_Spine
+    101892: QuickRigCharacter_Ctrl_Spine1
+    101894: QuickRigCharacter_Ctrl_Spine2
+    101896: QuickRigCharacter_Guides
+    101898: QuickRigCharacter_Head
+    101900: QuickRigCharacter_Hips
+    101902: QuickRigCharacter_LeftArm
+    101904: QuickRigCharacter_LeftFoot
+    101906: QuickRigCharacter_LeftForeArm
+    101908: QuickRigCharacter_LeftHand
+    101910: QuickRigCharacter_LeftLeg
+    101912: QuickRigCharacter_LeftShoulder
+    101914: QuickRigCharacter_LeftToeBase
+    101916: QuickRigCharacter_LeftUpLeg
+    101918: QuickRigCharacter_Neck
+    101920: QuickRigCharacter_Reference
+    101922: QuickRigCharacter_RightArm
+    101924: QuickRigCharacter_RightFoot
+    101926: QuickRigCharacter_RightForeArm
+    101928: QuickRigCharacter_RightHand
+    101930: QuickRigCharacter_RightLeg
+    101932: QuickRigCharacter_RightShoulder
+    101934: QuickRigCharacter_RightToeBase
+    101936: QuickRigCharacter_RightUpLeg
+    101938: QuickRigCharacter_Spine
+    101940: QuickRigCharacter_Spine1
+    101942: QuickRigCharacter_Spine2
+    101944: Reference
+    101946: Reference 1
+    101948: Reference 2
+    101950: Reference 3
+    101952: Reference 4
+    101954: Reference 5
+    101956: Reference 6
+    101958: Reference 7
+    101960: Reference 8
+    101962: RightArm
+    101964: RightArm 1
+    101966: RightArm 2
+    101968: RightArm 3
+    101970: RightArm 4
+    101972: RightArm 5
+    101974: RightArm 6
+    101976: RightArm 7
+    101978: RightArm 8
+    101980: RightFoot
+    101982: RightFoot 1
+    101984: RightFoot 2
+    101986: RightFoot 3
+    101988: RightFoot 4
+    101990: RightFoot 5
+    101992: RightFoot 6
+    101994: RightFoot 7
+    101996: RightFoot 8
+    101998: RightForeArm
+    102000: RightForeArm 1
+    102002: RightForeArm 2
+    102004: RightForeArm 3
+    102006: RightForeArm 4
+    102008: RightForeArm 5
+    102010: RightForeArm 6
+    102012: RightForeArm 7
+    102014: RightForeArm 8
+    102016: RightHand
+    102018: RightHand 1
+    102020: RightHand 2
+    102022: RightHand 3
+    102024: RightHand 4
+    102026: RightHand 5
+    102028: RightHand 6
+    102030: RightHand 7
+    102032: RightHand 8
+    102034: RightLeg
+    102036: RightLeg 1
+    102038: RightLeg 2
+    102040: RightLeg 3
+    102042: RightLeg 4
+    102044: RightLeg 5
+    102046: RightLeg 6
+    102048: RightLeg 7
+    102050: RightLeg 8
+    102052: RightShoulder
+    102054: RightShoulder 1
+    102056: RightShoulder 2
+    102058: RightShoulder 3
+    102060: RightShoulder 4
+    102062: RightShoulder 5
+    102064: RightShoulder 6
+    102066: RightShoulder 7
+    102068: RightShoulder 8
+    102070: RightToeBase
+    102072: RightToeBase 1
+    102074: RightToeBase 2
+    102076: RightToeBase 3
+    102078: RightToeBase 4
+    102080: RightToeBase 5
+    102082: RightToeBase 6
+    102084: RightToeBase 7
+    102086: RightToeBase 8
+    102088: RightUpLeg
+    102090: RightUpLeg 1
+    102092: RightUpLeg 2
+    102094: RightUpLeg 3
+    102096: RightUpLeg 4
+    102098: RightUpLeg 5
+    102100: RightUpLeg 6
+    102102: RightUpLeg 7
+    102104: RightUpLeg 8
+    102106: Spine
+    102108: Spine 1
+    102110: Spine 2
+    102112: Spine 3
+    102114: Spine 4
+    102116: Spine 5
+    102118: Spine 6
+    102120: Spine 7
+    102122: Spine 8
+    102124: Spine1
+    102126: Spine1 1
+    102128: Spine1 2
+    102130: Spine1 3
+    102132: Spine1 4
+    102134: Spine1 5
+    102136: Spine1 6
+    102138: Spine1 7
+    102140: Spine1 8
+    102142: Spine2
+    102144: Spine2 1
+    102146: Spine2 2
+    102148: Spine2 3
+    102150: Spine2 4
+    102152: Spine2 5
+    102154: Spine2 6
+    102156: Spine2 7
+    102158: Spine2 8
+    102160: transform1
+    102162: transform2
+    102164: transform3
+    102166: transform4
+    102168: transform5
+    400000: //RootNode
+    400002: Female_box_head_attached_done:bottom
+    400004: Female_box_head_attached_done:group
+    400006: Female_box_head_attached_done:group1
+    400008: Female_box_head_attached_done:group2
+    400010: Female_box_head_attached_done:group3
+    400012: Female_box_head_attached_done:group3_pasted__pCube4
+    400014: Female_box_head_attached_done:imagePlane1
+    400016: Female_box_head_attached_done:imagePlane10
+    400018: Female_box_head_attached_done:imagePlane2
+    400020: Female_box_head_attached_done:imagePlane3
+    400022: Female_box_head_attached_done:imagePlane4
+    400024: Female_box_head_attached_done:imagePlane5
+    400026: Female_box_head_attached_done:imagePlane6
+    400028: Female_box_head_attached_done:imagePlane7
+    400030: Female_box_head_attached_done:imagePlane8
+    400032: Female_box_head_attached_done:imagePlane9
+    400034: Female_box_head_attached_done:left
+    400036: Female_box_head_attached_done:pasted__pCube4
+    400038: Female_box_head_attached_done:pasted__pCube4 1
+    400040: Female_box_head_attached_done:pasted__pCube4 2
+    400042: Female_box_head_attached_done:pasted__pCube4 3
+    400044: Female_box_head_attached_done:pCube1
+    400046: Female_box_head_attached_done:pCube10
+    400048: Female_box_head_attached_done:pCube11
+    400050: Female_box_head_attached_done:pCube12
+    400052: Female_box_head_attached_done:pCube2
+    400054: Female_box_head_attached_done:pCube3
+    400056: Female_box_head_attached_done:pCube4
+    400058: Female_box_head_attached_done:pCube6
+    400060: Female_box_head_attached_done:pCube8
+    400062: Female_box_head_attached_done:pCube9
+    400064: Female_box_head_attached_done:polySurface4
+    400066: Female_box_head_attached_done:pPlane1
+    400068: Female_box_head_attached_done:transform1
+    400070: Female_box_head_attached_done:transform10
+    400072: Female_box_head_attached_done:transform11
+    400074: Female_box_head_attached_done:transform12
+    400076: Female_box_head_attached_done:transform13
+    400078: Female_box_head_attached_done:transform14
+    400080: Female_box_head_attached_done:transform15
+    400082: Female_box_head_attached_done:transform16
+    400084: Female_box_head_attached_done:transform2
+    400086: Female_box_head_attached_done:transform3
+    400088: Female_box_head_attached_done:transform4
+    400090: Female_box_head_attached_done:transform5
+    400092: Female_box_head_attached_done:transform6
+    400094: Female_box_head_attached_done:transform7
+    400096: Female_box_head_attached_done:transform8
+    400098: Female_box_head_attached_done:transform9
+    400100: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube13
+    400102: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pCube14
+    400104: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:polySurface5
+    400106: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:pPlane1
+    400108: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform17
+    400110: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform18
+    400112: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform19
+    400114: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:Female_box_head_attached_done:transform20
+    400116: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:pCube1
+    400118: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED1:polySurface5
+    400120: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube13
+    400122: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    400124: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:polySurface5
+    400126: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pPlane1
+    400128: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform17
+    400130: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform18
+    400132: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform19
+    400134: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:transform20
+    400136: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:pCube1
+    400138: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:polySurface5
+    400140: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube13
+    400142: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pCube14
+    400144: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:polySurface5
+    400146: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:pPlane1
+    400148: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform17
+    400150: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform18
+    400152: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform19
+    400154: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:Female_box_head_attached_done:transform20
+    400156: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:pCube1
+    400158: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED3:polySurface5
+    400160: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube13
+    400162: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pCube14
+    400164: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:polySurface5
+    400166: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:pPlane1
+    400168: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform17
+    400170: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform18
+    400172: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform19
+    400174: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:Female_box_head_attached_done:transform20
+    400176: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:pCube1
+    400178: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED4:polySurface5
+    400180: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube13
+    400182: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pCube14
+    400184: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:polySurface5
+    400186: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:pPlane1
+    400188: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform17
+    400190: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform18
+    400192: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform19
+    400194: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:Female_box_head_attached_done:transform20
+    400196: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:pCube1
+    400198: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED5:polySurface5
+    400200: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube13
+    400202: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pCube14
+    400204: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:polySurface5
+    400206: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:pPlane1
+    400208: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform17
+    400210: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform18
+    400212: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform19
+    400214: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:Female_box_head_attached_done:transform20
+    400216: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:pCube1
+    400218: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED6:polySurface5
+    400220: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube13
+    400222: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pCube14
+    400224: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:polySurface5
+    400226: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:pPlane1
+    400228: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform17
+    400230: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform18
+    400232: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform19
+    400234: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:Female_box_head_attached_done:transform20
+    400236: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:pCube1
+    400238: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED7:polySurface5
+    400240: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube13
+    400242: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pCube14
+    400244: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:polySurface5
+    400246: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:pPlane1
+    400248: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform17
+    400250: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform18
+    400252: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform19
+    400254: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:Female_box_head_attached_done:transform20
+    400256: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:pCube1
+    400258: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED8:polySurface5
+    400260: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube13
+    400262: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pCube14
+    400264: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:polySurface5
+    400266: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:pPlane1
+    400268: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform17
+    400270: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform18
+    400272: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform19
+    400274: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:Female_box_head_attached_done:transform20
+    400276: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:pCube1
+    400278: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED9:polySurface5
+    400280: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    400282: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group
+    400284: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group1
+    400286: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group2
+    400288: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3
+    400290: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:group3_pasted__pCube4
+    400292: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane1
+    400294: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane10
+    400296: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane2
+    400298: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane3
+    400300: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane4
+    400302: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane5
+    400304: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane6
+    400306: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane7
+    400308: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane8
+    400310: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:imagePlane9
+    400312: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    400314: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+    400316: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      1
+    400318: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      2
+    400320: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pasted__pCube4
+      3
+    400322: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube1
+    400324: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube10
+    400326: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube11
+    400328: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube12
+    400330: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube13
+    400332: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube2
+    400334: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube3
+    400336: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube4
+    400338: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube6
+    400340: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube8
+    400342: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pCube9
+    400344: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface4
+    400346: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:polySurface5
+    400348: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:pPlane1
+    400350: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform1
+    400352: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform10
+    400354: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform11
+    400356: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform12
+    400358: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform13
+    400360: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform14
+    400362: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform15
+    400364: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform16
+    400366: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform17
+    400368: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform18
+    400370: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform19
+    400372: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform2
+    400374: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform20
+    400376: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform3
+    400378: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform4
+    400380: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform5
+    400382: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform6
+    400384: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform7
+    400386: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform8
+    400388: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:transform9
+    400390: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:pCube1
+    400392: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:polySurface5
+    400394: group
+    400396: group1
+    400398: group2
+    400400: group3
+    400402: group4
+    400404: group5
+    400406: group6
+    400408: group7
+    400410: group8
+    400412: Head
+    400414: Head 1
+    400416: Head 2
+    400418: Head 3
+    400420: Head 4
+    400422: Head 5
+    400424: Head 6
+    400426: Head 7
+    400428: Head 8
+    400430: Hips
+    400432: Hips 1
+    400434: Hips 2
+    400436: Hips 3
+    400438: Hips 4
+    400440: Hips 5
+    400442: Hips 6
+    400444: Hips 7
+    400446: Hips 8
+    400448: LeftArm
+    400450: LeftArm 1
+    400452: LeftArm 2
+    400454: LeftArm 3
+    400456: LeftArm 4
+    400458: LeftArm 5
+    400460: LeftArm 6
+    400462: LeftArm 7
+    400464: LeftArm 8
+    400466: LeftFoot
+    400468: LeftFoot 1
+    400470: LeftFoot 2
+    400472: LeftFoot 3
+    400474: LeftFoot 4
+    400476: LeftFoot 5
+    400478: LeftFoot 6
+    400480: LeftFoot 7
+    400482: LeftFoot 8
+    400484: LeftForeArm
+    400486: LeftForeArm 1
+    400488: LeftForeArm 2
+    400490: LeftForeArm 3
+    400492: LeftForeArm 4
+    400494: LeftForeArm 5
+    400496: LeftForeArm 6
+    400498: LeftForeArm 7
+    400500: LeftForeArm 8
+    400502: LeftHand
+    400504: LeftHand 1
+    400506: LeftHand 2
+    400508: LeftHand 3
+    400510: LeftHand 4
+    400512: LeftHand 5
+    400514: LeftHand 6
+    400516: LeftHand 7
+    400518: LeftHand 8
+    400520: LeftLeg
+    400522: LeftLeg 1
+    400524: LeftLeg 2
+    400526: LeftLeg 3
+    400528: LeftLeg 4
+    400530: LeftLeg 5
+    400532: LeftLeg 6
+    400534: LeftLeg 7
+    400536: LeftLeg 8
+    400538: LeftShoulder
+    400540: LeftShoulder 1
+    400542: LeftShoulder 2
+    400544: LeftShoulder 3
+    400546: LeftShoulder 4
+    400548: LeftShoulder 5
+    400550: LeftShoulder 6
+    400552: LeftShoulder 7
+    400554: LeftShoulder 8
+    400556: LeftToeBase
+    400558: LeftToeBase 1
+    400560: LeftToeBase 2
+    400562: LeftToeBase 3
+    400564: LeftToeBase 4
+    400566: LeftToeBase 5
+    400568: LeftToeBase 6
+    400570: LeftToeBase 7
+    400572: LeftToeBase 8
+    400574: LeftUpLeg
+    400576: LeftUpLeg 1
+    400578: LeftUpLeg 2
+    400580: LeftUpLeg 3
+    400582: LeftUpLeg 4
+    400584: LeftUpLeg 5
+    400586: LeftUpLeg 6
+    400588: LeftUpLeg 7
+    400590: LeftUpLeg 8
+    400592: Neck
+    400594: Neck 1
+    400596: Neck 2
+    400598: Neck 3
+    400600: Neck 4
+    400602: Neck 5
+    400604: Neck 6
+    400606: Neck 7
+    400608: Neck 8
+    400610: pasted__group
+    400612: pasted__group 1
+    400614: pasted__group 2
+    400616: pasted__group 3
+    400618: pasted__group 4
+    400620: pasted__group 5
+    400622: pasted__group 6
+    400624: pasted__polySurface1
+    400626: pasted__polySurface1 1
+    400628: pasted__polySurface1 2
+    400630: pasted__polySurface1 3
+    400632: pasted__polySurface1 4
+    400634: pasted__polySurface1 5
+    400636: pasted__polySurface1 6
+    400638: pasted__polySurface2
+    400640: pasted__polySurface2 1
+    400642: pasted__polySurface2 10
+    400644: pasted__polySurface2 11
+    400646: pasted__polySurface2 12
+    400648: pasted__polySurface2 13
+    400650: pasted__polySurface2 2
+    400652: pasted__polySurface2 3
+    400654: pasted__polySurface2 4
+    400656: pasted__polySurface2 5
+    400658: pasted__polySurface2 6
+    400660: pasted__polySurface2 7
+    400662: pasted__polySurface2 8
+    400664: pasted__polySurface2 9
+    400666: pasted__polySurface3
+    400668: pasted__polySurface3 1
+    400670: pasted__polySurface3 2
+    400672: pasted__polySurface3 3
+    400674: pasted__polySurface3 4
+    400676: pasted__polySurface3 5
+    400678: pasted__polySurface3 6
+    400680: pasted__polySurface4
+    400682: pasted__polySurface4 1
+    400684: pasted__polySurface4 2
+    400686: pasted__polySurface4 3
+    400688: pasted__polySurface4 4
+    400690: pasted__polySurface4 5
+    400692: pasted__polySurface4 6
+    400694: pasted__transform1
+    400696: pasted__transform1 1
+    400698: pasted__transform1 2
+    400700: pasted__transform1 3
+    400702: pasted__transform1 4
+    400704: pasted__transform1 5
+    400706: pasted__transform1 6
+    400708: pasted__transform2
+    400710: pasted__transform2 1
+    400712: pasted__transform2 2
+    400714: pasted__transform2 3
+    400716: pasted__transform2 4
+    400718: pasted__transform2 5
+    400720: pasted__transform2 6
+    400722: pasted__transform3
+    400724: pasted__transform3 1
+    400726: pasted__transform3 2
+    400728: pasted__transform3 3
+    400730: pasted__transform3 4
+    400732: pasted__transform3 5
+    400734: pasted__transform3 6
+    400736: pasted__transform4
+    400738: pasted__transform4 1
+    400740: pasted__transform4 2
+    400742: pasted__transform4 3
+    400744: pasted__transform4 4
+    400746: pasted__transform4 5
+    400748: pasted__transform4 6
+    400750: pasted__transform5
+    400752: pasted__transform5 1
+    400754: pasted__transform5 2
+    400756: pasted__transform5 3
+    400758: pasted__transform5 4
+    400760: pasted__transform5 5
+    400762: pasted__transform5 6
+    400764: polySurface1
+    400766: polySurface2
+    400768: polySurface2 1
+    400770: polySurface3
+    400772: polySurface4
+    400774: QuickRigCharacter1_Ctrl_ChestEndEffector
+    400776: QuickRigCharacter1_Ctrl_ChestOriginEffector
+    400778: QuickRigCharacter1_Ctrl_Head
+    400780: QuickRigCharacter1_Ctrl_HeadEffector
+    400782: QuickRigCharacter1_Ctrl_Hips
+    400784: QuickRigCharacter1_Ctrl_HipsEffector
+    400786: QuickRigCharacter1_Ctrl_LeftAnkleEffector
+    400788: QuickRigCharacter1_Ctrl_LeftArm
+    400790: QuickRigCharacter1_Ctrl_LeftElbowEffector
+    400792: QuickRigCharacter1_Ctrl_LeftFoot
+    400794: QuickRigCharacter1_Ctrl_LeftFootEffector
+    400796: QuickRigCharacter1_Ctrl_LeftForeArm
+    400798: QuickRigCharacter1_Ctrl_LeftHand
+    400800: QuickRigCharacter1_Ctrl_LeftHipEffector
+    400802: QuickRigCharacter1_Ctrl_LeftKneeEffector
+    400804: QuickRigCharacter1_Ctrl_LeftLeg
+    400806: QuickRigCharacter1_Ctrl_LeftShoulder
+    400808: QuickRigCharacter1_Ctrl_LeftShoulderEffector
+    400810: QuickRigCharacter1_Ctrl_LeftToeBase
+    400812: QuickRigCharacter1_Ctrl_LeftUpLeg
+    400814: QuickRigCharacter1_Ctrl_LeftWristEffector
+    400816: QuickRigCharacter1_Ctrl_Neck
+    400818: QuickRigCharacter1_Ctrl_Reference
+    400820: QuickRigCharacter1_Ctrl_RightAnkleEffector
+    400822: QuickRigCharacter1_Ctrl_RightArm
+    400824: QuickRigCharacter1_Ctrl_RightElbowEffector
+    400826: QuickRigCharacter1_Ctrl_RightFoot
+    400828: QuickRigCharacter1_Ctrl_RightFootEffector
+    400830: QuickRigCharacter1_Ctrl_RightForeArm
+    400832: QuickRigCharacter1_Ctrl_RightHand
+    400834: QuickRigCharacter1_Ctrl_RightHipEffector
+    400836: QuickRigCharacter1_Ctrl_RightKneeEffector
+    400838: QuickRigCharacter1_Ctrl_RightLeg
+    400840: QuickRigCharacter1_Ctrl_RightShoulder
+    400842: QuickRigCharacter1_Ctrl_RightShoulderEffector
+    400844: QuickRigCharacter1_Ctrl_RightToeBase
+    400846: QuickRigCharacter1_Ctrl_RightUpLeg
+    400848: QuickRigCharacter1_Ctrl_RightWristEffector
+    400850: QuickRigCharacter1_Ctrl_Spine
+    400852: QuickRigCharacter1_Ctrl_Spine1
+    400854: QuickRigCharacter1_Ctrl_Spine2
+    400856: QuickRigCharacter1_Guides
+    400858: QuickRigCharacter1_Head
+    400860: QuickRigCharacter1_Hips
+    400862: QuickRigCharacter1_LeftArm
+    400864: QuickRigCharacter1_LeftFoot
+    400866: QuickRigCharacter1_LeftForeArm
+    400868: QuickRigCharacter1_LeftHand
+    400870: QuickRigCharacter1_LeftLeg
+    400872: QuickRigCharacter1_LeftShoulder
+    400874: QuickRigCharacter1_LeftToeBase
+    400876: QuickRigCharacter1_LeftUpLeg
+    400878: QuickRigCharacter1_Neck
+    400880: QuickRigCharacter1_Reference
+    400882: QuickRigCharacter1_RightArm
+    400884: QuickRigCharacter1_RightFoot
+    400886: QuickRigCharacter1_RightForeArm
+    400888: QuickRigCharacter1_RightHand
+    400890: QuickRigCharacter1_RightLeg
+    400892: QuickRigCharacter1_RightShoulder
+    400894: QuickRigCharacter1_RightToeBase
+    400896: QuickRigCharacter1_RightUpLeg
+    400898: QuickRigCharacter1_Spine
+    400900: QuickRigCharacter1_Spine1
+    400902: QuickRigCharacter1_Spine2
+    400904: QuickRigCharacter2_Ctrl_ChestEndEffector
+    400906: QuickRigCharacter2_Ctrl_ChestOriginEffector
+    400908: QuickRigCharacter2_Ctrl_Head
+    400910: QuickRigCharacter2_Ctrl_HeadEffector
+    400912: QuickRigCharacter2_Ctrl_Hips
+    400914: QuickRigCharacter2_Ctrl_HipsEffector
+    400916: QuickRigCharacter2_Ctrl_LeftAnkleEffector
+    400918: QuickRigCharacter2_Ctrl_LeftArm
+    400920: QuickRigCharacter2_Ctrl_LeftElbowEffector
+    400922: QuickRigCharacter2_Ctrl_LeftFoot
+    400924: QuickRigCharacter2_Ctrl_LeftFootEffector
+    400926: QuickRigCharacter2_Ctrl_LeftForeArm
+    400928: QuickRigCharacter2_Ctrl_LeftHand
+    400930: QuickRigCharacter2_Ctrl_LeftHipEffector
+    400932: QuickRigCharacter2_Ctrl_LeftKneeEffector
+    400934: QuickRigCharacter2_Ctrl_LeftLeg
+    400936: QuickRigCharacter2_Ctrl_LeftShoulder
+    400938: QuickRigCharacter2_Ctrl_LeftShoulderEffector
+    400940: QuickRigCharacter2_Ctrl_LeftToeBase
+    400942: QuickRigCharacter2_Ctrl_LeftUpLeg
+    400944: QuickRigCharacter2_Ctrl_LeftWristEffector
+    400946: QuickRigCharacter2_Ctrl_Neck
+    400948: QuickRigCharacter2_Ctrl_Reference
+    400950: QuickRigCharacter2_Ctrl_RightAnkleEffector
+    400952: QuickRigCharacter2_Ctrl_RightArm
+    400954: QuickRigCharacter2_Ctrl_RightElbowEffector
+    400956: QuickRigCharacter2_Ctrl_RightFoot
+    400958: QuickRigCharacter2_Ctrl_RightFootEffector
+    400960: QuickRigCharacter2_Ctrl_RightForeArm
+    400962: QuickRigCharacter2_Ctrl_RightHand
+    400964: QuickRigCharacter2_Ctrl_RightHipEffector
+    400966: QuickRigCharacter2_Ctrl_RightKneeEffector
+    400968: QuickRigCharacter2_Ctrl_RightLeg
+    400970: QuickRigCharacter2_Ctrl_RightShoulder
+    400972: QuickRigCharacter2_Ctrl_RightShoulderEffector
+    400974: QuickRigCharacter2_Ctrl_RightToeBase
+    400976: QuickRigCharacter2_Ctrl_RightUpLeg
+    400978: QuickRigCharacter2_Ctrl_RightWristEffector
+    400980: QuickRigCharacter2_Ctrl_Spine
+    400982: QuickRigCharacter2_Ctrl_Spine1
+    400984: QuickRigCharacter2_Ctrl_Spine2
+    400986: QuickRigCharacter2_Guides
+    400988: QuickRigCharacter2_Head
+    400990: QuickRigCharacter2_Hips
+    400992: QuickRigCharacter2_LeftArm
+    400994: QuickRigCharacter2_LeftFoot
+    400996: QuickRigCharacter2_LeftForeArm
+    400998: QuickRigCharacter2_LeftHand
+    401000: QuickRigCharacter2_LeftLeg
+    401002: QuickRigCharacter2_LeftShoulder
+    401004: QuickRigCharacter2_LeftToeBase
+    401006: QuickRigCharacter2_LeftUpLeg
+    401008: QuickRigCharacter2_Neck
+    401010: QuickRigCharacter2_Reference
+    401012: QuickRigCharacter2_RightArm
+    401014: QuickRigCharacter2_RightFoot
+    401016: QuickRigCharacter2_RightForeArm
+    401018: QuickRigCharacter2_RightHand
+    401020: QuickRigCharacter2_RightLeg
+    401022: QuickRigCharacter2_RightShoulder
+    401024: QuickRigCharacter2_RightToeBase
+    401026: QuickRigCharacter2_RightUpLeg
+    401028: QuickRigCharacter2_Spine
+    401030: QuickRigCharacter2_Spine1
+    401032: QuickRigCharacter2_Spine2
+    401034: QuickRigCharacter3_Ctrl_ChestEndEffector
+    401036: QuickRigCharacter3_Ctrl_ChestOriginEffector
+    401038: QuickRigCharacter3_Ctrl_Head
+    401040: QuickRigCharacter3_Ctrl_HeadEffector
+    401042: QuickRigCharacter3_Ctrl_Hips
+    401044: QuickRigCharacter3_Ctrl_HipsEffector
+    401046: QuickRigCharacter3_Ctrl_LeftAnkleEffector
+    401048: QuickRigCharacter3_Ctrl_LeftArm
+    401050: QuickRigCharacter3_Ctrl_LeftElbowEffector
+    401052: QuickRigCharacter3_Ctrl_LeftFoot
+    401054: QuickRigCharacter3_Ctrl_LeftFootEffector
+    401056: QuickRigCharacter3_Ctrl_LeftForeArm
+    401058: QuickRigCharacter3_Ctrl_LeftHand
+    401060: QuickRigCharacter3_Ctrl_LeftHipEffector
+    401062: QuickRigCharacter3_Ctrl_LeftKneeEffector
+    401064: QuickRigCharacter3_Ctrl_LeftLeg
+    401066: QuickRigCharacter3_Ctrl_LeftShoulder
+    401068: QuickRigCharacter3_Ctrl_LeftShoulderEffector
+    401070: QuickRigCharacter3_Ctrl_LeftToeBase
+    401072: QuickRigCharacter3_Ctrl_LeftUpLeg
+    401074: QuickRigCharacter3_Ctrl_LeftWristEffector
+    401076: QuickRigCharacter3_Ctrl_Neck
+    401078: QuickRigCharacter3_Ctrl_Reference
+    401080: QuickRigCharacter3_Ctrl_RightAnkleEffector
+    401082: QuickRigCharacter3_Ctrl_RightArm
+    401084: QuickRigCharacter3_Ctrl_RightElbowEffector
+    401086: QuickRigCharacter3_Ctrl_RightFoot
+    401088: QuickRigCharacter3_Ctrl_RightFootEffector
+    401090: QuickRigCharacter3_Ctrl_RightForeArm
+    401092: QuickRigCharacter3_Ctrl_RightHand
+    401094: QuickRigCharacter3_Ctrl_RightHipEffector
+    401096: QuickRigCharacter3_Ctrl_RightKneeEffector
+    401098: QuickRigCharacter3_Ctrl_RightLeg
+    401100: QuickRigCharacter3_Ctrl_RightShoulder
+    401102: QuickRigCharacter3_Ctrl_RightShoulderEffector
+    401104: QuickRigCharacter3_Ctrl_RightToeBase
+    401106: QuickRigCharacter3_Ctrl_RightUpLeg
+    401108: QuickRigCharacter3_Ctrl_RightWristEffector
+    401110: QuickRigCharacter3_Ctrl_Spine
+    401112: QuickRigCharacter3_Ctrl_Spine1
+    401114: QuickRigCharacter3_Ctrl_Spine2
+    401116: QuickRigCharacter3_Guides
+    401118: QuickRigCharacter3_Head
+    401120: QuickRigCharacter3_Hips
+    401122: QuickRigCharacter3_LeftArm
+    401124: QuickRigCharacter3_LeftFoot
+    401126: QuickRigCharacter3_LeftForeArm
+    401128: QuickRigCharacter3_LeftHand
+    401130: QuickRigCharacter3_LeftLeg
+    401132: QuickRigCharacter3_LeftShoulder
+    401134: QuickRigCharacter3_LeftToeBase
+    401136: QuickRigCharacter3_LeftUpLeg
+    401138: QuickRigCharacter3_Neck
+    401140: QuickRigCharacter3_Reference
+    401142: QuickRigCharacter3_RightArm
+    401144: QuickRigCharacter3_RightFoot
+    401146: QuickRigCharacter3_RightForeArm
+    401148: QuickRigCharacter3_RightHand
+    401150: QuickRigCharacter3_RightLeg
+    401152: QuickRigCharacter3_RightShoulder
+    401154: QuickRigCharacter3_RightToeBase
+    401156: QuickRigCharacter3_RightUpLeg
+    401158: QuickRigCharacter3_Spine
+    401160: QuickRigCharacter3_Spine1
+    401162: QuickRigCharacter3_Spine2
+    401164: QuickRigCharacter4_Ctrl_ChestEndEffector
+    401166: QuickRigCharacter4_Ctrl_ChestOriginEffector
+    401168: QuickRigCharacter4_Ctrl_Head
+    401170: QuickRigCharacter4_Ctrl_HeadEffector
+    401172: QuickRigCharacter4_Ctrl_Hips
+    401174: QuickRigCharacter4_Ctrl_HipsEffector
+    401176: QuickRigCharacter4_Ctrl_LeftAnkleEffector
+    401178: QuickRigCharacter4_Ctrl_LeftArm
+    401180: QuickRigCharacter4_Ctrl_LeftElbowEffector
+    401182: QuickRigCharacter4_Ctrl_LeftFoot
+    401184: QuickRigCharacter4_Ctrl_LeftFootEffector
+    401186: QuickRigCharacter4_Ctrl_LeftForeArm
+    401188: QuickRigCharacter4_Ctrl_LeftHand
+    401190: QuickRigCharacter4_Ctrl_LeftHipEffector
+    401192: QuickRigCharacter4_Ctrl_LeftKneeEffector
+    401194: QuickRigCharacter4_Ctrl_LeftLeg
+    401196: QuickRigCharacter4_Ctrl_LeftShoulder
+    401198: QuickRigCharacter4_Ctrl_LeftShoulderEffector
+    401200: QuickRigCharacter4_Ctrl_LeftToeBase
+    401202: QuickRigCharacter4_Ctrl_LeftUpLeg
+    401204: QuickRigCharacter4_Ctrl_LeftWristEffector
+    401206: QuickRigCharacter4_Ctrl_Neck
+    401208: QuickRigCharacter4_Ctrl_Reference
+    401210: QuickRigCharacter4_Ctrl_RightAnkleEffector
+    401212: QuickRigCharacter4_Ctrl_RightArm
+    401214: QuickRigCharacter4_Ctrl_RightElbowEffector
+    401216: QuickRigCharacter4_Ctrl_RightFoot
+    401218: QuickRigCharacter4_Ctrl_RightFootEffector
+    401220: QuickRigCharacter4_Ctrl_RightForeArm
+    401222: QuickRigCharacter4_Ctrl_RightHand
+    401224: QuickRigCharacter4_Ctrl_RightHipEffector
+    401226: QuickRigCharacter4_Ctrl_RightKneeEffector
+    401228: QuickRigCharacter4_Ctrl_RightLeg
+    401230: QuickRigCharacter4_Ctrl_RightShoulder
+    401232: QuickRigCharacter4_Ctrl_RightShoulderEffector
+    401234: QuickRigCharacter4_Ctrl_RightToeBase
+    401236: QuickRigCharacter4_Ctrl_RightUpLeg
+    401238: QuickRigCharacter4_Ctrl_RightWristEffector
+    401240: QuickRigCharacter4_Ctrl_Spine
+    401242: QuickRigCharacter4_Ctrl_Spine1
+    401244: QuickRigCharacter4_Ctrl_Spine2
+    401246: QuickRigCharacter4_Guides
+    401248: QuickRigCharacter4_Head
+    401250: QuickRigCharacter4_Hips
+    401252: QuickRigCharacter4_LeftArm
+    401254: QuickRigCharacter4_LeftFoot
+    401256: QuickRigCharacter4_LeftForeArm
+    401258: QuickRigCharacter4_LeftHand
+    401260: QuickRigCharacter4_LeftLeg
+    401262: QuickRigCharacter4_LeftShoulder
+    401264: QuickRigCharacter4_LeftToeBase
+    401266: QuickRigCharacter4_LeftUpLeg
+    401268: QuickRigCharacter4_Neck
+    401270: QuickRigCharacter4_Reference
+    401272: QuickRigCharacter4_RightArm
+    401274: QuickRigCharacter4_RightFoot
+    401276: QuickRigCharacter4_RightForeArm
+    401278: QuickRigCharacter4_RightHand
+    401280: QuickRigCharacter4_RightLeg
+    401282: QuickRigCharacter4_RightShoulder
+    401284: QuickRigCharacter4_RightToeBase
+    401286: QuickRigCharacter4_RightUpLeg
+    401288: QuickRigCharacter4_Spine
+    401290: QuickRigCharacter4_Spine1
+    401292: QuickRigCharacter4_Spine2
+    401294: QuickRigCharacter5_Ctrl_ChestEndEffector
+    401296: QuickRigCharacter5_Ctrl_ChestOriginEffector
+    401298: QuickRigCharacter5_Ctrl_Head
+    401300: QuickRigCharacter5_Ctrl_HeadEffector
+    401302: QuickRigCharacter5_Ctrl_Hips
+    401304: QuickRigCharacter5_Ctrl_HipsEffector
+    401306: QuickRigCharacter5_Ctrl_LeftAnkleEffector
+    401308: QuickRigCharacter5_Ctrl_LeftArm
+    401310: QuickRigCharacter5_Ctrl_LeftElbowEffector
+    401312: QuickRigCharacter5_Ctrl_LeftFoot
+    401314: QuickRigCharacter5_Ctrl_LeftFootEffector
+    401316: QuickRigCharacter5_Ctrl_LeftForeArm
+    401318: QuickRigCharacter5_Ctrl_LeftHand
+    401320: QuickRigCharacter5_Ctrl_LeftHipEffector
+    401322: QuickRigCharacter5_Ctrl_LeftKneeEffector
+    401324: QuickRigCharacter5_Ctrl_LeftLeg
+    401326: QuickRigCharacter5_Ctrl_LeftShoulder
+    401328: QuickRigCharacter5_Ctrl_LeftShoulderEffector
+    401330: QuickRigCharacter5_Ctrl_LeftToeBase
+    401332: QuickRigCharacter5_Ctrl_LeftUpLeg
+    401334: QuickRigCharacter5_Ctrl_LeftWristEffector
+    401336: QuickRigCharacter5_Ctrl_Neck
+    401338: QuickRigCharacter5_Ctrl_Reference
+    401340: QuickRigCharacter5_Ctrl_RightAnkleEffector
+    401342: QuickRigCharacter5_Ctrl_RightArm
+    401344: QuickRigCharacter5_Ctrl_RightElbowEffector
+    401346: QuickRigCharacter5_Ctrl_RightFoot
+    401348: QuickRigCharacter5_Ctrl_RightFootEffector
+    401350: QuickRigCharacter5_Ctrl_RightForeArm
+    401352: QuickRigCharacter5_Ctrl_RightHand
+    401354: QuickRigCharacter5_Ctrl_RightHipEffector
+    401356: QuickRigCharacter5_Ctrl_RightKneeEffector
+    401358: QuickRigCharacter5_Ctrl_RightLeg
+    401360: QuickRigCharacter5_Ctrl_RightShoulder
+    401362: QuickRigCharacter5_Ctrl_RightShoulderEffector
+    401364: QuickRigCharacter5_Ctrl_RightToeBase
+    401366: QuickRigCharacter5_Ctrl_RightUpLeg
+    401368: QuickRigCharacter5_Ctrl_RightWristEffector
+    401370: QuickRigCharacter5_Ctrl_Spine
+    401372: QuickRigCharacter5_Ctrl_Spine1
+    401374: QuickRigCharacter5_Ctrl_Spine2
+    401376: QuickRigCharacter5_Guides
+    401378: QuickRigCharacter5_Head
+    401380: QuickRigCharacter5_Hips
+    401382: QuickRigCharacter5_LeftArm
+    401384: QuickRigCharacter5_LeftFoot
+    401386: QuickRigCharacter5_LeftForeArm
+    401388: QuickRigCharacter5_LeftHand
+    401390: QuickRigCharacter5_LeftLeg
+    401392: QuickRigCharacter5_LeftShoulder
+    401394: QuickRigCharacter5_LeftToeBase
+    401396: QuickRigCharacter5_LeftUpLeg
+    401398: QuickRigCharacter5_Neck
+    401400: QuickRigCharacter5_Reference
+    401402: QuickRigCharacter5_RightArm
+    401404: QuickRigCharacter5_RightFoot
+    401406: QuickRigCharacter5_RightForeArm
+    401408: QuickRigCharacter5_RightHand
+    401410: QuickRigCharacter5_RightLeg
+    401412: QuickRigCharacter5_RightShoulder
+    401414: QuickRigCharacter5_RightToeBase
+    401416: QuickRigCharacter5_RightUpLeg
+    401418: QuickRigCharacter5_Spine
+    401420: QuickRigCharacter5_Spine1
+    401422: QuickRigCharacter5_Spine2
+    401424: QuickRigCharacter6_Ctrl_ChestEndEffector
+    401426: QuickRigCharacter6_Ctrl_ChestOriginEffector
+    401428: QuickRigCharacter6_Ctrl_Head
+    401430: QuickRigCharacter6_Ctrl_HeadEffector
+    401432: QuickRigCharacter6_Ctrl_Hips
+    401434: QuickRigCharacter6_Ctrl_HipsEffector
+    401436: QuickRigCharacter6_Ctrl_LeftAnkleEffector
+    401438: QuickRigCharacter6_Ctrl_LeftArm
+    401440: QuickRigCharacter6_Ctrl_LeftElbowEffector
+    401442: QuickRigCharacter6_Ctrl_LeftFoot
+    401444: QuickRigCharacter6_Ctrl_LeftFootEffector
+    401446: QuickRigCharacter6_Ctrl_LeftForeArm
+    401448: QuickRigCharacter6_Ctrl_LeftHand
+    401450: QuickRigCharacter6_Ctrl_LeftHipEffector
+    401452: QuickRigCharacter6_Ctrl_LeftKneeEffector
+    401454: QuickRigCharacter6_Ctrl_LeftLeg
+    401456: QuickRigCharacter6_Ctrl_LeftShoulder
+    401458: QuickRigCharacter6_Ctrl_LeftShoulderEffector
+    401460: QuickRigCharacter6_Ctrl_LeftToeBase
+    401462: QuickRigCharacter6_Ctrl_LeftUpLeg
+    401464: QuickRigCharacter6_Ctrl_LeftWristEffector
+    401466: QuickRigCharacter6_Ctrl_Neck
+    401468: QuickRigCharacter6_Ctrl_Reference
+    401470: QuickRigCharacter6_Ctrl_RightAnkleEffector
+    401472: QuickRigCharacter6_Ctrl_RightArm
+    401474: QuickRigCharacter6_Ctrl_RightElbowEffector
+    401476: QuickRigCharacter6_Ctrl_RightFoot
+    401478: QuickRigCharacter6_Ctrl_RightFootEffector
+    401480: QuickRigCharacter6_Ctrl_RightForeArm
+    401482: QuickRigCharacter6_Ctrl_RightHand
+    401484: QuickRigCharacter6_Ctrl_RightHipEffector
+    401486: QuickRigCharacter6_Ctrl_RightKneeEffector
+    401488: QuickRigCharacter6_Ctrl_RightLeg
+    401490: QuickRigCharacter6_Ctrl_RightShoulder
+    401492: QuickRigCharacter6_Ctrl_RightShoulderEffector
+    401494: QuickRigCharacter6_Ctrl_RightToeBase
+    401496: QuickRigCharacter6_Ctrl_RightUpLeg
+    401498: QuickRigCharacter6_Ctrl_RightWristEffector
+    401500: QuickRigCharacter6_Ctrl_Spine
+    401502: QuickRigCharacter6_Ctrl_Spine1
+    401504: QuickRigCharacter6_Ctrl_Spine2
+    401506: QuickRigCharacter6_Guides
+    401508: QuickRigCharacter6_Head
+    401510: QuickRigCharacter6_Hips
+    401512: QuickRigCharacter6_LeftArm
+    401514: QuickRigCharacter6_LeftFoot
+    401516: QuickRigCharacter6_LeftForeArm
+    401518: QuickRigCharacter6_LeftHand
+    401520: QuickRigCharacter6_LeftLeg
+    401522: QuickRigCharacter6_LeftShoulder
+    401524: QuickRigCharacter6_LeftToeBase
+    401526: QuickRigCharacter6_LeftUpLeg
+    401528: QuickRigCharacter6_Neck
+    401530: QuickRigCharacter6_Reference
+    401532: QuickRigCharacter6_RightArm
+    401534: QuickRigCharacter6_RightFoot
+    401536: QuickRigCharacter6_RightForeArm
+    401538: QuickRigCharacter6_RightHand
+    401540: QuickRigCharacter6_RightLeg
+    401542: QuickRigCharacter6_RightShoulder
+    401544: QuickRigCharacter6_RightToeBase
+    401546: QuickRigCharacter6_RightUpLeg
+    401548: QuickRigCharacter6_Spine
+    401550: QuickRigCharacter6_Spine1
+    401552: QuickRigCharacter6_Spine2
+    401554: QuickRigCharacter7_Ctrl_ChestEndEffector
+    401556: QuickRigCharacter7_Ctrl_ChestOriginEffector
+    401558: QuickRigCharacter7_Ctrl_Head
+    401560: QuickRigCharacter7_Ctrl_HeadEffector
+    401562: QuickRigCharacter7_Ctrl_Hips
+    401564: QuickRigCharacter7_Ctrl_HipsEffector
+    401566: QuickRigCharacter7_Ctrl_LeftAnkleEffector
+    401568: QuickRigCharacter7_Ctrl_LeftArm
+    401570: QuickRigCharacter7_Ctrl_LeftElbowEffector
+    401572: QuickRigCharacter7_Ctrl_LeftFoot
+    401574: QuickRigCharacter7_Ctrl_LeftFootEffector
+    401576: QuickRigCharacter7_Ctrl_LeftForeArm
+    401578: QuickRigCharacter7_Ctrl_LeftHand
+    401580: QuickRigCharacter7_Ctrl_LeftHipEffector
+    401582: QuickRigCharacter7_Ctrl_LeftKneeEffector
+    401584: QuickRigCharacter7_Ctrl_LeftLeg
+    401586: QuickRigCharacter7_Ctrl_LeftShoulder
+    401588: QuickRigCharacter7_Ctrl_LeftShoulderEffector
+    401590: QuickRigCharacter7_Ctrl_LeftToeBase
+    401592: QuickRigCharacter7_Ctrl_LeftUpLeg
+    401594: QuickRigCharacter7_Ctrl_LeftWristEffector
+    401596: QuickRigCharacter7_Ctrl_Neck
+    401598: QuickRigCharacter7_Ctrl_Reference
+    401600: QuickRigCharacter7_Ctrl_RightAnkleEffector
+    401602: QuickRigCharacter7_Ctrl_RightArm
+    401604: QuickRigCharacter7_Ctrl_RightElbowEffector
+    401606: QuickRigCharacter7_Ctrl_RightFoot
+    401608: QuickRigCharacter7_Ctrl_RightFootEffector
+    401610: QuickRigCharacter7_Ctrl_RightForeArm
+    401612: QuickRigCharacter7_Ctrl_RightHand
+    401614: QuickRigCharacter7_Ctrl_RightHipEffector
+    401616: QuickRigCharacter7_Ctrl_RightKneeEffector
+    401618: QuickRigCharacter7_Ctrl_RightLeg
+    401620: QuickRigCharacter7_Ctrl_RightShoulder
+    401622: QuickRigCharacter7_Ctrl_RightShoulderEffector
+    401624: QuickRigCharacter7_Ctrl_RightToeBase
+    401626: QuickRigCharacter7_Ctrl_RightUpLeg
+    401628: QuickRigCharacter7_Ctrl_RightWristEffector
+    401630: QuickRigCharacter7_Ctrl_Spine
+    401632: QuickRigCharacter7_Ctrl_Spine1
+    401634: QuickRigCharacter7_Ctrl_Spine2
+    401636: QuickRigCharacter7_Guides
+    401638: QuickRigCharacter7_Head
+    401640: QuickRigCharacter7_Hips
+    401642: QuickRigCharacter7_LeftArm
+    401644: QuickRigCharacter7_LeftFoot
+    401646: QuickRigCharacter7_LeftForeArm
+    401648: QuickRigCharacter7_LeftHand
+    401650: QuickRigCharacter7_LeftLeg
+    401652: QuickRigCharacter7_LeftShoulder
+    401654: QuickRigCharacter7_LeftToeBase
+    401656: QuickRigCharacter7_LeftUpLeg
+    401658: QuickRigCharacter7_Neck
+    401660: QuickRigCharacter7_Reference
+    401662: QuickRigCharacter7_RightArm
+    401664: QuickRigCharacter7_RightFoot
+    401666: QuickRigCharacter7_RightForeArm
+    401668: QuickRigCharacter7_RightHand
+    401670: QuickRigCharacter7_RightLeg
+    401672: QuickRigCharacter7_RightShoulder
+    401674: QuickRigCharacter7_RightToeBase
+    401676: QuickRigCharacter7_RightUpLeg
+    401678: QuickRigCharacter7_Spine
+    401680: QuickRigCharacter7_Spine1
+    401682: QuickRigCharacter7_Spine2
+    401684: QuickRigCharacter8_Ctrl_ChestEndEffector
+    401686: QuickRigCharacter8_Ctrl_ChestOriginEffector
+    401688: QuickRigCharacter8_Ctrl_Head
+    401690: QuickRigCharacter8_Ctrl_HeadEffector
+    401692: QuickRigCharacter8_Ctrl_Hips
+    401694: QuickRigCharacter8_Ctrl_HipsEffector
+    401696: QuickRigCharacter8_Ctrl_LeftAnkleEffector
+    401698: QuickRigCharacter8_Ctrl_LeftArm
+    401700: QuickRigCharacter8_Ctrl_LeftElbowEffector
+    401702: QuickRigCharacter8_Ctrl_LeftFoot
+    401704: QuickRigCharacter8_Ctrl_LeftFootEffector
+    401706: QuickRigCharacter8_Ctrl_LeftForeArm
+    401708: QuickRigCharacter8_Ctrl_LeftHand
+    401710: QuickRigCharacter8_Ctrl_LeftHipEffector
+    401712: QuickRigCharacter8_Ctrl_LeftKneeEffector
+    401714: QuickRigCharacter8_Ctrl_LeftLeg
+    401716: QuickRigCharacter8_Ctrl_LeftShoulder
+    401718: QuickRigCharacter8_Ctrl_LeftShoulderEffector
+    401720: QuickRigCharacter8_Ctrl_LeftToeBase
+    401722: QuickRigCharacter8_Ctrl_LeftUpLeg
+    401724: QuickRigCharacter8_Ctrl_LeftWristEffector
+    401726: QuickRigCharacter8_Ctrl_Neck
+    401728: QuickRigCharacter8_Ctrl_Reference
+    401730: QuickRigCharacter8_Ctrl_RightAnkleEffector
+    401732: QuickRigCharacter8_Ctrl_RightArm
+    401734: QuickRigCharacter8_Ctrl_RightElbowEffector
+    401736: QuickRigCharacter8_Ctrl_RightFoot
+    401738: QuickRigCharacter8_Ctrl_RightFootEffector
+    401740: QuickRigCharacter8_Ctrl_RightForeArm
+    401742: QuickRigCharacter8_Ctrl_RightHand
+    401744: QuickRigCharacter8_Ctrl_RightHipEffector
+    401746: QuickRigCharacter8_Ctrl_RightKneeEffector
+    401748: QuickRigCharacter8_Ctrl_RightLeg
+    401750: QuickRigCharacter8_Ctrl_RightShoulder
+    401752: QuickRigCharacter8_Ctrl_RightShoulderEffector
+    401754: QuickRigCharacter8_Ctrl_RightToeBase
+    401756: QuickRigCharacter8_Ctrl_RightUpLeg
+    401758: QuickRigCharacter8_Ctrl_RightWristEffector
+    401760: QuickRigCharacter8_Ctrl_Spine
+    401762: QuickRigCharacter8_Ctrl_Spine1
+    401764: QuickRigCharacter8_Ctrl_Spine2
+    401766: QuickRigCharacter8_Guides
+    401768: QuickRigCharacter8_Head
+    401770: QuickRigCharacter8_Hips
+    401772: QuickRigCharacter8_LeftArm
+    401774: QuickRigCharacter8_LeftFoot
+    401776: QuickRigCharacter8_LeftForeArm
+    401778: QuickRigCharacter8_LeftHand
+    401780: QuickRigCharacter8_LeftLeg
+    401782: QuickRigCharacter8_LeftShoulder
+    401784: QuickRigCharacter8_LeftToeBase
+    401786: QuickRigCharacter8_LeftUpLeg
+    401788: QuickRigCharacter8_Neck
+    401790: QuickRigCharacter8_Reference
+    401792: QuickRigCharacter8_RightArm
+    401794: QuickRigCharacter8_RightFoot
+    401796: QuickRigCharacter8_RightForeArm
+    401798: QuickRigCharacter8_RightHand
+    401800: QuickRigCharacter8_RightLeg
+    401802: QuickRigCharacter8_RightShoulder
+    401804: QuickRigCharacter8_RightToeBase
+    401806: QuickRigCharacter8_RightUpLeg
+    401808: QuickRigCharacter8_Spine
+    401810: QuickRigCharacter8_Spine1
+    401812: QuickRigCharacter8_Spine2
+    401814: QuickRigCharacter_Ctrl_ChestEndEffector
+    401816: QuickRigCharacter_Ctrl_ChestOriginEffector
+    401818: QuickRigCharacter_Ctrl_Head
+    401820: QuickRigCharacter_Ctrl_HeadEffector
+    401822: QuickRigCharacter_Ctrl_Hips
+    401824: QuickRigCharacter_Ctrl_HipsEffector
+    401826: QuickRigCharacter_Ctrl_LeftAnkleEffector
+    401828: QuickRigCharacter_Ctrl_LeftArm
+    401830: QuickRigCharacter_Ctrl_LeftElbowEffector
+    401832: QuickRigCharacter_Ctrl_LeftFoot
+    401834: QuickRigCharacter_Ctrl_LeftFootEffector
+    401836: QuickRigCharacter_Ctrl_LeftForeArm
+    401838: QuickRigCharacter_Ctrl_LeftHand
+    401840: QuickRigCharacter_Ctrl_LeftHipEffector
+    401842: QuickRigCharacter_Ctrl_LeftKneeEffector
+    401844: QuickRigCharacter_Ctrl_LeftLeg
+    401846: QuickRigCharacter_Ctrl_LeftShoulder
+    401848: QuickRigCharacter_Ctrl_LeftShoulderEffector
+    401850: QuickRigCharacter_Ctrl_LeftToeBase
+    401852: QuickRigCharacter_Ctrl_LeftUpLeg
+    401854: QuickRigCharacter_Ctrl_LeftWristEffector
+    401856: QuickRigCharacter_Ctrl_Neck
+    401858: QuickRigCharacter_Ctrl_Reference
+    401860: QuickRigCharacter_Ctrl_RightAnkleEffector
+    401862: QuickRigCharacter_Ctrl_RightArm
+    401864: QuickRigCharacter_Ctrl_RightElbowEffector
+    401866: QuickRigCharacter_Ctrl_RightFoot
+    401868: QuickRigCharacter_Ctrl_RightFootEffector
+    401870: QuickRigCharacter_Ctrl_RightForeArm
+    401872: QuickRigCharacter_Ctrl_RightHand
+    401874: QuickRigCharacter_Ctrl_RightHipEffector
+    401876: QuickRigCharacter_Ctrl_RightKneeEffector
+    401878: QuickRigCharacter_Ctrl_RightLeg
+    401880: QuickRigCharacter_Ctrl_RightShoulder
+    401882: QuickRigCharacter_Ctrl_RightShoulderEffector
+    401884: QuickRigCharacter_Ctrl_RightToeBase
+    401886: QuickRigCharacter_Ctrl_RightUpLeg
+    401888: QuickRigCharacter_Ctrl_RightWristEffector
+    401890: QuickRigCharacter_Ctrl_Spine
+    401892: QuickRigCharacter_Ctrl_Spine1
+    401894: QuickRigCharacter_Ctrl_Spine2
+    401896: QuickRigCharacter_Guides
+    401898: QuickRigCharacter_Head
+    401900: QuickRigCharacter_Hips
+    401902: QuickRigCharacter_LeftArm
+    401904: QuickRigCharacter_LeftFoot
+    401906: QuickRigCharacter_LeftForeArm
+    401908: QuickRigCharacter_LeftHand
+    401910: QuickRigCharacter_LeftLeg
+    401912: QuickRigCharacter_LeftShoulder
+    401914: QuickRigCharacter_LeftToeBase
+    401916: QuickRigCharacter_LeftUpLeg
+    401918: QuickRigCharacter_Neck
+    401920: QuickRigCharacter_Reference
+    401922: QuickRigCharacter_RightArm
+    401924: QuickRigCharacter_RightFoot
+    401926: QuickRigCharacter_RightForeArm
+    401928: QuickRigCharacter_RightHand
+    401930: QuickRigCharacter_RightLeg
+    401932: QuickRigCharacter_RightShoulder
+    401934: QuickRigCharacter_RightToeBase
+    401936: QuickRigCharacter_RightUpLeg
+    401938: QuickRigCharacter_Spine
+    401940: QuickRigCharacter_Spine1
+    401942: QuickRigCharacter_Spine2
+    401944: Reference
+    401946: Reference 1
+    401948: Reference 2
+    401950: Reference 3
+    401952: Reference 4
+    401954: Reference 5
+    401956: Reference 6
+    401958: Reference 7
+    401960: Reference 8
+    401962: RightArm
+    401964: RightArm 1
+    401966: RightArm 2
+    401968: RightArm 3
+    401970: RightArm 4
+    401972: RightArm 5
+    401974: RightArm 6
+    401976: RightArm 7
+    401978: RightArm 8
+    401980: RightFoot
+    401982: RightFoot 1
+    401984: RightFoot 2
+    401986: RightFoot 3
+    401988: RightFoot 4
+    401990: RightFoot 5
+    401992: RightFoot 6
+    401994: RightFoot 7
+    401996: RightFoot 8
+    401998: RightForeArm
+    402000: RightForeArm 1
+    402002: RightForeArm 2
+    402004: RightForeArm 3
+    402006: RightForeArm 4
+    402008: RightForeArm 5
+    402010: RightForeArm 6
+    402012: RightForeArm 7
+    402014: RightForeArm 8
+    402016: RightHand
+    402018: RightHand 1
+    402020: RightHand 2
+    402022: RightHand 3
+    402024: RightHand 4
+    402026: RightHand 5
+    402028: RightHand 6
+    402030: RightHand 7
+    402032: RightHand 8
+    402034: RightLeg
+    402036: RightLeg 1
+    402038: RightLeg 2
+    402040: RightLeg 3
+    402042: RightLeg 4
+    402044: RightLeg 5
+    402046: RightLeg 6
+    402048: RightLeg 7
+    402050: RightLeg 8
+    402052: RightShoulder
+    402054: RightShoulder 1
+    402056: RightShoulder 2
+    402058: RightShoulder 3
+    402060: RightShoulder 4
+    402062: RightShoulder 5
+    402064: RightShoulder 6
+    402066: RightShoulder 7
+    402068: RightShoulder 8
+    402070: RightToeBase
+    402072: RightToeBase 1
+    402074: RightToeBase 2
+    402076: RightToeBase 3
+    402078: RightToeBase 4
+    402080: RightToeBase 5
+    402082: RightToeBase 6
+    402084: RightToeBase 7
+    402086: RightToeBase 8
+    402088: RightUpLeg
+    402090: RightUpLeg 1
+    402092: RightUpLeg 2
+    402094: RightUpLeg 3
+    402096: RightUpLeg 4
+    402098: RightUpLeg 5
+    402100: RightUpLeg 6
+    402102: RightUpLeg 7
+    402104: RightUpLeg 8
+    402106: Spine
+    402108: Spine 1
+    402110: Spine 2
+    402112: Spine 3
+    402114: Spine 4
+    402116: Spine 5
+    402118: Spine 6
+    402120: Spine 7
+    402122: Spine 8
+    402124: Spine1
+    402126: Spine1 1
+    402128: Spine1 2
+    402130: Spine1 3
+    402132: Spine1 4
+    402134: Spine1 5
+    402136: Spine1 6
+    402138: Spine1 7
+    402140: Spine1 8
+    402142: Spine2
+    402144: Spine2 1
+    402146: Spine2 2
+    402148: Spine2 3
+    402150: Spine2 4
+    402152: Spine2 5
+    402154: Spine2 6
+    402156: Spine2 7
+    402158: Spine2 8
+    402160: transform1
+    402162: transform2
+    402164: transform3
+    402166: transform4
+    402168: transform5
+    2000000: Female_box_head_attached_done:bottom
+    2000002: Female_box_head_attached_done:left
+    2000004: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:bottom
+    2000006: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED:Female_box_head_attached_done:left
+    4300000: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    4300002: polySurface2
+    4300004: pasted__polySurface2
+    4300006: pasted__polySurface2
+    4300008: pasted__polySurface2
+    4300010: pasted__polySurface2
+    4300012: pasted__polySurface2
+    4300014: pasted__polySurface2
+    4300016: pasted__polySurface2
+    9500000: //RootNode
+    13700000: Female_box_head_detached_and_textured_AND_SMOOTHED_AND_COMBINED2:Female_box_head_attached_done:pCube14
+    13700002: pasted__polySurface2
+    13700004: pasted__polySurface2 1
+    13700006: pasted__polySurface2 2
+    13700008: pasted__polySurface2 3
+    13700010: pasted__polySurface2 4
+    13700012: pasted__polySurface2 5
+    13700014: pasted__polySurface2 6
+    13700016: polySurface2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
