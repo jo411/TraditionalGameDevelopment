@@ -14,6 +14,8 @@ public class Attack
 
     public int usesLeft;
     public int uses;
+
+    public string tag;
     public Attack(string name, int power, double accuracy,string text,string sound, int uses)
     {
         this.name = name;

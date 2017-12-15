@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114133494273587574}
   - component: {fileID: 114153992249683800}
   - component: {fileID: 114847179583163286}
+  - component: {fileID: 114756278206826112}
   m_Layer: 0
   m_Name: Entity
   m_TagString: Entity
@@ -116,7 +117,22 @@ GameObject:
   - component: {fileID: 33333297213254888}
   - component: {fileID: 23654377560780186}
   m_Layer: 0
-  m_Name: Green
+  m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1705989479167526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4731258747498072}
+  m_Layer: 0
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -139,6 +155,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1791307279814736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4397101313060384}
+  m_Layer: 0
+  m_Name: Left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4397101313060384
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1791307279814736}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.46097955, y: 0.66673774, z: -0.110691145}
+  m_LocalScale: {x: -0.076815546, y: -0.03626249, z: -0.076815486}
+  m_Children: []
+  m_Father: {fileID: 4491337393404616}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!4 &4491337393404616
 Transform:
   m_ObjectHideFlags: 1
@@ -149,11 +193,26 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.85643697, y: 1.8142064, z: 0.85643697}
   m_Children:
+  - {fileID: 4397101313060384}
+  - {fileID: 4731258747498072}
   - {fileID: 4759429222691910}
   - {fileID: 224578134370423970}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4731258747498072
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1705989479167526}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.4406628, y: 0.66673774, z: -0.110691145}
+  m_LocalScale: {x: -0.076815546, y: -0.03626249, z: -0.076815486}
+  m_Children: []
+  m_Father: {fileID: 4491337393404616}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!4 &4759429222691910
 Transform:
   m_ObjectHideFlags: 1
@@ -165,7 +224,7 @@ Transform:
   m_LocalScale: {x: 70.05769, y: 33.07231, z: 70.05769}
   m_Children: []
   m_Father: {fileID: 4491337393404616}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23654377560780186
 MeshRenderer:
@@ -379,6 +438,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   combatText: {fileID: 1282160311008872, guid: 766c85189a5675541b9b3eae7561c1d6, type: 2}
   eName: 
+  namebar: {fileID: 0}
+--- !u!114 &114756278206826112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1079692136670958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1086e91dfb51854bba636d118473857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armPrefab: {fileID: 1855991597685562, guid: 448fc35c1c78df848aede5f27a73a20a, type: 2}
 --- !u!114 &114815647959728844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -619,7 +691,7 @@ RectTransform:
   - {fileID: 224407540012427094}
   - {fileID: 224921101258537094}
   m_Father: {fileID: 4491337393404616}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
