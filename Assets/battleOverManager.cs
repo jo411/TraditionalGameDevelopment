@@ -80,6 +80,7 @@ public class battleOverManager : MonoBehaviour {
             names.Add(current.attack.name);
         }
         lootDropDown.AddOptions(names);
+        armChosen(0);
     }
 
 
