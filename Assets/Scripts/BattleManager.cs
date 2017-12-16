@@ -192,7 +192,7 @@ public class BattleManager : MonoBehaviour {
             Debug.LogError("No sound manager was found!");
         }
 
-        //selectedInfoPane.SetActive(false);
+       // selectedInfoPane.SetActive(false);
 
         instance = this;
 
@@ -475,7 +475,7 @@ public class BattleManager : MonoBehaviour {
 
             targetClicked(getFirstEnemyTarget());
 
-            turnMarker.transform.position = current.transform.position + new Vector3(0, 3, 0);
+            turnMarker.transform.position = current.transform.position + new Vector3(0, 7.5f, 0);
 
             foreach (GameObject currentEntity in turnOrder)
             {

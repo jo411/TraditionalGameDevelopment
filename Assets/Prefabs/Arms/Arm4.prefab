@@ -260,7 +260,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b44f6162f35176e4da3e299f61ce2675, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - Siphon
+  - Poison
 --- !u!137 &137765063827696156
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -324,7 +324,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c8f685debb0b8344e8c604635fc35e59, type: 2}
+  - {fileID: 2100000, guid: b44f6162f35176e4da3e299f61ce2675, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
