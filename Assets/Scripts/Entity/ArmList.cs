@@ -24,7 +24,8 @@ public class ArmList : MonoBehaviour {
     {
         foreach(GameObject current in arms)
         {
-            if(current.GetComponent<TagList>().hasTag(tag))
+            TagList tags = current.GetComponent<TagList>();
+            if (tags!=null && tags.hasTag(tag))
             {
                 return current;
             }
